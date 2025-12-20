@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Immersive Learning" src="images/immersive-learning.jpg">
+                    <img alt="Immersive Learning" src="images/eduu/what is immer.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Immersive Simulations" src="images/immersive-is.jpeg">
+                  <img alt="Immersive Simulations" src="images/eduu/immersive.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Immersive Simulations</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Gamification" src="images/immersive-g.jpeg">
+                  <img alt="Gamification" src="images/eduu/gami.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Gamification</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="AR & VR Classrooms" src="images/immersive-arvr.jpeg">
+                  <img alt="AR & VR Classrooms" src="images/eduu/ar vr.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">AR & VR Classrooms</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Collaborative Learning Spaces" src="images/immersive-cs.jpeg">
+                  <img alt="Collaborative Learning Spaces" src="images/eduu/collab spaces.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Collaborative Spaces</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Experiential Storytelling" src="images/immersive-es.jpeg">
+                  <img alt="Experiential Storytelling" src="images/eduu/story telling.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Experiential Storytelling</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Feedback" src="images/immersive-af.jpeg">
+                  <img alt="Analytics & Feedback" src="images/eduu/feedback.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Feedback</h3>
