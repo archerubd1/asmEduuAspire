@@ -6,7 +6,7 @@
 
 if (!isset($base_url)) {
     $is_localhost = in_array($_SERVER['REMOTE_ADDR'], array('127.0.0.1', '::1'));
-    $base_url = $is_localhost ? 'http://localhost/eduuaspire.online' : 'https://eduuaspire.online';
+    $base_url = $is_localhost ? 'http://localhost/asmEduuAspire' : 'https://eduuaspire.online';
 }
 ?>
 <!DOCTYPE html>
