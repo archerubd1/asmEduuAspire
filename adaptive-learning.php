@@ -51,7 +51,7 @@ include_once('head-nav.php');
 <div class="row align-items-center">
     <div class="col-lg-6 col-md-6 padding_bottom_half">
         <div class="image">
-            <img alt="Adaptive Learning Platform" src="images/adaptlearn-sal.jpg">
+            <img alt="Adaptive Learning Platform" src="images/eduu/Smarter Adaptive Learning.jpg">
         </div>
     </div>
     <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -145,7 +145,7 @@ include_once('head-nav.php');
 <div class="cbp-item digital">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Personalized Learning" src="images/adaptlearn-pp.jpg">
+      <img alt="Personalized Learning" src="images/eduu/Personalized Pathways.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Personalized Pathways</h3>
@@ -162,7 +162,7 @@ include_once('head-nav.php');
 <div class="cbp-item design">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Future Skills" src="images/adaptlearn-asd.jpg">
+      <img alt="Future Skills" src="images/eduu/Adaptive Skill Development.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Adaptive Skill Development</h3>
@@ -179,7 +179,7 @@ include_once('head-nav.php');
 <div class="cbp-item brand">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Immersive Experience" src="images/adaptlearn-iae.jpg">
+      <img alt="Immersive Experience" src="images/eduu/Immersive & Adaptive Experiences.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Immersive & Adaptive Experiences</h3>
@@ -196,7 +196,7 @@ include_once('head-nav.php');
 <div class="cbp-item graphics">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Campus to Corporate" src="images/adaptlearn-cp1.jpg">
+      <img alt="Campus to Corporate" src="images/eduu/career pathway.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Career Pathways</h3>
@@ -213,7 +213,7 @@ include_once('head-nav.php');
 <div class="cbp-item digital">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Collaboration & Social Learning" src="images/adaptlearn-ac.jpg">
+      <img alt="Collaboration & Social Learning" src="images/eduu/Adaptive Collaboration.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Adaptive Collaboration</h3>
@@ -230,7 +230,7 @@ include_once('head-nav.php');
 <div class="cbp-item design graphics">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Analytics & Insights" src="images/adaptlearn-li.jpg">
+      <img alt="Analytics & Insights" src="images/eduu/Learning Intelligence.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Learning Intelligence</h3>

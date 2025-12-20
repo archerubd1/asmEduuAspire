@@ -50,7 +50,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Learning Experience Platform" src="images/LXP.jpg">
+                    <img alt="Learning Experience Platform" src="images/eduu/next gen.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -137,7 +137,7 @@ include_once('head-nav.php');
       <div class="cbp-item digital">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Personalized Learning" src="images/lxp-pl.jpg">
+            <img alt="Personalized Learning" src="images/eduu/personal learning.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Personalized Learning</h3>
@@ -155,7 +155,7 @@ include_once('head-nav.php');
       <div class="cbp-item design">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Future Skills" src="images/lxp-fs.jpg">
+            <img alt="Future Skills" src="images/eduu/future skills.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Future Skills</h3>
@@ -173,7 +173,7 @@ include_once('head-nav.php');
       <div class="cbp-item brand">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Immersive Experience" src="images/lxp-ie.jpg">
+            <img alt="Immersive Experience" src="images/eduu/immersive exp.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Immersive Experience</h3>
@@ -191,7 +191,7 @@ include_once('head-nav.php');
       <div class="cbp-item graphics">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Campus to Corporate" src="images/lxp-c2c.jpg">
+            <img alt="Campus to Corporate" src="images/eduu/ctc.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Campus-to-Corporate</h3>
@@ -209,7 +209,7 @@ include_once('head-nav.php');
       <div class="cbp-item digital">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Collaboration & Social Learning" src="images/lxp-c&s.jpg">
+            <img alt="Collaboration & Social Learning" src="images/eduu/collab learning.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Collaboration & Social Learning</h3>
@@ -227,7 +227,7 @@ include_once('head-nav.php');
       <div class="cbp-item design graphics">
         <div class="services-main">
           <div class="image bottom10">
-            <img alt="Analytics & Insights" src="images/lxp-a&i.jpg">
+            <img alt="Analytics & Insights" src="images/eduu/Analytics & Insights.jpg">
           </div>
           <div class="services-content text-center text-md-left">
             <h3 class="bottom10 darkcolor">Analytics & Insights</h3>
