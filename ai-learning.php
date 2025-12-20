@@ -53,7 +53,7 @@ include_once('head-nav.php');
 <div class="row align-items-center">
     <div class="col-lg-6 col-md-6 padding_bottom_half">
         <div class="image">
-            <img alt="AI-Powered Learning Analytics" src="images/ai-learning-ila.jpg">
+            <img alt="AI-Powered Learning Analytics" src="images/eduu/innovative.jpg">
         </div>
     </div>
     <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -147,7 +147,7 @@ include_once('head-nav.php');
 <div class="cbp-item digital">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Personalized Learning" src="images/ai-learning-ddp.jpg">
+      <img alt="Personalized Learning" src="images/eduu/data driven.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Data-Driven Personalization</h3>
@@ -164,7 +164,7 @@ include_once('head-nav.php');
 <div class="cbp-item design">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Future Skills" src="images/ai-learning-psi.jpg">
+      <img alt="Future Skills" src="images/eduu/predictative.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Predictive Skill Insights</h3>
@@ -181,7 +181,7 @@ include_once('head-nav.php');
 <div class="cbp-item brand">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Immersive Experience" src="images/ai-learning-ale.jpg">
+      <img alt="Immersive Experience" src="images/eduu/adaptative.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Adaptive Learning Experiences</h3>
@@ -198,7 +198,7 @@ include_once('head-nav.php');
 <div class="cbp-item graphics">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Campus to Corporate" src="images/ai-learning-cp.jpg">
+      <img alt="Campus to Corporate" src="images/eduu/career path.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Career Pathway Analytics</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
 <div class="cbp-item digital">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Collaboration & Social Learning" src="images/ai-learning-aiec.jpg">
+      <img alt="Collaboration & Social Learning" src="images/eduu/ai enhanced.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">AI-Enhanced Collaboration</h3>
@@ -232,7 +232,7 @@ include_once('head-nav.php');
 <div class="cbp-item design graphics">
   <div class="services-main">
     <div class="image bottom10">
-      <img alt="Analytics & Insights" src="images/ai-learning-li.jpg">
+      <img alt="Analytics & Insights" src="images/eduu/learning intell2.jpg">
     </div>
     <div class="services-content text-center text-md-left">
       <h3 class="bottom10 darkcolor">Learning Intelligence</h3>
