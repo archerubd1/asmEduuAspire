@@ -1,0 +1,199 @@
+[
+  {
+    "theme_id": "ai_everyday",
+    "level": "beginner",
+    "statement": "Design an AI assistant that helps you manage your daily schedule or studies.",
+    "why": "Understanding how AI supports daily life builds digital literacy and ethical awareness.",
+    "skills": ["AI Literacy", "Design Thinking", "Ethical Reasoning"]
+  },
+  {
+    "theme_id": "ai_everyday",
+    "level": "intermediate",
+    "statement": "Analyze a real-world AI application (like chatbots or smart cars) and suggest one ethical improvement.",
+    "why": "Learners connect technology with responsibility and human impact.",
+    "skills": ["Critical Thinking", "Data Ethics", "Systems Understanding"]
+  },
+  {
+    "theme_id": "ai_everyday",
+    "level": "advanced",
+    "statement": "Develop a concept for a human-centered AI solution that promotes inclusion or accessibility.",
+    "why": "Encourages creative leadership in future-ready, responsible innovation.",
+    "skills": ["Empathy in Design", "Innovation Strategy", "Human-Computer Interaction"]
+  },
+
+  {
+    "theme_id": "digital_wellbeing",
+    "level": "beginner",
+    "statement": "Track your screen time for 3 days and propose one healthier tech habit.",
+    "why": "Creates awareness of your relationship with technology.",
+    "skills": ["Self-Awareness", "Digital Hygiene", "Reflection"]
+  },
+  {
+    "theme_id": "digital_wellbeing",
+    "level": "intermediate",
+    "statement": "Design a 'Mindful Tech' campaign for peers promoting balanced online habits.",
+    "why": "Transforms self-awareness into leadership and influence.",
+    "skills": ["Communication", "Design for Change", "Empathy"]
+  },
+  {
+    "theme_id": "digital_wellbeing",
+    "level": "advanced",
+    "statement": "Create a prototype app or challenge that gamifies digital wellness.",
+    "why": "Combines design thinking and behavior science to solve real human problems.",
+    "skills": ["UX Design", "Behavioral Science", "Gamification"]
+  },
+
+  {
+    "theme_id": "sustainability",
+    "level": "beginner",
+    "statement": "Identify one sustainability issue in your community and brainstorm three solutions.",
+    "why": "Nurtures eco-conscious awareness and responsibility.",
+    "skills": ["Observation", "Idea Generation", "Team Collaboration"]
+  },
+  {
+    "theme_id": "sustainability",
+    "level": "intermediate",
+    "statement": "Design a simple sustainability project (e.g., upcycling, school garden, or energy savings).",
+    "why": "Translates ideas into tangible environmental impact.",
+    "skills": ["Project Planning", "Environmental Science", "Collaboration"]
+  },
+  {
+    "theme_id": "sustainability",
+    "level": "advanced",
+    "statement": "Develop a scalable green innovation plan (e.g., smart waste or solar solutions).",
+    "why": "Connects sustainability with entrepreneurship and social innovation.",
+    "skills": ["Systems Thinking", "Innovation", "Leadership"]
+  },
+
+  {
+    "theme_id": "entrepreneurship",
+    "level": "beginner",
+    "statement": "Spot a daily inconvenience and brainstorm a business idea to solve it.",
+    "why": "Fosters creative problem-solving and entrepreneurial curiosity.",
+    "skills": ["Creativity", "Problem Discovery", "Pitch Ideation"]
+  },
+  {
+    "theme_id": "entrepreneurship",
+    "level": "intermediate",
+    "statement": "Create a one-page business model canvas for your idea.",
+    "why": "Teaches structure, market fit, and lean thinking.",
+    "skills": ["Strategic Planning", "Business Modelling", "Communication"]
+  },
+  {
+    "theme_id": "entrepreneurship",
+    "level": "advanced",
+    "statement": "Build a minimum viable prototype and pitch it to a real audience.",
+    "why": "Turns entrepreneurial thinking into execution capability.",
+    "skills": ["Execution", "Pitching", "Leadership"]
+  },
+
+  {
+    "theme_id": "cybersecurity",
+    "level": "beginner",
+    "statement": "Create a poster or infographic on how to stay safe online.",
+    "why": "Raises awareness about privacy and responsible digital habits.",
+    "skills": ["Digital Safety", "Awareness Communication", "Creativity"]
+  },
+  {
+    "theme_id": "cybersecurity",
+    "level": "intermediate",
+    "statement": "Analyze a phishing email or fake website and explain how to detect scams.",
+    "why": "Develops practical awareness of real cyber risks.",
+    "skills": ["Critical Analysis", "Threat Detection", "Communication"]
+  },
+  {
+    "theme_id": "cybersecurity",
+    "level": "advanced",
+    "statement": "Propose a cybersecurity awareness campaign for youth or seniors.",
+    "why": "Encourages digital citizenship and leadership in online ethics.",
+    "skills": ["Advocacy", "Ethical Reasoning", "Public Awareness"]
+  },
+
+  {
+    "theme_id": "content_creation",
+    "level": "beginner",
+    "statement": "Create a 30-second video expressing an idea that matters to you.",
+    "why": "Builds confidence in communication and expression.",
+    "skills": ["Storytelling", "Creativity", "Digital Literacy"]
+  },
+  {
+    "theme_id": "content_creation",
+    "level": "intermediate",
+    "statement": "Plan and execute a mini digital campaign around a social theme.",
+    "why": "Develops strategy, consistency, and audience understanding.",
+    "skills": ["Campaign Design", "Media Planning", "Creative Direction"]
+  },
+  {
+    "theme_id": "content_creation",
+    "level": "advanced",
+    "statement": "Develop a content brand across 3 platforms focusing on authenticity.",
+    "why": "Combines creativity with long-term influence and identity design.",
+    "skills": ["Brand Building", "Strategic Communication", "Leadership"]
+  },
+
+  {
+    "theme_id": "robotics",
+    "level": "beginner",
+    "statement": "Design a simple robot concept that helps with a household task.",
+    "why": "Introduces basic automation logic and creativity.",
+    "skills": ["Engineering Basics", "Design Thinking", "Team Collaboration"]
+  },
+  {
+    "theme_id": "robotics",
+    "level": "intermediate",
+    "statement": "Simulate a workflow automation using code blocks or tools like Scratch or Arduino.",
+    "why": "Connects coding to real-world automation ideas.",
+    "skills": ["Coding", "Logic", "Problem-Solving"]
+  },
+  {
+    "theme_id": "robotics",
+    "level": "advanced",
+    "statement": "Build a robot prototype that solves a social or environmental issue.",
+    "why": "Empowers learners to connect robotics with meaningful impact.",
+    "skills": ["Engineering Design", "Prototyping", "Innovation"]
+  },
+
+  {
+    "theme_id": "problem_solving",
+    "level": "beginner",
+    "statement": "Identify a common team problem and brainstorm 3 ways to fix it.",
+    "why": "Encourages collaboration and open-mindedness.",
+    "skills": ["Collaboration", "Empathy", "Idea Generation"]
+  },
+  {
+    "theme_id": "problem_solving",
+    "level": "intermediate",
+    "statement": "Apply design thinking to a workplace or school problem.",
+    "why": "Teaches structured problem solving and adaptability.",
+    "skills": ["Design Thinking", "Analytical Reasoning", "Communication"]
+  },
+  {
+    "theme_id": "problem_solving",
+    "level": "advanced",
+    "statement": "Lead a small project team to implement a real process improvement.",
+    "why": "Builds leadership and cross-functional collaboration.",
+    "skills": ["Leadership", "Systems Thinking", "Change Management"]
+  },
+
+  {
+    "theme_id": "future_skills",
+    "level": "beginner",
+    "statement": "Reflect on 3 skills you’ll need in 2030 and how to develop them now.",
+    "why": "Promotes foresight and adaptability in learning.",
+    "skills": ["Self-Reflection", "Goal Setting", "Adaptability"]
+  },
+  {
+    "theme_id": "future_skills",
+    "level": "intermediate",
+    "statement": "Interview a professional about how their job is evolving and summarize key skills needed.",
+    "why": "Connects learners with real-world perspectives.",
+    "skills": ["Communication", "Critical Inquiry", "Networking"]
+  },
+  {
+    "theme_id": "future_skills",
+    "level": "advanced",
+    "statement": "Create a personal future-skills growth plan with milestones.",
+    "why": "Transforms awareness into action and leadership.",
+    "skills": ["Planning", "Self-Leadership", "Career Design"]
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "theme_id": "collab_intel_labs",
+    "level": "Kids",
+    "statement": "Simple AI-assisted idea boards and group creativity games.",
+    "why": "Introduces safe, guided AI interaction and creative thinking.",
+    "skills": ["Curiosity", "Teamwork", "Early Digital Literacy"]
+  },
+  {
+    "theme_id": "collab_intel_labs",
+    "level": "Teens",
+    "statement": "AI-supported problem modelling and innovation challenges.",
+    "why": "Prepares for STEM pathways, robotics, and innovation labs.",
+    "skills": ["Systems Thinking", "Design Thinking", "Analytical Reasoning"]
+  },
+  {
+    "theme_id": "collab_intel_labs",
+    "level": "Adults",
+    "statement": "AI–human co-creation for projects, risk models, and prototypes.",
+    "why": "Builds future workforce capabilities aligned with Industry 4.0 and AI adoption.",
+    "skills": ["Advanced Problem Solving", "AI Literacy", "Collaboration"]
+  },
+
+  {
+    "theme_id": "rotational_panels",
+    "level": "Kids",
+    "statement": "Learn a topic and present it to peers using simple language.",
+    "why": "Reinforces learning-by-teaching from an early age.",
+    "skills": ["Confidence", "Communication"]
+  },
+  {
+    "theme_id": "rotational_panels",
+    "level": "Teens",
+    "statement": "Research deeply and explain subtopics during structured rotations.",
+    "why": "Builds academic depth and presentation skills.",
+    "skills": ["Research Skills", "Structured Knowledge Transfer"]
+  },
+  {
+    "theme_id": "rotational_panels",
+    "level": "Adults",
+    "statement": "Formal peer-led knowledge circles inside organizations.",
+    "why": "Reduces knowledge silos and improves cross-skilling.",
+    "skills": ["Expertise Sharing", "Leadership"]
+  },
+
+  {
+    "theme_id": "socratic_debate",
+    "level": "Kids",
+    "statement": "Guided 'Why do you think…?' discussions on everyday topics.",
+    "why": "Provides a soft introduction to reasoning and reflection.",
+    "skills": ["Listening", "Expression"]
+  },
+  {
+    "theme_id": "socratic_debate",
+    "level": "Teens",
+    "statement": "Debates on ethics, science, and society with simple structures.",
+    "why": "Supports academic development and critical thinking.",
+    "skills": ["Critical Thinking", "Argumentation"]
+  },
+  {
+    "theme_id": "socratic_debate",
+    "level": "Adults",
+    "statement": "Policy, finance, technology, and compliance debates.",
+    "why": "Strengthens professional judgement and governance thinking.",
+    "skills": ["Decision-Making", "Analytical Rigor"]
+  },
+
+  {
+    "theme_id": "scenario_rewriting",
+    "level": "Kids",
+    "statement": "Change story endings and explore different choices.",
+    "why": "Encourages imagination and creativity.",
+    "skills": ["Creativity"]
+  },
+  {
+    "theme_id": "scenario_rewriting",
+    "level": "Teens",
+    "statement": "Rewrite scientific, ethical, or tech scenarios with alternative outcomes.",
+    "why": "Expands worldview and perspective-taking.",
+    "skills": ["Perspective-Taking"]
+  },
+  {
+    "theme_id": "scenario_rewriting",
+    "level": "Adults",
+    "statement": "Rewrite business cases, failures, and compliance scenarios.",
+    "why": "Improves strategic reasoning and risk analysis.",
+    "skills": ["Counterfactual Reasoning", "Strategic Thinking"]
+  },
+
+  {
+    "theme_id": "micro_challenges",
+    "level": "Kids",
+    "statement": "Short puzzles, quizzes, and mini-build tasks solved in groups.",
+    "why": "Keeps energy high and learning playful.",
+    "skills": ["Agility", "Quick Thinking"]
+  },
+  {
+    "theme_id": "micro_challenges",
+    "level": "Teens",
+    "statement": "Coding challenges, logic puzzles, and design sprints.",
+    "why": "Ideal for competitions and collaborative problem-solving.",
+    "skills": ["Competitive Collaboration", "Analytical Skills"]
+  },
+  {
+    "theme_id": "micro_challenges",
+    "level": "Adults",
+    "statement": "Rapid problem-solving sprints in teams around real-world prompts.",
+    "why": "Excellent for hackathons and agile workflows with high engagement.",
+    "skills": ["Rapid Collaboration", "Practical Problem-Solving"]
+  },
+
+  {
+    "theme_id": "meta_learning_pods",
+    "level": "Kids",
+    "statement": "Learn simple learning strategies with peers and talk about what worked.",
+    "why": "Builds foundational learning behaviours early.",
+    "skills": ["Self-Awareness"]
+  },
+  {
+    "theme_id": "meta_learning_pods",
+    "level": "Teens",
+    "statement": "Understand memory, focus, and collaboration strategies together.",
+    "why": "Builds independent learners who can manage their own study habits.",
+    "skills": ["Study Mastery"]
+  },
+  {
+    "theme_id": "meta_learning_pods",
+    "level": "Adults",
+    "statement": "Pods reflect on meta-cognition, productivity, and team processes.",
+    "why": "Improves team performance and workplace capability.",
+    "skills": ["Meta-Cognition", "Team Process Awareness", "Leadership Maturity"]
+  },
+
+  {
+    "theme_id": "insight_swarm",
+    "level": "Kids",
+    "statement": "Fun collaborative group puzzles and simple shared challenges.",
+    "why": "Creates high engagement and positive team bonding.",
+    "skills": ["Team Bonding", "Basic Collaboration"]
+  },
+  {
+    "theme_id": "insight_swarm",
+    "level": "Teens",
+    "statement": "Multi-team problem-solving events tackling shared challenges.",
+    "why": "Prepares learners for hackathons and innovation contests.",
+    "skills": ["Multi-Perspective Insight Formation", "Group Problem-Solving"]
+  },
+  {
+    "theme_id": "insight_swarm",
+    "level": "Adults",
+    "statement": "Multi-department brainstorming and innovation swarms across organizations.",
+    "why": "Supports enterprise collaboration and innovation culture.",
+    "skills": ["Enterprise Collaboration", "Systems Thinking"]
+  },
+
+  {
+    "theme_id": "failure_labs",
+    "level": "Kids",
+    "statement": "Learn why simple experiments or builds fail through stories and demos.",
+    "why": "Provides a safe space to learn from mistakes.",
+    "skills": ["Resilience"]
+  },
+  {
+    "theme_id": "failure_labs",
+    "level": "Teens",
+    "statement": "Analyze failure cases in science, coding, and projects.",
+    "why": "Builds emotional maturity and root-cause thinking.",
+    "skills": ["Root-Cause Analysis"]
+  },
+  {
+    "theme_id": "failure_labs",
+    "level": "Adults",
+    "statement": "Deep dives into failures in BFSI, cybersecurity, and product design.",
+    "why": "Critical for regulated industries where risk needs to be managed.",
+    "skills": ["Risk Literacy", "Resilience"]
+  },
+
+  {
+    "theme_id": "fusion_labs",
+    "level": "Kids",
+    "statement": "Mix art, science, and stories into simple fusion projects.",
+    "why": "Encourages broad exploration across subjects.",
+    "skills": ["Creativity"]
+  },
+  {
+    "theme_id": "fusion_labs",
+    "level": "Teens",
+    "statement": "Combine STEM and humanities to design integrated projects.",
+    "why": "Ideal for STEAM learning and holistic thinking.",
+    "skills": ["Integrative Thinking"]
+  },
+  {
+    "theme_id": "fusion_labs",
+    "level": "Adults",
+    "statement": "Complex multi-disciplinary innovation combining tech, domain, and design.",
+    "why": "Mimics real-world innovation in Fintech, AI, and Healthtech.",
+    "skills": ["Cross-Functional Problem-Solving"]
+  },
+
+  {
+    "theme_id": "story_building",
+    "level": "Kids",
+    "statement": "Create storyboards and cartoon-based learning narratives in groups.",
+    "why": "Makes learning enjoyable and memorable.",
+    "skills": ["Communication", "Narrative Skills"]
+  },
+  {
+    "theme_id": "story_building",
+    "level": "Teens",
+    "statement": "Build multimedia case stories around a topic or project.",
+    "why": "Improves presentation skills and creative synthesis.",
+    "skills": ["Creative Synthesis", "Storytelling"]
+  },
+  {
+    "theme_id": "story_building",
+    "level": "Adults",
+    "statement": "Create narrative case-building for business problems and solutions.",
+    "why": "Useful for leadership, consulting, and BFSI storytelling.",
+    "skills": ["Strategic Communication", "Case Narrative Design"]
+  },
+
+  {
+    "theme_id": "micro_communities",
+    "level": "Kids",
+    "statement": "Teacher-guided micro-groups with simple weekly tasks.",
+    "why": "Builds healthy group habits and discipline.",
+    "skills": ["Discipline", "Peer Learning"]
+  },
+  {
+    "theme_id": "micro_communities",
+    "level": "Teens",
+    "statement": "Mentor-led mini clubs focused on interests and portfolios.",
+    "why": "Supports portfolio building and college preparation.",
+    "skills": ["Portfolio Building"]
+  },
+  {
+    "theme_id": "micro_communities",
+    "level": "Adults",
+    "statement": "Expert-guided professional cohorts with regular micro-tasks.",
+    "why": "Enables scalable mentorship at an enterprise level.",
+    "skills": ["Career Acceleration", "Networked Learning"]
+  },
+
+  {
+    "theme_id": "roleplay_ecosystem",
+    "level": "Kids",
+    "statement": "Role-play stories as explorers, scientists, and other characters.",
+    "why": "Encourages participation and empathy through imagination.",
+    "skills": ["Empathy", "Imagination"]
+  },
+  {
+    "theme_id": "roleplay_ecosystem",
+    "level": "Teens",
+    "statement": "Simulated negotiations and crisis-management role plays.",
+    "why": "Makes abstract concepts real and builds leadership experience.",
+    "skills": ["Leadership", "Communication"]
+  },
+  {
+    "theme_id": "roleplay_ecosystem",
+    "level": "Adults",
+    "statement": "Multi-role corporate simulations in realistic scenarios.",
+    "why": "Ideal for BFSI, law, and healthcare training.",
+    "skills": ["Workplace Readiness", "Risk and Compliance Awareness"]
+  },
+
+  {
+    "theme_id": "ethics_lab",
+    "level": "Kids",
+    "statement": "Simple good–bad decision scenarios in everyday situations.",
+    "why": "Builds foundations of citizenship and fairness.",
+    "skills": ["Moral Reasoning"]
+  },
+  {
+    "theme_id": "ethics_lab",
+    "level": "Teens",
+    "statement": "Ethical dilemmas in technology, social media, and society.",
+    "why": "Important for responsible behaviour in the digital age.",
+    "skills": ["Value-Based Thinking"]
+  },
+  {
+    "theme_id": "ethics_lab",
+    "level": "Adults",
+    "statement": "Policy-level decision-making around AI and compliance ethics.",
+    "why": "Critical for AI governance and regulatory maturity.",
+    "skills": ["Ethical Intelligence", "Governance Mindset"]
+  },
+
+  {
+    "theme_id": "avatar_collab",
+    "level": "Kids",
+    "statement": "Educational game world where learners collaborate as avatars.",
+    "why": "Acts as an engagement booster in learning.",
+    "skills": ["Digital Fluency"]
+  },
+  {
+    "theme_id": "avatar_collab",
+    "level": "Teens",
+    "statement": "Virtual innovation rooms to co-create ideas using avatars.",
+    "why": "Highly attractive to Gen Z and digital natives.",
+    "skills": ["Spatial Problem-Solving", "Virtual Collaboration"]
+  },
+  {
+    "theme_id": "avatar_collab",
+    "level": "Adults",
+    "statement": "Remote collaboration spaces for global teams using simple 3D rooms.",
+    "why": "Differentiator for modern LXPs and remote teamwork.",
+    "skills": ["Immersive Teamwork", "Remote Collaboration"]
+  },
+
+  {
+    "theme_id": "ai_team_matching",
+    "level": "Kids",
+    "statement": "Teams matched based on learning styles for simple collaborative tasks.",
+    "why": "Supports shy learners and makes groups more inclusive.",
+    "skills": ["Inclusivity", "Social Comfort"]
+  },
+  {
+    "theme_id": "ai_team_matching",
+    "level": "Teens",
+    "statement": "Teams matched based on interests and abilities for projects and challenges.",
+    "why": "Builds diversity in teams and improves motivation.",
+    "skills": ["Motivation", "Performance in Groups"]
+  },
+  {
+    "theme_id": "ai_team_matching",
+    "level": "Adults",
+    "statement": "Teams matched based on skill gaps and collaboration style for complex work.",
+    "why": "Reduces failure in group work and project unevenness.",
+    "skills": ["Team Productivity", "Collaboration Design"]
+  }
+]

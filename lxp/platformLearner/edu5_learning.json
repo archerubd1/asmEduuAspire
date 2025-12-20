@@ -1,0 +1,596 @@
+[
+  {
+    "framework_id": "core_genius_hours",
+    "segment": "K–12",
+    "statement": "Students choose their own topics and ways of learning in teacher-guided choice blocks.",
+    "why": "Builds early confidence, ownership and joy in learning beyond fixed textbook boundaries.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_genius_hours",
+    "segment": "Higher Ed",
+    "statement": "Learners carve out time to explore themes beyond the syllabus and link them to their discipline.",
+    "why": "Helps students form a distinct academic identity and create portfolio artefacts that stand out.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_genius_hours",
+    "segment": "Corporate L&D",
+    "statement": "Professionals define self-directed learning tracks to explore new tools, domains or problems.",
+    "why": "Encourages lifelong learning and proactive upskilling instead of waiting for formal training.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "core_passion_projects",
+    "segment": "K–12",
+    "statement": "Students develop projects around hobbies or interests and showcase them as simple outputs.",
+    "why": "Connects play and passion with structured outcomes, increasing engagement and confidence.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_passion_projects",
+    "segment": "Higher Ed",
+    "statement": "Learners turn long-term interests into structured projects aligned with their program or career path.",
+    "why": "Transforms personal motivation into tangible work samples useful for higher studies or placements.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_passion_projects",
+    "segment": "Corporate L&D",
+    "statement": "Employees design side projects that link their passions with team, product or customer value.",
+    "why": "Channels intrinsic motivation into innovation that benefits both individual growth and the organisation.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "core_peripheral",
+    "segment": "K–12",
+    "statement": "Students get guided exposure to AI, AR/VR and other emerging ideas through simple demos and tasks.",
+    "why": "Expands their view of what is possible, without overwhelming them with technical detail.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_peripheral",
+    "segment": "Higher Ed",
+    "statement": "Learners explore frontier topics such as AI/ML, XR, blockchain or Industry 5.0 at a conceptual level.",
+    "why": "Positions them to spot opportunities at the edge of their discipline or chosen career domain.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_peripheral",
+    "segment": "Corporate L&D",
+    "statement": "Professionals sample new technologies and trends that sit just outside their current role definition.",
+    "why": "Builds peripheral awareness that often leads to innovation, career pivots and strategic insights.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "core_minds_i",
+    "segment": "K–12",
+    "statement": "Students reflect on feelings, strengths and challenges using age-appropriate prompts and journaling.",
+    "why": "Helps them name emotions, recognise patterns and build a healthier relationship with self and others.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_minds_i",
+    "segment": "Higher Ed",
+    "statement": "Learners examine identity, beliefs and habits through guided reflection, dialogue and narrative work.",
+    "why": "Supports more conscious choices about careers, relationships and leadership aspirations.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_minds_i",
+    "segment": "Corporate L&D",
+    "statement": "Professionals pause to examine their triggers, beliefs and default responses in work situations.",
+    "why": "Improves emotional awareness and maturity, which directly impacts collaboration and leadership.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "core_micro_adventures_lite",
+    "segment": "K–12",
+    "statement": "Students attempt short 24–72 hour challenges to try one new skill, tool or creative output.",
+    "why": "Makes experimentation fun and low-risk, encouraging them to keep trying new things.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_micro_adventures_lite",
+    "segment": "Higher Ed",
+    "statement": "Learners pick micro-challenges that expand their skill stack just enough without heavy load.",
+    "why": "Enables rapid exploration of domains before committing to deeper courses or projects.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_micro_adventures_lite",
+    "segment": "Corporate L&D",
+    "statement": "Employees run mini-experiments to test tools, processes or ideas within a very short timebox.",
+    "why": "Builds a habit of small, safe experiments that compound into meaningful innovation.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "core_skill_sprints",
+    "segment": "K–12",
+    "statement": "Students focus for 1–2 weeks on mastering a basic skill and then demonstrating it to peers.",
+    "why": "Teaches them how deliberate practice and repetition lead to visible improvement.",
+    "outcomes": [
+      "Self-expression",
+      "Early skill discovery",
+      "Foundational creativity"
+    ]
+  },
+  {
+    "framework_id": "core_skill_sprints",
+    "segment": "Higher Ed",
+    "statement": "Learners run focused skill sprints around tools, methods or concepts linked to their program.",
+    "why": "Supports deliberate, trackable skill-building that feeds directly into portfolios and projects.",
+    "outcomes": [
+      "Academic identity",
+      "Portfolio-building",
+      "Innovation mindset"
+    ]
+  },
+  {
+    "framework_id": "core_skill_sprints",
+    "segment": "Corporate L&D",
+    "statement": "Professionals commit to short, well-defined sprints to close a specific skill gap end-to-end.",
+    "why": "Aligns individual development with role expectations and measurable performance outcomes.",
+    "outcomes": [
+      "Independent learning",
+      "Creative problem solving",
+      "Self-driven upskilling"
+    ]
+  },
+  {
+    "framework_id": "adv_future_labs",
+    "segment": "K–12",
+    "statement": "Students engage in age-appropriate experiments and simulations using simple AI, data or digital tools.",
+    "why": "Introduces future technologies in a playful, guided way while building comfort with STEAM thinking.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_future_labs",
+    "segment": "Higher Ed",
+    "statement": "Learners work on hands-on labs in AI, FinTech, analytics and Industry 5.0 scenarios with realistic data.",
+    "why": "Bridges theory and practice, increasing readiness for internships, research and specialised roles.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_future_labs",
+    "segment": "Corporate L&D",
+    "statement": "Teams run focused labs on AI, automation, analytics and ESG using relevant business contexts.",
+    "why": "Accelerates digital transformation and builds internal capability to work with data and intelligent systems.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "adv_sandbox",
+    "segment": "K–12",
+    "statement": "Students test ideas, stories, games or prototypes in a safe, teacher-moderated sandbox space.",
+    "why": "Allows failure without penalty, teaching resilience and iteration at an early age.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_sandbox",
+    "segment": "Higher Ed",
+    "statement": "Learners prototype code, business models or designs in a protected test bed before real deployment.",
+    "why": "Reduces fear of failure and supports rigorous experimentation around complex ideas.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_sandbox",
+    "segment": "Corporate L&D",
+    "statement": "Professionals explore new processes, automations or product concepts in a non-production sandbox.",
+    "why": "De-risks innovation and encourages teams to try bolder ideas before scaling.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "adv_micro_adventures_advanced",
+    "segment": "K–12",
+    "statement": "Older students take on slightly tougher domain challenges with clear goals and time limits.",
+    "why": "Prepares them for more serious projects by simulating real-world problem constraints.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_micro_adventures_advanced",
+    "segment": "Higher Ed",
+    "statement": "Learners tackle short, high-intensity cases in domains such as BFSI, healthcare or manufacturing.",
+    "why": "Develops the ability to apply theory quickly under time and information pressure.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_micro_adventures_advanced",
+    "segment": "Corporate L&D",
+    "statement": "Teams or individuals solve compressed real-case challenges drawn from their own business context.",
+    "why": "Sharpens execution under constraints while surfacing new ideas and process improvements.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "adv_human_renaissance_projects",
+    "segment": "K–12",
+    "statement": "Students combine art, stories, music or crafts with simple science and technology themes.",
+    "why": "Shows that creativity and logic can coexist, making STEAM more inclusive and engaging.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_human_renaissance_projects",
+    "segment": "Higher Ed",
+    "statement": "Learners design projects that weave culture, philosophy, design and technology together.",
+    "why": "Builds whole-brain thinking and the ability to communicate complex ideas with clarity and beauty.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_human_renaissance_projects",
+    "segment": "Corporate L&D",
+    "statement": "Professionals reframe business, customer or employee challenges through design, storytelling and culture lenses.",
+    "why": "Encourages more humane, creative and differentiated solutions in otherwise technical environments.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "adv_innovation_expeditions",
+    "segment": "K–12",
+    "statement": "Students follow a simple design thinking journey to understand a problem and propose a solution.",
+    "why": "Introduces structured problem-solving and empathy for users at a young age.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_innovation_expeditions",
+    "segment": "Higher Ed",
+    "statement": "Learners run full innovation sprints around real problems using design and systems thinking.",
+    "why": "Helps them handle complexity and produce solutions that are both desirable and feasible.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_innovation_expeditions",
+    "segment": "Corporate L&D",
+    "statement": "Cross-functional teams undertake expeditions to reimagine processes, products or services.",
+    "why": "Builds innovation muscle and shared ownership for change across the organisation.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "adv_colab_studios",
+    "segment": "K–12",
+    "statement": "Students work in small groups to create shared outputs in art, STEM or community projects.",
+    "why": "Teaches them to listen, share roles and resolve simple conflicts while creating together.",
+    "outcomes": [
+      "Experiential learning",
+      "STEAM readiness",
+      "Teamwork"
+    ]
+  },
+  {
+    "framework_id": "adv_colab_studios",
+    "segment": "Higher Ed",
+    "statement": "Learners from different disciplines collaborate in studio-style projects, often with mentors.",
+    "why": "Strengthens communication, negotiation and co-creation across specialisations.",
+    "outcomes": [
+      "Career readiness",
+      "Research capability",
+      "Cross-disciplinary innovation"
+    ]
+  },
+  {
+    "framework_id": "adv_colab_studios",
+    "segment": "Corporate L&D",
+    "statement": "Teams and stakeholders co-create solutions in facilitated studio sessions, sometimes with AI support.",
+    "why": "Improves collaboration across silos and builds practical experience in multi-stakeholder problem-solving.",
+    "outcomes": [
+      "Employability",
+      "Digital transformation skills",
+      "Leadership readiness"
+    ]
+  },
+  {
+    "framework_id": "inner_mind_as_program",
+    "segment": "K–12",
+    "statement": "Students learn that thoughts and habits can be observed and gently changed over time.",
+    "why": "Builds early awareness that mindset is not fixed and can be improved with practice.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_mind_as_program",
+    "segment": "Higher Ed",
+    "statement": "Learners map their cognitive biases, habits and recurring patterns around study and work.",
+    "why": "Helps them consciously upgrade how they think, decide and respond to academic pressure.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_mind_as_program",
+    "segment": "Corporate L&D",
+    "statement": "Professionals examine default scripts that drive their decisions, communication and leadership style.",
+    "why": "Enables deliberate rewiring of unhelpful patterns in high-stakes, fast-changing environments.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  },
+  {
+    "framework_id": "inner_the_observer",
+    "segment": "K–12",
+    "statement": "Students practise pausing before reacting and describing what they feel or think.",
+    "why": "Reduces impulsive behaviour and supports kinder interactions with peers and adults.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_the_observer",
+    "segment": "Higher Ed",
+    "statement": "Learners cultivate a neutral inner observer to watch stress, fear or excitement without being overwhelmed.",
+    "why": "Improves emotional stability and responsiveness during exams, projects and group work.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_the_observer",
+    "segment": "Corporate L&D",
+    "statement": "Leaders and contributors learn to notice triggers and pause before responding in tense situations.",
+    "why": "Strengthens composure, reduces reactive conflict and improves quality of decision-making.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  },
+  {
+    "framework_id": "inner_inner_eye",
+    "segment": "K–12",
+    "statement": "Students are introduced to simple mindfulness, breathing and reflection practices.",
+    "why": "Supports concentration, calmness and a healthier relationship with digital distractions.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_inner_eye",
+    "segment": "Higher Ed",
+    "statement": "Learners deepen awareness through regular reflection, mindfulness and focus-building practices.",
+    "why": "Improves clarity of thought, energy management and the ability to prioritise under load.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_inner_eye",
+    "segment": "Corporate L&D",
+    "statement": "Professionals apply mindfulness and reflection to stay grounded amid complexity and rapid change.",
+    "why": "Enhances presence, listening and quality of strategic thinking in meetings and decisions.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  },
+  {
+    "framework_id": "inner_identity_beyond_identity",
+    "segment": "K–12",
+    "statement": "Older students explore who they are beyond grades, labels or peer opinions.",
+    "why": "Helps them anchor self-worth in deeper qualities, not just external validation.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_identity_beyond_identity",
+    "segment": "Higher Ed",
+    "statement": "Learners question limiting stories about their background, capabilities or career options.",
+    "why": "Opens space for more authentic, self-chosen paths and leadership styles.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_identity_beyond_identity",
+    "segment": "Corporate L&D",
+    "statement": "Professionals reflect on identity beyond title, role or organisation.",
+    "why": "Supports more grounded, less ego-driven leadership and healthier career decisions.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  },
+  {
+    "framework_id": "inner_meta_self_integration",
+    "segment": "K–12",
+    "statement": "Students begin to see how thoughts, feelings and actions connect in everyday life.",
+    "why": "Encourages more consistent, values-aligned behaviour at school and at home.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_meta_self_integration",
+    "segment": "Higher Ed",
+    "statement": "Learners integrate intellect, emotions, intuition and values when making key life choices.",
+    "why": "Builds an inner compass for handling ambiguity and competing priorities.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_meta_self_integration",
+    "segment": "Corporate L&D",
+    "statement": "Leaders work on aligning head, heart and values in strategy, people decisions and risk-taking.",
+    "why": "Creates more coherent, trustworthy and sustainable leadership behaviour.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  },
+  {
+    "framework_id": "inner_wise_mind",
+    "segment": "K–12",
+    "statement": "Older students imagine their ‘wise self’ and practise making choices from that viewpoint.",
+    "why": "Introduces the idea of long-term consequences and kinder, wiser decision-making.",
+    "outcomes": [
+      "Emotional regulation",
+      "Empathy",
+      "Reflective thinking"
+    ]
+  },
+  {
+    "framework_id": "inner_wise_mind",
+    "segment": "Higher Ed",
+    "statement": "Learners connect purpose, ethics and long-term vision to everyday academic and career decisions.",
+    "why": "Encourages them to act not just from ambition but from responsibility and contribution.",
+    "outcomes": [
+      "Ethical reasoning",
+      "Leadership capability",
+      "Identity formation"
+    ]
+  },
+  {
+    "framework_id": "inner_wise_mind",
+    "segment": "Corporate L&D",
+    "statement": "Professionals practise making decisions that balance results, ethics, people and future impact.",
+    "why": "Supports purpose-driven leadership, strategic clarity and integrity in complex contexts.",
+    "outcomes": [
+      "Purpose-driven leadership",
+      "Strategic clarity",
+      "Emotional intelligence"
+    ]
+  }
+]

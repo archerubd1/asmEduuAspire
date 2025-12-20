@@ -1,0 +1,335 @@
+[
+  {
+    "framework_id": "foundational_workplace_readiness",
+    "level": "Gen Z",
+    "statement": "Short, gamified experiences that teach how to write emails, join meetings, report work, and follow basic workplace etiquette.",
+    "why": "First-time entrants into work or internships need very concrete, bite-sized guidance to avoid anxiety and feel confident in professional environments.",
+    "skills": [
+      "Professional Etiquette",
+      "Digital Communication",
+      "Meeting Discipline",
+      "Basic Compliance Awareness"
+    ]
+  },
+  {
+    "framework_id": "foundational_workplace_readiness",
+    "level": "Millennials",
+    "statement": "Role-aligned readiness tracks that connect professional behaviour to performance ratings, promotions, and stakeholder trust.",
+    "why": "Mid-career learners respond strongly when they see how behaviour and communication quality directly influence growth and opportunities.",
+    "skills": [
+      "Professional Maturity",
+      "Ownership",
+      "Documentation Hygiene",
+      "Stakeholder Orientation"
+    ]
+  },
+  {
+    "framework_id": "foundational_workplace_readiness",
+    "level": "Gen X",
+    "statement": "Concise refreshers on workplace norms, policy interpretation, and modelling the right behaviour for teams and younger colleagues.",
+    "why": "Senior professionals need efficient, no-fluff guidance that helps them align teams to culture, compliance, and organisational expectations.",
+    "skills": [
+      "Policy Interpretation",
+      "Role Modelling",
+      "Cultural Stewardship",
+      "Governance Mindset"
+    ]
+  },
+
+  {
+    "framework_id": "technical_domain_experience",
+    "level": "Gen Z",
+    "statement": "Hands-on labs, simulations, and guided tasks that let learners build and test solutions before deeply studying the underlying theory.",
+    "why": "Younger learners stay engaged when they can experiment, fail safely, and learn by doing with immediate feedback from tools and mentors.",
+    "skills": [
+      "Tool Proficiency",
+      "Applied Technical Skills",
+      "Debugging & Iteration",
+      "Domain Curiosity"
+    ]
+  },
+  {
+    "framework_id": "technical_domain_experience",
+    "level": "Millennials",
+    "statement": "Structured domain tracks that link concepts, tools, and end-to-end workflows in areas like BFSI, IT/ITeS, Industry 4.0, and EdTech.",
+    "why": "At this stage, learners want to deepen their expertise, take ownership of modules, and build portfolios that show real business impact.",
+    "skills": [
+      "End-to-End Workflow Understanding",
+      "Domain-Specific Problem Solving",
+      "Solution Deployment Readiness",
+      "Cross-Tool Integration"
+    ]
+  },
+  {
+    "framework_id": "technical_domain_experience",
+    "level": "Gen X",
+    "statement": "High-level overviews of architectures, risk points, and technology choices that impact delivery quality and regulatory expectations.",
+    "why": "Senior leaders need enough technical and domain clarity to make decisions, challenge assumptions, and guide teams without deep hands-on work.",
+    "skills": [
+      "Architecture Literacy",
+      "Risk Identification",
+      "Trade-off Analysis",
+      "Strategic Technology Alignment"
+    ]
+  },
+
+  {
+    "framework_id": "problem_solving_decision_making",
+    "level": "Gen Z",
+    "statement": "Structured templates and guided exercises that walk through problem definition, root cause analysis, and simple options evaluation.",
+    "why": "Young learners often jump to solutions; scaffolding helps them build repeatable thinking habits that work across subjects and careers.",
+    "skills": [
+      "Problem Framing",
+      "Basic Root-Cause Analysis",
+      "Option Comparison",
+      "Evidence-Based Thinking"
+    ]
+  },
+  {
+    "framework_id": "problem_solving_decision_making",
+    "level": "Millennials",
+    "statement": "Multi-step case challenges with incomplete information, requiring trade-offs, cross-functional thinking, and clear justification.",
+    "why": "Mid-career professionals frequently make operational decisions; they must balance constraints while explaining their reasoning to managers.",
+    "skills": [
+      "Analytical Reasoning",
+      "Cross-Functional Thinking",
+      "Justification & Documentation",
+      "Risk–Reward Evaluation"
+    ]
+  },
+  {
+    "framework_id": "problem_solving_decision_making",
+    "level": "Gen X",
+    "statement": "Strategic simulations involving crises, compliance events, and portfolio-level choices with long-term implications.",
+    "why": "Leaders are accountable for decisions that shape teams, finances, and reputation; they benefit from safe rehearsal of complex scenarios.",
+    "skills": [
+      "Strategic Judgment",
+      "Scenario Planning",
+      "Crisis Decision-Making",
+      "Accountability & Governance"
+    ]
+  },
+
+  {
+    "framework_id": "collab_leadership_development",
+    "level": "Gen Z",
+    "statement": "Peer pods, projects, and rotating roles that make collaboration feel social, supported, and psychologically safe.",
+    "why": "Younger learners build confidence when they can experiment with small leadership roles in low-risk, mentor-supported environments.",
+    "skills": [
+      "Team Collaboration",
+      "Active Listening",
+      "Peer Leadership",
+      "Constructive Feedback"
+    ]
+  },
+  {
+    "framework_id": "collab_leadership_development",
+    "level": "Millennials",
+    "statement": "Leadership readiness tracks where learners coordinate teams, manage timelines, and resolve conflicts in real or simulated projects.",
+    "why": "This group is often transitioning into lead roles and needs structured practice in managing people, expectations, and outcomes.",
+    "skills": [
+      "Task Delegation",
+      "Conflict Resolution",
+      "Stakeholder Communication",
+      "Outcome Ownership"
+    ]
+  },
+  {
+    "framework_id": "collab_leadership_development",
+    "level": "Gen X",
+    "statement": "Advanced leadership labs that focus on leading leaders, navigating politics, and building high-trust, high-performance cultures.",
+    "why": "Senior professionals need to refine influence, coach other leaders, and shape culture across multiple teams or business units.",
+    "skills": [
+      "Influencing Without Authority",
+      "Coaching & Mentoring",
+      "Culture Building",
+      "Strategic Stakeholder Management"
+    ]
+  },
+
+  {
+    "framework_id": "performance_capability_acceleration",
+    "level": "Gen Z",
+    "statement": "Simple dashboards and XP-style indicators that show weekly progress, streaks, and small wins to keep motivation high.",
+    "why": "Young learners respond better to clear, immediate signals of progress rather than distant or abstract performance reviews.",
+    "skills": [
+      "Goal Setting",
+      "Self-Tracking",
+      "Reflection on Progress",
+      "Consistency Building"
+    ]
+  },
+  {
+    "framework_id": "performance_capability_acceleration",
+    "level": "Millennials",
+    "statement": "Career-aligned capability views that link skills, certifications, and performance signals to future roles and compensation bands.",
+    "why": "Mid-career talent wants transparency on how current efforts translate into career mobility and leadership opportunities.",
+    "skills": [
+      "Career Pathing",
+      "Skill Gap Analysis",
+      "Performance Planning",
+      "Growth Negotiation Readiness"
+    ]
+  },
+  {
+    "framework_id": "performance_capability_acceleration",
+    "level": "Gen X",
+    "statement": "Team and function-level performance insights that help leaders identify strengths, gaps, and succession opportunities.",
+    "why": "Senior leaders need aggregated, meaningful data to make decisions about hiring, coaching, and strategic capability building.",
+    "skills": [
+      "Talent Mapping",
+      "Team-Level Analytics",
+      "Succession Planning",
+      "Performance Governance"
+    ]
+  },
+
+  {
+    "framework_id": "worklife_integration_wellbeing",
+    "level": "Gen Z",
+    "statement": "Guided routines, check-ins, and micro-habits that teach balancing study, work, and personal time without burnout.",
+    "why": "Younger learners are still forming identity and habits; early exposure to healthy work–life patterns prevents future exhaustion.",
+    "skills": [
+      "Time Management Basics",
+      "Digital Boundaries",
+      "Stress Recognition",
+      "Healthy Routine Building"
+    ]
+  },
+  {
+    "framework_id": "worklife_integration_wellbeing",
+    "level": "Millennials",
+    "statement": "Modules on balancing career ambition, family responsibilities, and financial planning with realistic time and energy constraints.",
+    "why": "This generation is often managing multiple life roles simultaneously and needs pragmatic tools, not theory, to stay balanced.",
+    "skills": [
+      "Prioritisation Under Pressure",
+      "Work–Family Balance",
+      "Financial Wellbeing Basics",
+      "Habit Stacking"
+    ]
+  },
+  {
+    "framework_id": "worklife_integration_wellbeing",
+    "level": "Gen X",
+    "statement": "Executive resilience journeys that focus on managing sustained load, recovery rhythms, and long-term health risk awareness.",
+    "why": "Senior professionals face chronic, high-responsibility pressure and need to avoid silent burnout while staying effective.",
+    "skills": [
+      "Resilience Strategies",
+      "Energy Management",
+      "Burnout Risk Awareness",
+      "Recovery Planning"
+    ]
+  },
+
+  {
+    "framework_id": "industry_immersion_exposure",
+    "level": "Gen Z",
+    "statement": "Virtual internships, shadowing experiences, and simplified case tasks that introduce real-world language and workflows.",
+    "why": "Younger learners need a safe way to experience how work actually feels before stepping into full responsibility.",
+    "skills": [
+      "Industry Vocabulary",
+      "Professional Behaviour Basics",
+      "Task Ownership",
+      "Contextual Awareness"
+    ]
+  },
+  {
+    "framework_id": "industry_immersion_exposure",
+    "level": "Millennials",
+    "statement": "Deeper capstone projects, domain-specific challenges, and cross-team collaborations mapped to real job descriptions.",
+    "why": "This group wants evidence of impact they can show employers, clients, and managers to prove readiness for the next role.",
+    "skills": [
+      "End-to-End Project Delivery",
+      "Client-Centric Thinking",
+      "Cross-Functional Collaboration",
+      "Portfolio Building"
+    ]
+  },
+  {
+    "framework_id": "industry_immersion_exposure",
+    "level": "Gen X",
+    "statement": "Strategic industry briefings, ecosystem maps, and scenario boards that reveal macro trends and disruption risks.",
+    "why": "Senior leaders must see beyond individual projects to understand how industries are shifting and where to steer teams.",
+    "skills": [
+      "Ecosystem Thinking",
+      "Trend Analysis",
+      "Strategic Positioning",
+      "Opportunity & Risk Scanning"
+    ]
+  },
+
+  {
+    "framework_id": "continuous_learning_future_skills",
+    "level": "Gen Z",
+    "statement": "Exploratory tracks in AI, data, cybersecurity, and emerging tech with playful challenges and guided experimentation.",
+    "why": "Starting early with future skills builds curiosity and confidence, making advanced topics feel accessible rather than intimidating.",
+    "skills": [
+      "Learning Agility",
+      "Future Tech Curiosity",
+      "Basic Data & AI Literacy",
+      "Experimentation Mindset"
+    ]
+  },
+  {
+    "framework_id": "continuous_learning_future_skills",
+    "level": "Millennials",
+    "statement": "Role-linked future skills journeys that connect AI, data, cloud, and automation directly to current or next job roles.",
+    "why": "Mid-career learners need clear answers to how emerging skills will protect or enhance their employability and earning power.",
+    "skills": [
+      "Role-Relevant Tech Skills",
+      "Upskilling Roadmapping",
+      "Cross-Skilling",
+      "Continuous Improvement Habit"
+    ]
+  },
+  {
+    "framework_id": "continuous_learning_future_skills",
+    "level": "Gen X",
+    "statement": "Executive overviews and guided explorations of emerging technologies focused on risk, opportunity, and strategic decisions.",
+    "why": "Leaders must decide where to invest, what to modernise, and how to manage risk without becoming deep technical experts.",
+    "skills": [
+      "Tech Strategy Awareness",
+      "Innovation Portfolio Thinking",
+      "Risk–Opportunity Evaluation",
+      "Change Leadership"
+    ]
+  },
+
+  {
+    "framework_id": "behavioural_intel_prof_maturity",
+    "level": "Gen Z",
+    "statement": "Interactive scenarios and reflections that help learners understand themselves, manage emotions, and behave professionally online and offline.",
+    "why": "Early development of self-awareness and ethical behaviour prevents reputational risks and builds long-term credibility.",
+    "skills": [
+      "Self-Awareness",
+      "Emotional Regulation",
+      "Digital Citizenship",
+      "Respectful Communication"
+    ]
+  },
+  {
+    "framework_id": "behavioural_intel_prof_maturity",
+    "level": "Millennials",
+    "statement": "Behaviour analytics and feedback that show how communication style, follow-through, and ethics affect workplace brand.",
+    "why": "At this stage, fine-tuning behaviour can unlock leadership opportunities and strengthen trust with managers and clients.",
+    "skills": [
+      "Professional Presence",
+      "Feedback Responsiveness",
+      "Ethical Decision-Making",
+      "Reputation Management"
+    ]
+  },
+  {
+    "framework_id": "behavioural_intel_prof_maturity",
+    "level": "Gen X",
+    "statement": "Advanced practice in executive presence, complex ethical dilemmas, and leading with integrity across generations and cultures.",
+    "why": "Senior leaders shape organisational norms; their behaviour sends strong signals that influence compliance, culture, and trust.",
+    "skills": [
+      "Executive Presence",
+      "Values-Based Leadership",
+      "Complex Ethics Handling",
+      "Multi-Generational Sensitivity"
+    ]
+  }
+]
+

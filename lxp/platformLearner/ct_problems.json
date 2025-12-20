@@ -1,0 +1,164 @@
+[
+  {
+    "problem_id": "fact-kid",
+    "type_id": "fact_vs_opinion",
+    "type_title": "Fact vs Opinion",
+    "level": "kid",
+    "statement": "Circle which are facts vs opinions: 'The sky is blue.' / 'Ice cream is the best.'",
+    "how_to": "1) Is it observable/measurable? 2) If yes → fact; if not → opinion.",
+    "expected_outcome": "Label each statement and write one sentence why."
+  },
+  {
+    "problem_id": "fact-teen",
+    "type_id": "fact_vs_opinion",
+    "type_title": "Fact vs Opinion",
+    "level": "teen",
+    "statement": "A social post claims a supplement cured headaches. Identify whether it's a fact or opinion and the evidence needed.",
+    "how_to": "1) Check for cited studies. 2) Seek independent sources. 3) Note missing controls.",
+    "expected_outcome": "A short credibility note and list of evidence to verify."
+  },
+  {
+    "problem_id": "fact-adult",
+    "type_id": "fact_vs_opinion",
+    "type_title": "Fact vs Opinion",
+    "level": "adult",
+    "statement": "A report says 'X% increase after campaign Y'. Evaluate if this is causal or correlational.",
+    "how_to": "1) Seek baseline & controls. 2) Ask for methodology. 3) Suggest data to confirm causality.",
+    "expected_outcome": "A short critique with data requests."
+  },
+  {
+    "problem_id": "coffee-kid",
+    "type_id": "coffee_chat",
+    "type_title": "Coffee House Chat",
+    "level": "kid",
+    "statement": "A friend lost a toy and is sad. What can you say to show you care?",
+    "how_to": "1) Name the feeling. 2) Ask a gentle question. 3) Offer help.",
+    "expected_outcome": "Empathetic lines to comfort a friend."
+  },
+  {
+    "problem_id": "coffee-teen",
+    "type_id": "coffee_chat",
+    "type_title": "Coffee House Chat",
+    "level": "teen",
+    "statement": "A groupmate is upset about a grade. Practice a response that listens and asks specifics.",
+    "how_to": "1) Paraphrase their concern. 2) Ask clarifying question. 3) Offer to help.",
+    "expected_outcome": "A reflective listening example."
+  },
+  {
+    "problem_id": "coffee-adult",
+    "type_id": "coffee_chat",
+    "type_title": "Coffee House Chat",
+    "level": "adult",
+    "statement": "A colleague is defensive in a meeting. Show a de-escalating phrase + follow-up question.",
+    "how_to": "1) Acknowledge their point. 2) Use 'I' statements. 3) Ask about goals.",
+    "expected_outcome": "De-escalation lines + next steps."
+  },
+  {
+    "problem_id": "worldly-kid",
+    "type_id": "worldly_words",
+    "type_title": "Worldly Words",
+    "level": "kid",
+    "statement": "Explain 'school' using exactly 10 words.",
+    "how_to": "1) Pick core words. 2) Use nouns/verbs to compress meaning.",
+    "expected_outcome": "A clear 10-word sentence."
+  },
+  {
+    "problem_id": "worldly-teen",
+    "type_id": "worldly_words",
+    "type_title": "Worldly Words",
+    "level": "teen",
+    "statement": "Summarize a book in 10 words keeping main idea.",
+    "how_to": "1) Identify main idea. 2) Compress to core nouns/verbs.",
+    "expected_outcome": "10-word summary."
+  },
+  {
+    "problem_id": "worldly-adult",
+    "type_id": "worldly_words",
+    "type_title": "Worldly Words",
+    "level": "adult",
+    "statement": "Describe your job in 10 words for a recruiter.",
+    "how_to": "1) Focus on outcomes. 2) Avoid jargon.",
+    "expected_outcome": "Concise job summary."
+  },
+  {
+    "problem_id": "alien-kid",
+    "type_id": "alien_guide",
+    "type_title": "Alien Travel Guide",
+    "level": "kid",
+    "statement": "Explain 'money' to an alien who has never traded.",
+    "how_to": "1) Use concrete examples. 2) Avoid cultural terms.",
+    "expected_outcome": "Simple analogy-based explanation."
+  },
+  {
+    "problem_id": "alien-teen",
+    "type_id": "alien_guide",
+    "type_title": "Alien Travel Guide",
+    "level": "teen",
+    "statement": "Explain 'school' to an alien; avoid assuming literacy in English.",
+    "how_to": "1) Break activities & goals. 2) Use analogies.",
+    "expected_outcome": "De-biased explanation."
+  },
+  {
+    "problem_id": "alien-adult",
+    "type_id": "alien_guide",
+    "type_title": "Alien Travel Guide",
+    "level": "adult",
+    "statement": "Explain 'taxes' focusing on purpose rather than local rules.",
+    "how_to": "1) Describe collective services & funding. 2) Use non-cultural analogies.",
+    "expected_outcome": "Purpose-focused clarification."
+  },
+  {
+    "problem_id": "talk-kid",
+    "type_id": "talk_it_out",
+    "type_title": "Talk It Out",
+    "level": "kid",
+    "statement": "Make a short claim and one simple reason.",
+    "how_to": "1) State claim. 2) Give evidence (example).",
+    "expected_outcome": "Claim + reason."
+  },
+  {
+    "problem_id": "talk-teen",
+    "type_id": "talk_it_out",
+    "type_title": "Talk It Out",
+    "level": "teen",
+    "statement": "Give a claim, one piece of evidence, and one counterargument.",
+    "how_to": "1) Formulate claim. 2) Add evidence & counter.",
+    "expected_outcome": "Structured mini-debate."
+  },
+  {
+    "problem_id": "talk-adult",
+    "type_id": "talk_it_out",
+    "type_title": "Talk It Out",
+    "level": "adult",
+    "statement": "Prepare a position with evidence and two plausible counterarguments.",
+    "how_to": "1) Source evidence. 2) Anticipate objections.",
+    "expected_outcome": "Balanced argument + defenses."
+  },
+  {
+    "problem_id": "pitch-kid",
+    "type_id": "elevator_pitch",
+    "type_title": "Elevator Pitch",
+    "level": "kid",
+    "statement": "Explain why your class project is cool in one sentence.",
+    "how_to": "1) Focus on benefit. 2) Keep it simple.",
+    "expected_outcome": "One-sentence pitch."
+  },
+  {
+    "problem_id": "pitch-teen",
+    "type_id": "elevator_pitch",
+    "type_title": "Elevator Pitch",
+    "level": "teen",
+    "statement": "30-second pitch for a school club idea.",
+    "how_to": "1) Problem → idea → benefit. 2) Add one action step.",
+    "expected_outcome": "Short pitch."
+  },
+  {
+    "problem_id": "pitch-adult",
+    "type_id": "elevator_pitch",
+    "type_title": "Elevator Pitch",
+    "level": "adult",
+    "statement": "30-second pitch for a product or initiative.",
+    "how_to": "1) Problem → solution → impact → ask.",
+    "expected_outcome": "Concise persuasive pitch."
+  }
+]

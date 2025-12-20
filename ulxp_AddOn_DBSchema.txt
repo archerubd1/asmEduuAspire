@@ -1,0 +1,372 @@
+
+
+A. Core Database Modules
+Module						Table																			Key Fields	Purpose
+Identity Core				learners																		learner_id, name, email, gender, country	Core demographics
+Education & Skills			learner_education, learner_skills, learner_certifications						education, degrees, skill_level	Academic and professional profile
+Psychographics				learner_psychographics, learner_preferences	motivation, style, persona			Learning behavior blueprint
+Behavioral Analytics		learner_activity_log, learner_engagement	time_spent, accuracy, streaks		Behavioral data feed
+Career Analytics			learner_goals, career_pathways	desired_role, gap_score							Career progression mapping
+Gamification Layer			learner_rewards, learner_xp	XP_points, badges									Engagement mechanics
+AI Feature Store			learner_ai_features	vector_embedding, skill_similarity							Precomputed model features
+
+
+
+
+
+CREATE TABLE learners (
+  learner_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  user_id INT UNSIGNED NOT NULL,           -- FK to users table
+  nationality VARCHAR(100),
+  gender ENUM('Male','Female','Other') DEFAULT NULL,
+  dob DATE DEFAULT NULL,
+  phone VARCHAR(20),
+  address_line1 VARCHAR(255),
+  address_line2 VARCHAR(255),
+  city VARCHAR(100),
+  state VARCHAR(100),
+  country VARCHAR(100),
+  timezone VARCHAR(50) DEFAULT 'Asia/Kolkata',
+  language_pref VARCHAR(50) DEFAULT 'English',
+  profile_photo VARCHAR(255),
+  registration_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  last_active DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  status ENUM('Active','Inactive','Suspended') DEFAULT 'Active',
+  INDEX (user_id),
+  CONSTRAINT fk_learners_user FOREIGN KEY (user_id) REFERENCES users(id)
+    ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE learner_education (
+  edu_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  institution VARCHAR(255),
+  qualification VARCHAR(255),
+  specialization VARCHAR(255),
+  start_year YEAR,
+  end_year YEAR,
+  is_current TINYINT(1) DEFAULT 0,
+  gpa DECIMAL(4,2) DEFAULT NULL,
+  achievements TEXT,
+  INDEX (learner_id),
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id)
+    ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_skills (
+  skill_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  skill_name VARCHAR(150) NOT NULL,
+  skill_level ENUM('Beginner','Intermediate','Advanced','Expert') DEFAULT 'Beginner',
+  proficiency_score DECIMAL(5,2) DEFAULT 0.00, -- 0-100 scale
+  endorsed_by VARCHAR(255) DEFAULT NULL,
+  source ENUM('Course','Assessment','PeerReview','Manual') DEFAULT 'Manual',
+  last_validated DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_certifications (
+  cert_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  cert_name VARCHAR(255),
+  issuing_org VARCHAR(255),
+  issue_date DATE,
+  expiry_date DATE DEFAULT NULL,
+  credential_id VARCHAR(100) DEFAULT NULL,
+  credential_url VARCHAR(255),
+  verification_status ENUM('Verified','Pending','Rejected') DEFAULT 'Pending',
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_psychographics (
+  psychographic_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  learning_motivation VARCHAR(100),
+  learning_style ENUM('Visual','Auditory','Reading/Writing','Kinesthetic') DEFAULT NULL,
+  cognitive_pattern TEXT,
+  engagement_type VARCHAR(100),
+  gamification_persona ENUM('Achiever','Explorer','Socializer','Killer') DEFAULT NULL,
+  confidence_score DECIMAL(4,2) DEFAULT 0.85,
+  derived_from ENUM('Survey','AI','Hybrid') DEFAULT 'Hybrid',
+  last_updated DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_preferences (
+  pref_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  preferred_content_format VARCHAR(50) DEFAULT 'Video',
+  preferred_learning_time VARCHAR(50) DEFAULT 'Evening',
+  notification_preference VARCHAR(50) DEFAULT 'Email',
+  privacy_consent TINYINT(1) DEFAULT 0,
+  ai_personalization_optin TINYINT(1) DEFAULT 1,
+  accessibility_needs TEXT,
+  theme_mode ENUM('Light','Dark','System') DEFAULT 'System',
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_activity_log (
+  log_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  course_id INT UNSIGNED DEFAULT NULL,
+  module_name VARCHAR(255),
+  activity_type ENUM('View','Quiz','Assignment','Forum','Video','VR','Login','Logout') NOT NULL,
+  duration_seconds INT UNSIGNED DEFAULT 0,
+  score DECIMAL(5,2) DEFAULT NULL,
+  device_type VARCHAR(100),
+  user_agent VARCHAR(255),
+  ip_address VARCHAR(45),
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_engagement (
+  engagement_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  avg_session_duration INT DEFAULT 0,
+  avg_quiz_accuracy DECIMAL(5,2) DEFAULT 0,
+  courses_completed INT DEFAULT 0,
+  discussion_posts INT DEFAULT 0,
+  peer_likes INT DEFAULT 0,
+  engagement_score DECIMAL(5,2) DEFAULT 0,
+  updated_on DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_goals (
+  goal_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  desired_role VARCHAR(150),
+  target_skills TEXT,
+  career_motivation TEXT,
+  target_timeline VARCHAR(50),
+  progress_percent DECIMAL(5,2) DEFAULT 0,
+  last_reviewed DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_career_pathways (
+  path_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  current_role VARCHAR(150),
+  next_role VARCHAR(150),
+  recommended_courses TEXT,
+  gap_analysis TEXT,
+  ai_confidence_score DECIMAL(4,2) DEFAULT 0.80,
+  last_updated DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_rewards (
+  reward_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  xp_points INT DEFAULT 0,
+  level INT DEFAULT 1,
+  badge_name VARCHAR(255),
+  badge_earned_on DATETIME DEFAULT NULL,
+  streak_days INT DEFAULT 0,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_metaverse_logs (
+  meta_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  session_id VARCHAR(100),
+  environment VARCHAR(255),
+  activity_summary TEXT,
+  duration_seconds INT DEFAULT 0,
+  recorded_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_ai_features (
+  learner_id INT UNSIGNED PRIMARY KEY,
+  engagement_vector JSON,
+  skill_vector JSON,
+  recommendation_vector JSON,
+  career_prediction JSON,
+  risk_prediction JSON,
+  model_version VARCHAR(50),
+  last_model_update DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+CREATE TABLE learner_audit_log (
+  audit_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED,
+  action VARCHAR(255),
+  module VARCHAR(100),
+  old_value TEXT,
+  new_value TEXT,
+  action_by VARCHAR(100),
+  action_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE SET NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+Integration Summary
+Subsystem								Core Table														Function
+User Identity							users, learners													Authentication + profile
+Psychographics & Preferences			learner_psychographics, learner_preferences						Motivation, style, AI opt-ins
+Learning Analytics						learner_activity_log, learner_engagement						Real-time tracking
+Skills & Career							learner_skills, learner_career_pathways							Competency mapping
+Gamification & Metaverse				learner_rewards, learner_metaverse_logs							Engagement mechanics
+AI Layer								learner_ai_features												Model outputs
+Audit Layer								learner_audit_log												Version control & compliance
+
+
+
+
+CREATE TABLE learner_recommendations (
+  rec_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  recommendation_type ENUM('Course','Skill','Career','Mentor','Content') NOT NULL,
+  reference_id VARCHAR(100),          -- ID of recommended entity (course_id, skill_id, etc.)
+  recommendation_reason TEXT,         -- Explainable AI output (“Based on your learning style and goal”)
+  confidence_score DECIMAL(4,2) DEFAULT 0.85,
+  action_status ENUM('Pending','Clicked','Ignored','Completed') DEFAULT 'Pending',
+  created_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+CREATE TABLE learner_group_mapping (
+  map_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  group_id INT UNSIGNED NOT NULL,
+  role ENUM('Learner','Facilitator','Mentor') DEFAULT 'Learner',
+  join_date DATETIME DEFAULT CURRENT_TIMESTAMP,
+  status ENUM('Active','Inactive') DEFAULT 'Active',
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE learning_groups (
+  group_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  group_name VARCHAR(255),
+  description TEXT,
+  course_id INT UNSIGNED DEFAULT NULL,
+  facilitator_id INT UNSIGNED DEFAULT NULL,
+  created_on DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE learner_emotion_metrics (
+  emotion_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  session_id VARCHAR(100),
+  emotion_label ENUM('Focused','Bored','Confused','Engaged','Frustrated','Happy') DEFAULT 'Focused',
+  confidence DECIMAL(4,2) DEFAULT 0.90,
+  detected_by ENUM('CameraAI','VoiceAI','TextSentiment','SelfReport') DEFAULT 'SelfReport',
+  recorded_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE learner_social_interactions (
+  interaction_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  sender_id INT UNSIGNED NOT NULL,
+  receiver_id INT UNSIGNED NOT NULL,
+  interaction_type ENUM('Message','Comment','Like','PeerReview','MentorshipRequest') NOT NULL,
+  context VARCHAR(255),
+  content TEXT,
+  created_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (sender_id) REFERENCES learners(learner_id) ON DELETE CASCADE,
+  FOREIGN KEY (receiver_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+CREATE TABLE learner_discussion_activity (
+  post_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  topic_id INT UNSIGNED NOT NULL,
+  parent_post_id BIGINT UNSIGNED DEFAULT NULL,
+  content TEXT,
+  likes_count INT DEFAULT 0,
+  sentiment ENUM('Positive','Neutral','Negative') DEFAULT 'Neutral',
+  created_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE learner_feedback_responses (
+  feedback_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  course_id INT UNSIGNED DEFAULT NULL,
+  feedback_type ENUM('Course','Instructor','Platform','Feature') DEFAULT 'Course',
+  rating INT DEFAULT NULL,
+  comments TEXT,
+  sentiment ENUM('Positive','Neutral','Negative') DEFAULT 'Neutral',
+  submitted_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+CREATE TABLE IF NOT EXISTS learner_notifications (
+    notification_id BIGINT(20) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    learner_id INT(10) UNSIGNED NOT NULL,
+    title VARCHAR(255) DEFAULT NULL,
+    message TEXT DEFAULT NULL,
+    type ENUM('System', 'Course', 'Reward', 'Reminder', 'Message', 'AI_Nudge') DEFAULT 'System',
+    channel_email TINYINT(1) DEFAULT 0,
+    channel_browser TINYINT(1) DEFAULT 0,
+    channel_app TINYINT(1) DEFAULT 0,
+    frequency ENUM('Anytime', 'OnlineOnly', 'DailyDigest', 'WeeklySummary') DEFAULT 'Anytime',
+    is_read TINYINT(1) DEFAULT 0,
+    created_on DATETIME DEFAULT CURRENT_TIMESTAMP,
+    updated_on DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    INDEX (learner_id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+
+CREATE TABLE learner_system_telemetry (
+  telemetry_id BIGINT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+  learner_id INT UNSIGNED NOT NULL,
+  device_info VARCHAR(255),
+  browser_info VARCHAR(255),
+  os_info VARCHAR(100),
+  network_speed DECIMAL(6,2) DEFAULT NULL,
+  latency_ms INT DEFAULT NULL,
+  timestamp DATETIME DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (learner_id) REFERENCES learners(learner_id) ON DELETE CASCADE
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+
+Summary: 						Total Schema Modules
+Domain											Purpose										Key Tables
+Identity & Core									Learner demographics						learners, learner_education, learner_skills
+Psychographics									Learning style, motivation, persona			learner_psychographics, learner_preferences
+Behavioral Analytics							Activity logs, engagement metrics			learner_activity_log, learner_engagement
+Career Intelligence								Goal mapping, skill gaps					learner_goals, learner_career_pathways
+Gamification									XP, badges, incentives						learner_rewards, learner_metaverse_logs
+AI Layer										AI vectors, model outputs					learner_ai_features, learner_recommendations
+Social Learning									Collaboration & communication				learner_social_interactions, learner_discussion_activity
+Feedback & Emotion								User sentiments & emotional data			learner_feedback_responses, learner_emotion_metrics
+System Utility									Alerts, telemetry, cohorts					learner_notifications, learner_group_mapping, learner_system_telemetry
+Audit & Compliance								Traceability								learner_audit_log
