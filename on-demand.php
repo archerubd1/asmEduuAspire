@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="On-Demand Learning" src="images/on-demand-learning.jpg">
+                    <img alt="On-Demand Learning" src="images/eduu/on demand.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Knowledge Libraries" src="images/on-demand-kl.jpg">
+                  <img alt="Knowledge Libraries" src="images/eduu/library.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Knowledge Libraries</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="AI-Powered Chatbots" src="images/on-demand-aichat.jpg">
+                  <img alt="AI-Powered Chatbots" src="images/eduu/chatbots.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">AI-Powered Chatbots</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Tutor-On-Demand" src="images/on-demand-tutor.jpg">
+                  <img alt="Tutor-On-Demand" src="images/eduu/tutor.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Tutor-On-Demand</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Personalized Learning Plans" src="images/on-demand-plp.jpg">
+                  <img alt="Personalized Learning Plans" src="images/eduu/learning plans.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Personalized Learning Plans</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Multi-Device Access" src="images/on-demand-mdaccess.jpg">
+                  <img alt="Multi-Device Access" src="images/eduu/mutli device acess.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Multi-Device Access</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Feedback" src="images/on-demand-afeed.jpg">
+                  <img alt="Analytics & Feedback" src="images/eduu/Analytics & Feedback.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Feedback</h3>

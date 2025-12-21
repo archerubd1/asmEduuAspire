@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Cloud Learning Platform" src="images/cloud-blp.jpeg">
+                    <img alt="Cloud Learning Platform" src="images/eduu/cloud based.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Cloud LMS" src="images/cloud-lms.jpeg">
+                  <img alt="Cloud LMS" src="images/eduu/cloud lms.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Cloud LMS Deployment</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Content Hosting" src="images/cloud-dch.jpeg">
+                  <img alt="Content Hosting" src="images/eduu/content hosting.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Digital Content Hosting</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Real-Time Collaboration" src="images/cloud-rtc.jpeg">
+                  <img alt="Real-Time Collaboration" src="images/eduu/realtime collab.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Real-Time Collaboration</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="System Integration" src="images/cloud-si.jpeg">
+                  <img alt="System Integration" src="images/eduu/system integration.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">System Integration</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Mobile-First Learning" src="images/cloud-mfl.jpeg">
+                  <img alt="Mobile-First Learning" src="images/eduu/mobile learning.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Mobile-First Learning</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Optimization" src="images/cloud-ao.jpeg">
+                  <img alt="Analytics & Optimization" src="images/eduu/optimization.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Optimization</h3>

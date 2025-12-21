@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Career Guidance & Counseling" src="images/career-solution.jpg">
+                    <img alt="Career Guidance & Counseling" src="images/eduu/couslling.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="One-to-One Counseling" src="images/career-one2one.jpg">
+                  <img alt="One-to-One Counseling" src="images/eduu/one to one.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">One-to-One Counseling</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Industry Insights" src="images/career-insite.jpg">
+                  <img alt="Industry Insights" src="images/eduu/industry.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Industry Insights</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Skill Gap Analysis" src="images/career-skillsgap.jpg">
+                  <img alt="Skill Gap Analysis" src="images/eduu/skill gap.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Skill Gap Analysis</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Career Pathways" src="images/career-path.jpg">
+                  <img alt="Career Pathways" src="images/eduu/pathway.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Career Pathways</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Workshops & Webinars" src="images/career-web.jpg">
+                  <img alt="Workshops & Webinars" src="images/eduu/workshop.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Workshops & Webinars</h3>
