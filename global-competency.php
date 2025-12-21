@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Global Competency Programs" src="images/global.jpg">
+                    <img alt="Global Competency Programs" src="images/eduu/globe.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Language & Communication Skills" src="images/global-lang.jpg">
+                  <img alt="Language & Communication Skills" src="images/eduu/language and comm.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Language & Communication</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Cultural Intelligence Training" src="images/global-inti.jpg">
+                  <img alt="Cultural Intelligence Training" src="images/eduu/culture.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Cultural Intelligence</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Global Collaboration Tools" src="images/global-col.jpg">
+                  <img alt="Global Collaboration Tools" src="images/eduu/global.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Global Collaboration</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Leadership Development" src="images/global-ledr.jpg">
+                  <img alt="Leadership Development" src="images/eduu/leadership.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Leadership Development</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="International Career Pathways" src="images/global-int.jpg">
+                  <img alt="International Career Pathways" src="images/eduu/international pathway.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">International Career Pathways</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Global Citizenship & Ethics" src="images/global-citi.jpg">
+                  <img alt="Global Citizenship & Ethics" src="images/eduu/global citizen.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Global Citizenship & Ethics</h3>
