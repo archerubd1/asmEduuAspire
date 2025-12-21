@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Data-Driven Systems" src="images/data-driven-ds.jpeg">
+                    <img alt="Data-Driven Systems" src="images/eduu/driven.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -133,7 +133,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Data Integration" src="images/data-driven-di.jpeg">
+                  <img alt="Data Integration" src="images/eduu/data integration.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Data Integration</h3>
@@ -149,7 +149,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Predictive Analytics" src="images/data-driven-pa.jpeg">
+                  <img alt="Predictive Analytics" src="images/eduu/predictive analytics.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Predictive Analytics</h3>
@@ -165,7 +165,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Real-Time Dashboards" src="images/data-driven-rtd.jpeg">
+                  <img alt="Real-Time Dashboards" src="images/eduu/real time.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Real-Time Dashboards</h3>
@@ -181,7 +181,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Automated Reporting" src="images/data-driven-ar.jpeg">
+                  <img alt="Automated Reporting" src="images/eduu/reporting.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Automated Reporting</h3>
@@ -197,7 +197,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Decision Intelligence" src="images/data-driven-decision int.jpeg">
+                  <img alt="Decision Intelligence" src="images/eduu/decision.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Decision Intelligence</h3>
@@ -213,7 +213,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Data Governance & Security" src="images/data-driven-dgs.jpeg">
+                  <img alt="Data Governance & Security" src="images/eduu/security.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Data Governance & Security</h3>
