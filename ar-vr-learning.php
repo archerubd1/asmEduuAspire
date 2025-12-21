@@ -52,7 +52,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-ts.jpeg" alt="AR Training Solutions" class="img-responsive">
+                        <img src="images/eduu/immersive training.jpg" alt="AR Training Solutions" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">
@@ -68,7 +68,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-vrs.jpeg" alt="Virtual Reality Simulations" class="img-responsive">
+                        <img src="images/eduu/virtual.jpg" alt="Virtual Reality Simulations" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">
@@ -84,7 +84,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-mrc.jpeg" alt="Mixed Reality Collaboration" class="img-responsive">
+                        <img src="images/eduu/mixed.jpg" alt="Mixed Reality Collaboration" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">
@@ -100,7 +100,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-erl.jpeg" alt="Extended Reality Learning" class="img-responsive">
+                        <img src="images/eduu/extend.jpg" alt="Extended Reality Learning" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">
@@ -116,7 +116,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-iil.jpeg" alt="Immersive Innovation Labs" class="img-responsive">
+                        <img src="images/eduu/labs.jpg" alt="Immersive Innovation Labs" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">
@@ -132,7 +132,7 @@ include_once('head-nav.php');
             <div class="cbp-item">
                 <div class="news_item shadow text-center text-md-left">
                     <a class="image" href="#blog-detail.html">
-                        <img src="images/arvr-xra.jpeg" alt="XR Analytics for Training" class="img-responsive">
+                        <img src="images/eduu/training impact.jpg" alt="XR Analytics for Training" class="img-responsive">
                     </a>
                     <div class="news_desc">
                         <h3 class="text-capitalize font-normal darkcolor">

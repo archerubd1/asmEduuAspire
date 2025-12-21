@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Curriculum Digitization" src="images/curriculum-cd.jpeg">
+                    <img alt="Curriculum Digitization" src="images/eduu/digital.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Content Conversion" src="images/curriculum-cc.jpeg">
+                  <img alt="Content Conversion" src="images/eduu/content.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Content Conversion</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Interactive Modules" src="images/curriculum-im.jpeg">
+                  <img alt="Interactive Modules" src="images/eduu/interactive.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Interactive Modules</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Digital Curriculum Mapping" src="images/curriculum-dcm.jpeg">
+                  <img alt="Digital Curriculum Mapping" src="images/eduu/mapping.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Digital Curriculum Mapping</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Learning Management Integration" src="images/curriculum-lms.jpeg">
+                  <img alt="Learning Management Integration" src="images/eduu/lms.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">LMS Integration</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Assessment & Evaluation" src="images/curriculum-ae.jpeg">
+                  <img alt="Assessment & Evaluation" src="images/eduu/assessment.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Assessment & Evaluation</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Insights" src="images/curriculum-ai.jpeg">
+                  <img alt="Analytics & Insights" src="images/eduu/Analytics.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Insights</h3>

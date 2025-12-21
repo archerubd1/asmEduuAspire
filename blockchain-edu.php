@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Blockchain in Education" src="images/blockchain-bes.jpeg">
+                    <img alt="Blockchain in Education" src="images/eduu/blockchain.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Digital Credential Issuance" src="images/blockchain-dci.jpeg">
+                  <img alt="Digital Credential Issuance" src="images/eduu/digital credential.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Digital Credential Issuance</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Instant Verification" src="images/blockchain-iv.jpeg">
+                  <img alt="Instant Verification" src="images/eduu/verification.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Instant Verification</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Lifelong Learning Records" src="images/blockchain-llr.jpeg">
+                  <img alt="Lifelong Learning Records" src="images/eduu/learning records.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Lifelong Learning Records</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Decentralized Records" src="images/blockchain-dr.jpeg">
+                  <img alt="Decentralized Records" src="images/eduu/decenterlised.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Decentralized Records</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Smart Contracts for Credentials" src="images/blockchain-sc.jpeg">
+                  <img alt="Smart Contracts for Credentials" src="images/eduu/smart contracts.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Smart Contracts</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Insights" src="images/blockchain-ai.jpeg">
+                  <img alt="Analytics & Insights" src="images/eduu/insights.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Insights</h3>

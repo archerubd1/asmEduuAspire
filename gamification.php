@@ -40,7 +40,7 @@ include_once('head-nav.php');
         <div class="row align-items-center">
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Gamification & Simulation" src="phxLive_Images/gamification.jpg">
+                    <img alt="Gamification & Simulation" src="images/eduu/gamification.jpg">
                 </div>
             </div>
             <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
@@ -135,7 +135,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Game-Based Learning Modules" src="phxLive_Images/game-based-learning.jpg">
+                  <img alt="Game-Based Learning Modules" src="images/eduu/game learning.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Game-Based Learning</h3>
@@ -151,7 +151,7 @@ include_once('head-nav.php');
             <div class="cbp-item design">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Simulation Labs" src="images/gamification-sl.jpeg">
+                  <img alt="Simulation Labs" src="images/eduu/simulation labs.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Simulation Labs</h3>
@@ -167,7 +167,7 @@ include_once('head-nav.php');
             <div class="cbp-item brand">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Scenario-Based Learning" src="images/gamification-sbl.jpeg">
+                  <img alt="Scenario-Based Learning" src="images/eduu/scenario.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Scenario-Based Learning</h3>
@@ -183,7 +183,7 @@ include_once('head-nav.php');
             <div class="cbp-item graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Gamified Assessments" src="images/gamification-ga.jpeg">
+                  <img alt="Gamified Assessments" src="images/eduu/gami asses.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Gamified Assessments</h3>
@@ -199,7 +199,7 @@ include_once('head-nav.php');
             <div class="cbp-item digital">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="AR/VR Simulations" src="images/gamification-arvr.jpeg">
+                  <img alt="AR/VR Simulations" src="images/eduu/ar vr simulation.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">AR/VR Simulations</h3>
@@ -215,7 +215,7 @@ include_once('head-nav.php');
             <div class="cbp-item design graphics">
               <div class="services-main">
                 <div class="image bottom10">
-                  <img alt="Analytics & Performance Tracking" src="images/gamification-at.jpeg">
+                  <img alt="Analytics & Performance Tracking" src="images/eduu/analysis tracking.jpg">
                 </div>
                 <div class="services-content text-center text-md-left">
                   <h3 class="bottom10 darkcolor">Analytics & Tracking</h3>
