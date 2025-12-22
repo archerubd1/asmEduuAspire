@@ -1,5 +1,5 @@
 <?php 
-$page = 'mindgym';
+$page = 'mind-gym';
 include_once('head-nav.php');
 ?>
 

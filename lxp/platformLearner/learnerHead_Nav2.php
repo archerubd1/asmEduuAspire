@@ -14,12 +14,12 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-   <title>Phx Innovates | EdTech, Campus to Corporate Learning & Skilling Solutions</title>
+   <title>EduuAspire by Raunak Educares Powered by Astraal Mind Solutions | EdTech, Campus to Corporate Learning & Skilling Solutions</title>
 
     <meta name="description" content="" />
 
     <!-- Favicon -->
-   <link href="<?php echo $base_url; ?>/images/favicon.ico" rel="icon">
+   <link href="<?php echo $base_url; ?>/images/eduuFavicon.png" rel="icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />

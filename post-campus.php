@@ -1,5 +1,5 @@
 <?php 
-$page="post-campus-transition";
+$page="post-campus";
 include_once('head-nav.php');
 ?>
 

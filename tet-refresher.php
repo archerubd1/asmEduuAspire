@@ -1,5 +1,5 @@
 <?php 
-$page="lxp";
+$page="tet-refresher";
 include_once('config.php');
 include_once('head-nav.php');
 

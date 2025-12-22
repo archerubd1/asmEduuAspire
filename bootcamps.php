@@ -1,5 +1,5 @@
 <?php 
-$page="coding-bootcamps";
+$page="bootcamps";
 include_once('head-nav.php');
 ?>
 

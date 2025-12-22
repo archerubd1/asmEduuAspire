@@ -1,5 +1,5 @@
 <?php 
-$page = 'neuro';
+$page = 'neuro-habits';
 include_once('head-nav.php');
 ?>
 <!--slider-->

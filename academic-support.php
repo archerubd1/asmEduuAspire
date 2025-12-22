@@ -1,5 +1,5 @@
 <?php 
-$page="research-mentorship";
+$page="academic-support";
 include_once('head-nav.php');
 ?>
 

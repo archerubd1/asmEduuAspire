@@ -1,5 +1,5 @@
 <?php 
-$page="digital-workplace";
+$page="digital-literacy";
 include_once('head-nav.php');
 ?>
 

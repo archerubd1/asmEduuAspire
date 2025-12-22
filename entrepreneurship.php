@@ -1,5 +1,5 @@
 <?php 
-$page="entrepreneurship-startup";
+$page="entrepreneurship";
 include_once('head-nav.php');
 ?>
 

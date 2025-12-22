@@ -1,5 +1,5 @@
 <?php 
-$page="teaching-innovation";
+$page="innovation-teaching";
 include_once('head-nav.php');
 ?>
 

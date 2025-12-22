@@ -1,5 +1,5 @@
 <?php 
-$page="lxp";
+$page="future-skills";
 include_once('head-nav.php');
 
 

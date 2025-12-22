@@ -1,5 +1,5 @@
 <?php 
-$page="6-60-learning";
+$page="learning";
 include_once('head-nav.php');
 
 

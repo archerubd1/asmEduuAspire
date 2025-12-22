@@ -1,5 +1,5 @@
 <?php 
-$page = 'super';
+$page = 'super-memory';
 include_once('head-nav.php');
 ?>
 

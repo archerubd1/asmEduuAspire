@@ -39,6 +39,24 @@ setTimeout(function(){
   if(l.length){l[0].style.display='none';}
 },4000);
 </script>
+<style>
+/* Force active state for parent dropdown */
+.navbar-nav .nav-item.active > .nav-link,
+.navbar-nav .nav-link.active {
+  color: #00e5ff !important;        /* match your cyan highlight */
+  font-weight: 600;
+}
+
+/* Optional: underline or indicator */
+.navbar-nav .nav-item.active > .nav-link::after {
+  content: '';
+  display: block;
+  margin: 4px auto 0;
+  width: 60%;
+  height: 2px;
+  background: #00e5ff;
+}
+</style>
 </head>
 
 <body>
@@ -57,105 +75,256 @@ setTimeout(function(){
 <?php
 $page = isset($page) ? $page : '';
 $futurePathwaysPages = array(
-  'EdTech','lxp','adaptive-learning','ai-learning','immersive-classrooms',
-  'curriculum-digital','ar-vr-learning','gamification','blockchain-edu',
-  'cloud-platforms','data-driven','6-60-learning','on-demand',
-  'career-counseling','resilience-programs','global-competency'
+  'lxp',
+  'adaptive-learning',
+  'ai-learning',
+  'immersive-classrooms',
+  'curriculum-digital',
+  'ar-vr-learning',
+  'gamification',
+  'blockchain-credentialing',
+  'cloud-platforms',
+  'data-driven',
+  'learning',
+  'on-demand',
+  'career-counseling',
+  'resilience-programs',
+  'global-competency'
 );
 $isFuturePathwaysActive = in_array($page, $futurePathwaysPages);
+
+
+$programsServicesPages = array(
+  'future-skills',
+  'bootcamps',
+  'train-to-hire',
+  'pathways',
+  'entrepreneurship',
+  'pre-corporate',
+  'soft-skills',
+  'digital-workplace',
+  'internship-support',
+  'post-campus',
+  'tet-refresher',
+  'nep-refresher',
+  'cpd',
+  'academic-support',
+  'innovation-teaching'
+);
+
+$isProgramsServicesActive = in_array($page, $programsServicesPages);
+
+
+$eduuAspirePages = array(
+  'brain-gym',
+  'blindfold',
+  'mind-gym',
+  'super-memory',
+  'neuro-habits',
+  'digital-lit',
+  'media-literacy',
+  'financial-literacy',
+  'information-literacy',
+  '3rs-8cs-3ms',
+  'ai-literacy',
+  'future-of-work',
+  'human-skills',
+  'entrepreneurship-21',
+  'lifelong-learning'
+);
+
+$isEduuAspireActive = in_array($page, $eduuAspirePages);
+
+
+
 ?>
+
 <!-- Home -->
-<li class="nav-item"><a class="nav-link <?php echo ($page=='home')?'active':''; ?>" href="<?php echo $base_url; ?>/index.php">Home</a></li>
-
-<!-- Future Pathways -->
-<li class="nav-item dropdown static">
-  <a class="nav-link dropdown-toggle <?php echo $isFuturePathwaysActive?'active':''; ?>" href="" data-toggle="dropdown">Future Pathways</a>
-  <ul class="dropdown-menu megamenu" style="padding:15px;min-width:750px;">
-    <li><div class="container" style="max-width:100%;">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-          <h6 style="font-weight:bold;">EdTech Solutions</h6>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/lxp.php">Learning Experience Platforms</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/adaptive-learning.php">Adaptive & Personalized Learning</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/ai-learning.php">AI-Powered Analytics</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/immersive-classrooms.php">Immersive Classrooms</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/curriculum-digital.php">Curriculum Digitization</a>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-          <h6 style="font-weight:bold;">Future Tech in Education</h6>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/ar-vr-learning.php">AR/VR Learning</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/gamification.php">Gamification & Simulation</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/blockchain-edu.php">Blockchain Credentialing</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/cloud-platforms.php">Cloud Platforms</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/data-driven.php">Data-Driven Systems</a>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-          <h6 style="font-weight:bold;">Lifelong Learning & Support</h6>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/learning.php">Learning Ecosystem</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/on-demand.php">On-Demand Support</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/career-counseling.php">Career Counseling</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/resilience-programs.php">Resilience Programs</a>
-          <a class="dropdown-item" href="<?php echo $base_url; ?>/global-competency.php">Global Competency</a>
-        </div>
-      </div>
-    </div></li>
-  </ul>
+<li class="nav-item">
+<a class="nav-link <?php echo ($page=='home')?'active':''; ?>" href="<?php echo $base_url; ?>/index.php">
+<i class="fas fa-home mr-1"></i>Home
+</a>
 </li>
 
-<!-- Programs & Services -->
-<li class="nav-item dropdown static">
-  <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Programs & Services
-  </a>
-  <ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
-    <li>
-      <div class="container" style="max-width:100%;">
-        <div class="row">
-          
-          <!-- Skilling & Employability -->
-          <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-            <h6 style="font-size:0.95rem; font-weight:bold; margin-bottom:8px; color:333;">
-              <i>Skilling & Employability</i>
-            </h6>
-            <a class="dropdown-item" href="future-skills.php" style="font-size:0.82rem; white-space:normal;">21st Century & Future-Ready Skills</a>
-            <a class="dropdown-item" href="bootcamps.php" style="font-size:0.82rem; white-space:normal;">Coding Bootcamps & Digital Fluency</a>
-            <a class="dropdown-item" href="train-to-hire.php" style="font-size:0.82rem; white-space:normal;">Train-to-Hire & Campus Placements</a>
-            <a class="dropdown-item" href="pathways.php" style="font-size:0.82rem; white-space:normal;">Career Pathways & Employability Labs</a>
-            <a class="dropdown-item" href="entrepreneurship.php" style="font-size:0.82rem; white-space:normal;">Entrepreneurship & Start-up Readiness</a>
-          </div>
+<!-- ================= FUTURE PATHWAYS ================= -->
+<li class="nav-item dropdown static <?php echo $isFuturePathwaysActive ? 'active' : ''; ?>">
+<a class="nav-link dropdown-toggle <?php echo $isFuturePathwaysActive?'active':''; ?>" href="" data-toggle="dropdown">
+<i class="fas fa-road mr-1"></i>Future Pathways
+</a>
 
-          <!-- Campus-to-Corporate -->
-          <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-            <h6 style="font-size:0.95rem; font-weight:bold; margin-bottom:8px; color:333;">
-              <i>Campus-to-Corporate</i>
-            </h6>
-            <a class="dropdown-item" href="pre-corporate.php" style="font-size:0.82rem; white-space:normal;">Pre-Corporate Readiness Programs</a>
-            <a class="dropdown-item" href="soft-skills.php" style="font-size:0.82rem; white-space:normal;">Communication & Workplace Etiquette</a>
-            <a class="dropdown-item" href="digital-workplace.php" style="font-size:0.82rem; white-space:normal;">Digital Workplace Skills</a>
-            <a class="dropdown-item" href="internship-support.php" style="font-size:0.82rem; white-space:normal;">Internship & Industry Bridge</a>
-            <a class="dropdown-item" href="post-campus.php" style="font-size:0.82rem; white-space:normal;">Post-Campus Transition Support</a>
-          </div>
+<ul class="dropdown-menu megamenu" style="padding:15px;min-width:750px;">
+<li><div class="container" style="max-width:100%;">
+<div class="row">
 
-          <!-- Faculty Development -->
-          <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-            <h6 style="font-size:0.95rem; font-weight:bold; margin-bottom:8px; color:333;">
-              <i>Faculty & Educator Development</i>
-            </h6>
-            <a class="dropdown-item" href="tet-refresher.php" style="font-size:0.82rem; white-space:normal;">TET Refresher & Pedagogy Excellence</a>
-            <a class="dropdown-item" href="nep-refresher.php" style="font-size:0.82rem; white-space:normal;">NEP 2020 Aligned Refresher Programs</a>
-            <a class="dropdown-item" href="cpd.php" style="font-size:0.82rem; white-space:normal;">Continuous Professional Development</a>
-            <a class="dropdown-item" href="academic-support.php" style="font-size:0.82rem; white-space:normal;">Academic & Research Mentorship</a>
-            <a class="dropdown-item" href="innovation-teaching.php" style="font-size:0.82rem; white-space:normal;">Innovation in Teaching Practices</a>
-          </div>
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6 style="font-weight:bold;"><i class="fas fa-laptop-code mr-2"></i>EdTech Solutions</h6>
+<a class="dropdown-item <?php echo ($page=='lxp')?'active':''; ?>" href="<?php echo $base_url; ?>/lxp.php"><i class="fas fa-layer-group mr-2"></i>Learning Experience Platforms</a>
+<a class="dropdown-item <?php echo ($page=='adaptive-learning')?'active':''; ?>" href="<?php echo $base_url; ?>/adaptive-learning.php"><i class="fas fa-sliders-h mr-2"></i>Adaptive & Personalized Learning</a>
+<a class="dropdown-item <?php echo ($page=='ai-learning')?'active':''; ?>" href="<?php echo $base_url; ?>/ai-learning.php"><i class="fas fa-brain mr-2"></i>AI-Powered Analytics</a>
+<a class="dropdown-item <?php echo ($page=='immersive-classrooms')?'active':''; ?>" href="<?php echo $base_url; ?>/immersive-classrooms.php"><i class="fas fa-vr-cardboard mr-2"></i>Immersive Classrooms</a>
+<a class="dropdown-item <?php echo ($page=='curriculum-digital')?'active':''; ?>" href="<?php echo $base_url; ?>/curriculum-digital.php"><i class="fas fa-book-reader mr-2"></i>Curriculum Digitization</a>
+</div>
 
-        </div>
-      </div>
-    </li>
-  </ul>
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6 style="font-weight:bold;"><i class="fas fa-microchip mr-2"></i>Future Tech in Education</h6>
+<a class="dropdown-item <?php echo ($page=='ar-vr-learning')?'active':''; ?>" href="<?php echo $base_url; ?>/ar-vr-learning.php"><i class="fas fa-cube mr-2"></i>AR/VR Learning</a>
+<a class="dropdown-item <?php echo ($page=='gamification')?'active':''; ?>" href="<?php echo $base_url; ?>/gamification.php"><i class="fas fa-gamepad mr-2"></i>Gamification & Simulation</a>
+<a class="dropdown-item <?php echo ($page=='blockchain-credentialing')?'active':''; ?>" href="<?php echo $base_url; ?>/blockchain-edu.php"><i class="fas fa-link mr-2"></i>Blockchain Credentialing</a>
+<a class="dropdown-item <?php echo ($page=='cloud-platforms')?'active':''; ?>" href="<?php echo $base_url; ?>/cloud-platforms.php"><i class="fas fa-cloud mr-2"></i>Cloud Platforms</a>
+<a class="dropdown-item <?php echo ($page=='data-driven')?'active':''; ?>" href="<?php echo $base_url; ?>/data-driven.php"><i class="fas fa-chart-line mr-2"></i>Data-Driven Systems</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6 style="font-weight:bold;"><i class="fas fa-infinity mr-2"></i>Lifelong Learning & Support</h6>
+<a class="dropdown-item <?php echo ($page=='learning')?'active':''; ?>" href="<?php echo $base_url; ?>/learning.php"><i class="fas fa-network-wired mr-2"></i>Learning Ecosystem</a>
+<a class="dropdown-item <?php echo ($page=='on-demand')?'active':''; ?>" href="<?php echo $base_url; ?>/on-demand.php"><i class="fas fa-headset mr-2"></i>On-Demand Support</a>
+<a class="dropdown-item <?php echo ($page=='career-counseling')?'active':''; ?>" href="<?php echo $base_url; ?>/career-counseling.php"><i class="fas fa-user-tie mr-2"></i>Career Counseling</a>
+<a class="dropdown-item <?php echo ($page=='resilience-programs')?'active':''; ?>" href="<?php echo $base_url; ?>/resilience-programs.php"><i class="fas fa-shield-alt mr-2"></i>Resilience Programs</a>
+<a class="dropdown-item <?php echo ($page=='global-competency')?'active':''; ?>" href="<?php echo $base_url; ?>/global-competency.php"><i class="fas fa-globe mr-2"></i>Global Competency</a>
+</div>
+
+</div>
+</div></li>
+</ul>
 </li>
 
 
-<!-- Brain Decode -->
+<!-- ================= PROGRAMS & SERVICES ================= -->
+<li class="nav-item dropdown static <?php echo $isProgramsServicesActive ? 'active' : ''; ?>">
+<a class="nav-link dropdown-toggle <?php echo $isProgramsServicesActive ? 'active' : ''; ?>" href="" data-toggle="dropdown">
+<i class="fas fa-cogs mr-1"></i>Programs & Services
+</a>
+
+<ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
+<li><div class="container" style="max-width:100%;">
+<div class="row">
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-briefcase mr-2"></i>Skilling & Employability</h6>
+<a class="dropdown-item <?php echo ($page=='future-skills')?'active':''; ?>" href="future-skills.php"><i class="fas fa-award mr-2"></i>21st Century & Future-Ready Skills</a>
+<a class="dropdown-item <?php echo ($page=='bootcamps')?'active':''; ?>" href="bootcamps.php"><i class="fas fa-code mr-2"></i>Coding Bootcamps & Digital Fluency</a>
+<a class="dropdown-item <?php echo ($page=='train-to-hire')?'active':''; ?>" href="train-to-hire.php"><i class="fas fa-handshake mr-2"></i>Train-to-Hire & Campus Placements</a>
+<a class="dropdown-item <?php echo ($page=='pathways')?'active':''; ?>" href="pathways.php"><i class="fas fa-route mr-2"></i>Career Pathways & Employability Labs</a>
+<a class="dropdown-item <?php echo ($page=='entrepreneurship')?'active':''; ?>" href="entrepreneurship.php"><i class="fas fa-lightbulb mr-2"></i>Entrepreneurship & Start-up Readiness</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-building mr-2"></i>Campus-to-Corporate</h6>
+<a class="dropdown-item <?php echo ($page=='pre-corporate')?'active':''; ?>" href="pre-corporate.php"><i class="fas fa-university mr-2"></i>Pre-Corporate Readiness Programs</a>
+<a class="dropdown-item <?php echo ($page=='soft-skills')?'active':''; ?>" href="soft-skills.php"><i class="fas fa-comments mr-2"></i>Communication & Workplace Etiquette</a>
+<a class="dropdown-item <?php echo ($page=='digital-workplace')?'active':''; ?>" href="digital-workplace.php"><i class="fas fa-desktop mr-2"></i>Digital Workplace Skills</a>
+<a class="dropdown-item <?php echo ($page=='internship-support')?'active':''; ?>" href="internship-support.php"><i class="fas fa-user-graduate mr-2"></i>Internship & Industry Bridge</a>
+<a class="dropdown-item <?php echo ($page=='post-campus')?'active':''; ?>" href="post-campus.php"><i class="fas fa-rocket mr-2"></i>Post-Campus Transition Support</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-chalkboard-teacher mr-2"></i>Faculty & Educator Development</h6>
+<a class="dropdown-item <?php echo ($page=='tet-refresher')?'active':''; ?>" href="tet-refresher.php"><i class="fas fa-sync mr-2"></i>TET Refresher & Pedagogy Excellence</a>
+<a class="dropdown-item <?php echo ($page=='nep-refresher')?'active':''; ?>" href="nep-refresher.php"><i class="fas fa-balance-scale mr-2"></i>NEP 2020 Aligned Refresher Programs</a>
+<a class="dropdown-item <?php echo ($page=='cpd')?'active':''; ?>" href="cpd.php"><i class="fas fa-user-cog mr-2"></i>Continuous Professional Development</a>
+<a class="dropdown-item <?php echo ($page=='academic-support')?'active':''; ?>" href="academic-support.php"><i class="fas fa-flask mr-2"></i>Academic & Research Mentorship</a>
+<a class="dropdown-item <?php echo ($page=='innovation-teaching')?'active':''; ?>" href="innovation-teaching.php"><i class="fas fa-lightbulb mr-2"></i>Innovation in Teaching Practices</a>
+</div>
+
+</div>
+</div></li>
+</ul>
+</li>
+
+
+<!-- ================= EDUUASPIRE 21.0 ================= -->
+<!-- ================= EDUUASPIRE 21.0 ================= -->
+<li class="nav-item dropdown static <?php echo $isEduuAspireActive ? 'active' : ''; ?>">
+<a class="nav-link dropdown-toggle <?php echo $isEduuAspireActive ? 'active' : ''; ?>" href="" data-toggle="dropdown">
+<i class="fas fa-brain mr-1"></i>EduuAspire 21.0
+</a>
+
+<ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
+<li><div class="container" style="max-width:100%;">
+<div class="row">
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-dna mr-2"></i>Edu-K (Educational Kinesiology)</h6>
+<a class="dropdown-item <?php echo ($page=='brain-gym')?'active':''; ?>" href="brain-gym.php"><i class="fas fa-brain mr-2"></i>Brain Gym</a>
+<a class="dropdown-item <?php echo ($page=='blindfold')?'active':''; ?>" href="blindfold.php"><i class="fas fa-eye-slash mr-2"></i>Blindfold Experience</a>
+<a class="dropdown-item <?php echo ($page=='mind-gym')?'active':''; ?>" href="mind-gym.php"><i class="fas fa-dumbbell mr-2"></i>Mind Gym Programs</a>
+<a class="dropdown-item <?php echo ($page=='super-memory')?'active':''; ?>" href="super-memory.php"><i class="fas fa-memory mr-2"></i>Super Memory Training</a>
+<a class="dropdown-item <?php echo ($page=='neuro-habits')?'active':''; ?>" href="neuro-habits.php"><i class="fas fa-project-diagram mr-2"></i>Neuro Habits & Cognitive Mastery</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-graduation-cap mr-2"></i>21st Century Skills</h6>
+<a class="dropdown-item <?php echo ($page=='digital-lit')?'active':''; ?>" href="digital-literacy.php"><i class="fas fa-laptop mr-2"></i>Digital Literacy</a>
+<a class="dropdown-item <?php echo ($page=='media-literacy')?'active':''; ?>" href="media-literacy.php"><i class="fas fa-photo-video mr-2"></i>Media Literacy</a>
+<a class="dropdown-item <?php echo ($page=='financial-literacy')?'active':''; ?>" href="financial-literacy.php"><i class="fas fa-wallet mr-2"></i>Financial Literacy</a>
+<a class="dropdown-item <?php echo ($page=='information-literacy')?'active':''; ?>" href="information-literacy.php"><i class="fas fa-database mr-2"></i>Information Literacy</a>
+<a class="dropdown-item <?php echo ($page=='3rs-8cs-3ms')?'active':''; ?>" href="3rs.php"><i class="fas fa-project-diagram mr-2"></i>3Rs 8Cs 3Ms' Literacy</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-forward mr-2"></i>21st Century Onwards</h6>
+<a class="dropdown-item <?php echo ($page=='ai-literacy')?'active':''; ?>" href="#ai-literacy.php"><i class="fas fa-robot mr-2"></i>AI Literacy & GenAI Skills</a>
+<a class="dropdown-item <?php echo ($page=='future-of-work')?'active':''; ?>" href="#future-of-work.php"><i class="fas fa-briefcase mr-2"></i>Future of Work & Careers</a>
+<a class="dropdown-item <?php echo ($page=='human-skills')?'active':''; ?>" href="#human-skills.php"><i class="fas fa-heart mr-2"></i>Human Skills</a>
+<a class="dropdown-item <?php echo ($page=='entrepreneurship-21')?'active':''; ?>" href="#entrepreneurship.php"><i class="fas fa-lightbulb mr-2"></i>Entrepreneurship & Innovation Mindset</a>
+<a class="dropdown-item <?php echo ($page=='lifelong-learning')?'active':''; ?>" href="#lifelong-learning.php"><i class="fas fa-infinity mr-2"></i>Lifelong Learning & Skill Portfolios</a>
+</div>
+
+</div>
+</div></li>
+</ul>
+</li>
+
+
+<!-- About Us -->
+<!-- ================= ABOUT US ================= -->
+<li class="nav-item dropdown static">
+<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+<i class="fas fa-info-circle mr-1"></i>About Us
+</a>
+
+<ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
+<li><div class="container" style="max-width:100%;">
+<div class="row">
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-users mr-2"></i>Who We Serve</h6>
+<a class="dropdown-item" href="#"><i class="fas fa-school mr-2"></i>Schools & Institutions</a>
+<a class="dropdown-item" href="#"><i class="fas fa-industry mr-2"></i>Industries & Corporates</a>
+<a class="dropdown-item" href="#"><i class="fas fa-hotel mr-2"></i>Hospitality & Retail</a>
+<a class="dropdown-item" href="#"><i class="fas fa-hands-helping mr-2"></i>NGOs & States</a>
+<a class="dropdown-item" href="#"><i class="fas fa-home mr-2"></i>Home Tutoring & Mentoring</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-book mr-2"></i>Resources</h6>
+<a class="dropdown-item" href="research-insights.php"><i class="fas fa-search mr-2"></i>Research & Insights</a>
+<a class="dropdown-item" href="blogs-articles.php"><i class="fas fa-blog mr-2"></i>Blogs & Articles</a>
+<a class="dropdown-item" href="case-studies.php"><i class="fas fa-file-alt mr-2"></i>Case Studies & Whitepapers</a>
+<a class="dropdown-item" href="intern-opportunities.php"><i class="fas fa-user-clock mr-2"></i>Internship Opportunities</a>
+<a class="dropdown-item" href="#"><i class="fas fa-chalkboard mr-2"></i>Faculty Resources</a>
+</div>
+
+<div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
+<h6><i class="fas fa-id-card mr-2"></i>Know Us</h6>
+<a class="dropdown-item" href="#who-we-are.php"><i class="fas fa-compass mr-2"></i>Who We Are</a>
+<a class="dropdown-item" href="#leadership-team.php"><i class="fas fa-users-cog mr-2"></i>Leadership Team</a>
+<a class="dropdown-item" href="#collaborations.php"><i class="fas fa-handshake mr-2"></i>Collaborations & Partnerships</a>
+<a class="dropdown-item" href="#careers.php"><i class="fas fa-briefcase mr-2"></i>Careers @ EduuAspire</a>
+<a class="dropdown-item" href="#join-as-mentor.php"><i class="fas fa-user-plus mr-2"></i>Join Us as a Mentor</a>
+</div>
+
+</div>
+</div></li>
+	
+  </ul>
+</li>
+
+
+
+
+
+<!-- Brain Decode 
 <li class="nav-item dropdown" style="position:relative;">
   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Brain's Gym</a>
   <ul class="dropdown-menu" style="padding:10px; min-width:300px; left:0;">
@@ -164,8 +333,12 @@ $isFuturePathwaysActive = in_array($page, $futurePathwaysPages);
     <a class="dropdown-item" href="super-memory.php" style="font-size:0.85rem; white-space:normal;">Super Memory Training</a>
     <a class="dropdown-item" href="neuro-habits.php" style="font-size:0.85rem; white-space:normal;">Neuro Habits & Cognitive Mastery</a>
   </ul>
-</li>
-<!-- About Us -->
+</li>-->    
+
+
+
+
+<!-- About Us 
 <li class="nav-item dropdown" style="position:relative;">
   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">About Us</a>
   <ul class="dropdown-menu" style="padding:10px; min-width:300px; left:0;">
@@ -175,16 +348,11 @@ $isFuturePathwaysActive = in_array($page, $futurePathwaysPages);
   </ul>
 </li>
 
-<!-- Resources -->
+<!-- Resources 
 <li class="nav-item dropdown" style="position:relative;">
   <a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">Resources</a>
   <ul class="dropdown-menu" style="padding:10px; min-width:220px; left:0;">
-    <a class="dropdown-item" href="research-insights.php" style="font-size:0.85rem; white-space:normal;">Research & Insights</a>
-    <a class="dropdown-item" href="blogs-articles.php" style="font-size:0.85rem; white-space:normal;">Blogs & Articles</a>
-    <a class="dropdown-item" href="case-studies.php" style="font-size:0.85rem; white-space:normal;">Case Studies & Whitepapers</a>
-	 <a class="dropdown-item" href="reach-us.php" style="font-size:0.85rem; white-space:normal;">Reach Us</a>
    
-    <a class="dropdown-item" href="intern-opportunities.php" style="font-size:0.85rem; white-space:normal;">Internship Opportunities</a>
   </ul>
 </li>
 

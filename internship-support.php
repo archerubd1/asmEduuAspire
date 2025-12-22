@@ -1,5 +1,5 @@
 <?php 
-$page="internship-industry";
+$page="internship-support";
 include_once('head-nav.php');
 ?>
 

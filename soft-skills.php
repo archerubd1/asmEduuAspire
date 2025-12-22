@@ -1,5 +1,5 @@
 <?php 
-$page="communication-etiquette";
+$page="soft-skills";
 include_once('head-nav.php');
 ?>
 
