@@ -17,7 +17,7 @@ include_once('head-nav.php');
     <div id="particles-text-morph" class="text-center" style="max-width:900px; margin:0 auto; padding-top:120px;">
         <h2 class="font-xlight" style="font-size:2rem; color:#fff;">Redefining Learning & Growth</h2>
        <h2 id="morph-text" class="pb-2" style="font-size:2.4rem; font-weight:700; color:#FFD700;">
-    EdTech Innovation, Brain Decode, Campus-to-Corporate, Future Skills, AI-Powered Learning, Immersive Classrooms, 21st-Century Competencies, Gamification Labs, Personalized Learning, Neuro Habits
+    EdTech Innovation, Campus-to-Corporate, Future Skills, AI-Powered Learning, Immersive Classrooms, 21st-Century Competencies, Gamification Labs, Personalized Learning, Neuro Habits
 </h2>
 
         <h3 class="font-light2">Future Skills with Creative, Adaptive & Immersive Learning</h3>
