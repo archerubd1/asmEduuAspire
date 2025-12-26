@@ -174,7 +174,7 @@ $isAboutUsActive = in_array($page, $aboutUsPages);
 <!-- ================= FUTURE PATHWAYS ================= -->
 <li class="nav-item dropdown static <?php echo $isFuturePathwaysActive ? 'active' : ''; ?>">
 <a class="nav-link dropdown-toggle <?php echo $isFuturePathwaysActive?'active':''; ?>" href="" data-toggle="dropdown">
-<i class="fas fa-road mr-1"></i>Future Pathways
+<i class="fas fa-road mr-1"></i>Solutions
 </a>
 
 <ul class="dropdown-menu megamenu" style="padding:15px;min-width:750px;">
@@ -217,7 +217,7 @@ $isAboutUsActive = in_array($page, $aboutUsPages);
 <!-- ================= PROGRAMS & SERVICES ================= -->
 <li class="nav-item dropdown static <?php echo $isProgramsServicesActive ? 'active' : ''; ?>">
 <a class="nav-link dropdown-toggle <?php echo $isProgramsServicesActive ? 'active' : ''; ?>" href="" data-toggle="dropdown">
-<i class="fas fa-cogs mr-1"></i>Programs & Services
+<i class="fas fa-cogs mr-1"></i>Services
 </a>
 
 <ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
@@ -254,6 +254,34 @@ $isAboutUsActive = in_array($page, $aboutUsPages);
 </div>
 </div></li>
 </ul>
+</li>
+
+
+
+<!-- ================= EDUUASPIRE PRODUCTS ================= -->
+<li class="nav-item dropdown" style="position:relative;" <?php echo ($page=='products') ? 'active' : ''; ?>">
+  <a class="nav-link dropdown-toggle" <?php echo ($page=='products') ? 'active' : ''; ?>"  href="#" data-toggle="dropdown">Products</a>
+  <ul class="dropdown-menu" style="padding:10px; min-width:300px; left:0;">
+    <a class="dropdown-item <?php echo ($page=='core-lms')?'active':''; ?>" href="#core-lms.php">
+<i class="fas fa-server mr-2"></i>EduuAspire Core LMS <small class="text-muted">((eLearning Platform)</small>
+</a>
+
+<a class="dropdown-item <?php echo ($page=='lxp-platform')?'active':''; ?>" href="#lxp-platform.php">
+<i class="fas fa-compass mr-2"></i>EduuAspire LXP <small class="text-muted">(Experience Layer)</small>
+</a>
+
+<a class="dropdown-item <?php echo ($page=='ai-studio')?'active':''; ?>" href="#ai-studio.php">
+<i class="fas fa-robot mr-2"></i>EduuAspire AI Studio <small class="text-muted">(AI & GenAI Modules)</small>
+</a>
+
+<a class="dropdown-item <?php echo ($page=='human-intelligence')?'active':''; ?>" href="#human-intelligence.php">
+<i class="fas fa-brain mr-2"></i>EduuAspire Human Intelligence Suite <small class="text-muted">(Human & cognitive capability building)</small>
+</a>
+
+<a class="dropdown-item <?php echo ($page=='credentials')?'active':''; ?>" href="#credentials.php">
+<i class="fas fa-certificate mr-2"></i>EduuAspire Credentials & Trust Layer <small class="text-muted">(Digital credentials, analytics & verification)</small>
+</a>
+  </ul>
 </li>
 
 
