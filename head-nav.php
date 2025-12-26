@@ -113,8 +113,6 @@ $programsServicesPages = array(
 );
 
 $isProgramsServicesActive = in_array($page, $programsServicesPages);
-
-
 $eduuAspirePages = array(
   'brain-gym',
   'blindfold',
@@ -126,15 +124,42 @@ $eduuAspirePages = array(
   'financial-literacy',
   'information-literacy',
   '3rs-8cs-3ms',
-  'ai-literacy',
-  'future-of-work',
+  'ai-genai-literacy',
+  'future-work-careers',
   'human-skills',
-  'entrepreneurship-21',
+  'innovation',
   'lifelong-learning'
 );
 
 $isEduuAspireActive = in_array($page, $eduuAspirePages);
 
+
+
+
+$aboutUsPages = array(
+    // Who We Serve
+    'schools-institutions',
+    'industries-corporates',
+    'hospitality-retail',
+    'ngos-states',
+    'home-tutoring',
+
+    // Resources
+    'research-insights',
+    'blogs-articles',
+    'case-studies',
+    'intern-opportunities',
+    'faculty-resources',
+
+    // Know Us
+    'who-we-are',
+    'leadership-team',
+    'collaborations',
+    'careers',
+    'join-as-mentor'
+);
+
+$isAboutUsActive = in_array($page, $aboutUsPages);
 
 
 ?>
@@ -260,15 +285,30 @@ $isEduuAspireActive = in_array($page, $eduuAspirePages);
 <a class="dropdown-item <?php echo ($page=='information-literacy')?'active':''; ?>" href="information-literacy.php"><i class="fas fa-database mr-2"></i>Information Literacy</a>
 <a class="dropdown-item <?php echo ($page=='3rs-8cs-3ms')?'active':''; ?>" href="3rs.php"><i class="fas fa-project-diagram mr-2"></i>3Rs 8Cs 3Ms' Literacy</a>
 </div>
-
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
-<h6><i class="fas fa-forward mr-2"></i>21st Century Onwards</h6>
-<a class="dropdown-item <?php echo ($page=='ai-literacy')?'active':''; ?>" href="#ai-literacy.php"><i class="fas fa-robot mr-2"></i>AI Literacy & GenAI Skills</a>
-<a class="dropdown-item <?php echo ($page=='future-of-work')?'active':''; ?>" href="#future-of-work.php"><i class="fas fa-briefcase mr-2"></i>Future of Work & Careers</a>
-<a class="dropdown-item <?php echo ($page=='human-skills')?'active':''; ?>" href="#human-skills.php"><i class="fas fa-heart mr-2"></i>Human Skills</a>
-<a class="dropdown-item <?php echo ($page=='entrepreneurship-21')?'active':''; ?>" href="#entrepreneurship.php"><i class="fas fa-lightbulb mr-2"></i>Entrepreneurship & Innovation Mindset</a>
-<a class="dropdown-item <?php echo ($page=='lifelong-learning')?'active':''; ?>" href="#lifelong-learning.php"><i class="fas fa-infinity mr-2"></i>Lifelong Learning & Skill Portfolios</a>
+<h6><i class="fas fa-forward mr-2"></i>Future-Ready Pathways (21.0+)</h6>
+
+<a class="dropdown-item <?php echo ($page=='ai-genai-literacy')?'active':''; ?>" href="ai-genai.php">
+<i class="fas fa-robot mr-2"></i>AI, GenAI & Algorithmic Literacy
+</a>
+
+<a class="dropdown-item <?php echo ($page=='future-work-careers')?'active':''; ?>" href="future-work-careers.php">
+<i class="fas fa-briefcase mr-2"></i>Future of Work, Careers & Skills
+</a>
+
+<a class="dropdown-item <?php echo ($page=='human-skills')?'active':''; ?>" href="human-skills.php">
+<i class="fas fa-heart mr-2"></i>Human Skills in a Tech-Driven World
+</a>
+
+<a class="dropdown-item <?php echo ($page=='innovation')?'active':''; ?>" href="innovation-design.php">
+<i class="fas fa-lightbulb mr-2"></i>Innovation & Design Thinking
+</a>
+
+<a class="dropdown-item <?php echo ($page=='lifelong-learning')?'active':''; ?>" href="lifelong-learning.php">
+<i class="fas fa-infinity mr-2"></i>Lifelong Learning & Entrepreneurship
+</a>
 </div>
+
 
 </div>
 </div></li>
@@ -278,46 +318,96 @@ $isEduuAspireActive = in_array($page, $eduuAspirePages);
 
 <!-- About Us -->
 <!-- ================= ABOUT US ================= -->
-<li class="nav-item dropdown static">
-<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown">
+<!-- ================= ABOUT US ================= -->
+<li class="nav-item dropdown static <?php echo $isAboutUsActive ? 'active' : ''; ?>">
+<a class="nav-link dropdown-toggle <?php echo $isAboutUsActive ? 'active' : ''; ?>" href="" data-toggle="dropdown">
 <i class="fas fa-info-circle mr-1"></i>About Us
 </a>
 
 <ul class="dropdown-menu megamenu" style="padding:15px; min-width:900px;">
-<li><div class="container" style="max-width:100%;">
+<li>
+<div class="container" style="max-width:100%;">
 <div class="row">
 
+<!-- ================= WHO WE SERVE ================= -->
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
 <h6><i class="fas fa-users mr-2"></i>Who We Serve</h6>
-<a class="dropdown-item" href="#"><i class="fas fa-school mr-2"></i>Schools & Institutions</a>
-<a class="dropdown-item" href="#"><i class="fas fa-industry mr-2"></i>Industries & Corporates</a>
-<a class="dropdown-item" href="#"><i class="fas fa-hotel mr-2"></i>Hospitality & Retail</a>
-<a class="dropdown-item" href="#"><i class="fas fa-hands-helping mr-2"></i>NGOs & States</a>
-<a class="dropdown-item" href="#"><i class="fas fa-home mr-2"></i>Home Tutoring & Mentoring</a>
+
+<a class="dropdown-item <?php echo ($page=='schools-institutions')?'active':''; ?>" href="#schools-institutions.php">
+<i class="fas fa-school mr-2"></i>Schools & Institutions
+</a>
+
+<a class="dropdown-item <?php echo ($page=='industries-corporates')?'active':''; ?>" href="#industries-corporates.php">
+<i class="fas fa-industry mr-2"></i>Industries & Corporates
+</a>
+
+<a class="dropdown-item <?php echo ($page=='hospitality-retail')?'active':''; ?>" href="#hospitality-retail.php">
+<i class="fas fa-hotel mr-2"></i>Hospitality & Retail
+</a>
+
+<a class="dropdown-item <?php echo ($page=='ngos-states')?'active':''; ?>" href="#ngos-states.php">
+<i class="fas fa-hands-helping mr-2"></i>NGOs & States
+</a>
+
+<a class="dropdown-item <?php echo ($page=='home-tutoring')?'active':''; ?>" href="#home-tutoring.php">
+<i class="fas fa-home mr-2"></i>Home Tutoring & Mentoring
+</a>
 </div>
 
+<!-- ================= RESOURCES ================= -->
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
 <h6><i class="fas fa-book mr-2"></i>Resources</h6>
-<a class="dropdown-item" href="research-insights.php"><i class="fas fa-search mr-2"></i>Research & Insights</a>
-<a class="dropdown-item" href="blogs-articles.php"><i class="fas fa-blog mr-2"></i>Blogs & Articles</a>
-<a class="dropdown-item" href="case-studies.php"><i class="fas fa-file-alt mr-2"></i>Case Studies & Whitepapers</a>
-<a class="dropdown-item" href="intern-opportunities.php"><i class="fas fa-user-clock mr-2"></i>Internship Opportunities</a>
-<a class="dropdown-item" href="#"><i class="fas fa-chalkboard mr-2"></i>Faculty Resources</a>
+
+<a class="dropdown-item <?php echo ($page=='research-insights')?'active':''; ?>" href="research-insights.php">
+<i class="fas fa-search mr-2"></i>Research & Insights
+</a>
+
+<a class="dropdown-item <?php echo ($page=='blogs-articles')?'active':''; ?>" href="blogs-articles.php">
+<i class="fas fa-blog mr-2"></i>Blogs & Articles
+</a>
+
+<a class="dropdown-item <?php echo ($page=='case-studies')?'active':''; ?>" href="case-studies.php">
+<i class="fas fa-file-alt mr-2"></i>Case Studies & Whitepapers
+</a>
+
+<a class="dropdown-item <?php echo ($page=='intern-opportunities')?'active':''; ?>" href="intern-opportunities.php">
+<i class="fas fa-user-clock mr-2"></i>Internship Opportunities
+</a>
+
+<a class="dropdown-item <?php echo ($page=='faculty-resources')?'active':''; ?>" href="#faculty-resources.php">
+<i class="fas fa-chalkboard mr-2"></i>Faculty Resources
+</a>
 </div>
 
+<!-- ================= KNOW US ================= -->
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
 <h6><i class="fas fa-id-card mr-2"></i>Know Us</h6>
-<a class="dropdown-item" href="#who-we-are.php"><i class="fas fa-compass mr-2"></i>Who We Are</a>
-<a class="dropdown-item" href="#leadership-team.php"><i class="fas fa-users-cog mr-2"></i>Leadership Team</a>
-<a class="dropdown-item" href="#collaborations.php"><i class="fas fa-handshake mr-2"></i>Collaborations & Partnerships</a>
-<a class="dropdown-item" href="#careers.php"><i class="fas fa-briefcase mr-2"></i>Careers @ EduuAspire</a>
-<a class="dropdown-item" href="#join-as-mentor.php"><i class="fas fa-user-plus mr-2"></i>Join Us as a Mentor</a>
+
+<a class="dropdown-item <?php echo ($page=='who-we-are')?'active':''; ?>" href="#who-we-are.php">
+<i class="fas fa-compass mr-2"></i>Who We Are
+</a>
+
+<a class="dropdown-item <?php echo ($page=='leadership-team')?'active':''; ?>" href="#leadership-team.php">
+<i class="fas fa-users-cog mr-2"></i>Leadership Team
+</a>
+
+<a class="dropdown-item <?php echo ($page=='collaborations')?'active':''; ?>" href="#collaborations.php">
+<i class="fas fa-handshake mr-2"></i>Collaborations & Partnerships
+</a>
+
+<a class="dropdown-item <?php echo ($page=='careers')?'active':''; ?>" href="#careers.php">
+<i class="fas fa-briefcase mr-2"></i>Careers @ EduuAspire
+</a>
+
+<a class="dropdown-item <?php echo ($page=='join-as-mentor')?'active':''; ?>" href="#join-as-mentor.php">
+<i class="fas fa-user-plus mr-2"></i>Join Us as a Mentor
+</a>
 </div>
 
 </div>
-</div></li>
-	
-  </ul>
+</div>
+</li>
+</ul>
 </li>
 
 

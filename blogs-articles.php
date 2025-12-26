@@ -1,5 +1,5 @@
 <?php 
-$page="blogs";
+$page="blogs-articles";
 include_once('head-nav.php');
 
 ?>
