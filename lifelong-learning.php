@@ -64,7 +64,7 @@ include_once('head-nav.php');
 
             <div class="col-lg-6 col-md-6 padding_bottom_half">
                 <div class="image">
-                    <img alt="Lifelong Learning" src="images/eduu/ll1.jpg">
+                    <img alt="Lifelong Learning" src="images/eduu/gami asses.jpg">
                 </div>
             </div>
 
@@ -225,7 +225,7 @@ include_once('head-nav.php');
             <!-- Center Image -->
             <div class="col-md-4 text-center">
                 <div class="app-image top30">
-                    <img src="images/eduu/ll2.jpg" alt="Lifelong Learning Services Showcase">
+                    <img src="images/eduu/fw2.jpg" alt="Lifelong Learning Services Showcase">
                 </div>
             </div>
 
@@ -264,6 +264,284 @@ include_once('head-nav.php');
 </section>
 
 
+<!-- ================= LIFELONG LEARNING FRAMEWORK ================= -->
+<section id="lifelong-learning-framework" class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <div class="heading-title bottom40 wow fadeInUp" data-wow-delay="300ms">
+            <span class="defaultcolor">Framework Continuity</span>
+            <h2 class="darkcolor font-normal">
+                From Formal Education to
+                <span class="defaultcolor">Continuous Capability</span>
+            </h2>
+            <p class="top10">
+                In a world of accelerating change, learning is no longer an event.
+                It is a lifelong capability that determines relevance, resilience,
+                and growth across life and work.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Beyond Degrees & Certifications</h4>
+            <p>
+                Lifelong learning shifts focus from
+                static qualifications to continuous
+                capability development.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="350ms">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>Designed for Constant Change</h4>
+            <p>
+                Learners develop the ability to
+                unlearn outdated knowledge,
+                adapt quickly, and relearn effectively.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <h4>Learning as a Life Skill</h4>
+            <p>
+                Lifelong learning becomes a
+                core human capability that supports
+                careers, citizenship, and personal growth.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- ================= LIFELONG LEARNING FRAMEWORK ================= -->
+<section id="lifelong-learning-framework" class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <div class="heading-title bottom40 wow fadeInUp" data-wow-delay="300ms">
+            <span class="defaultcolor">Framework Continuity</span>
+            <h2 class="darkcolor font-normal">
+                From Formal Education to
+                <span class="defaultcolor">Continuous Capability</span>
+            </h2>
+            <p class="top10">
+                In a world of accelerating change, learning is no longer an event.
+                It is a lifelong capability that determines relevance, resilience,
+                and growth across life and work.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Beyond Degrees & Certifications</h4>
+            <p>
+                Lifelong learning shifts focus from
+                static qualifications to continuous
+                capability development.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="350ms">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>Designed for Constant Change</h4>
+            <p>
+                Learners develop the ability to
+                unlearn outdated knowledge,
+                adapt quickly, and relearn effectively.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <h4>Learning as a Life Skill</h4>
+            <p>
+                Lifelong learning becomes a
+                core human capability that supports
+                careers, citizenship, and personal growth.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= LIFELONG LEARNING SIMULATIONS ================= -->
+<section class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Real-World
+            <span class="defaultcolor">Lifelong Learning Scenarios</span>
+        </h2>
+        <p class="bottom40">
+            Experiential learning environments that
+            build reflection, adaptability,
+            and continuous improvement habits.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-route"></i></div>
+            <h4>Career Transition Scenarios</h4>
+            <p>
+                Navigate job changes, role shifts,
+                reskilling decisions, and uncertainty
+                with confidence.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-brain"></i></div>
+            <h4>Learning Strategy Labs</h4>
+            <p>
+                Practice goal setting, learning planning,
+                reflection, and performance improvement.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>Unlearning & Relearning Challenges</h4>
+            <p>
+                Identify outdated assumptions,
+                replace them with new knowledge,
+                and apply learning effectively.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-seedling"></i></div>
+            <h4>Purpose & Growth Reflection Rooms</h4>
+            <p>
+                Align learning with values,
+                purpose, long-term goals,
+                and responsible growth.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= LIFELONG LEARNING SIMULATIONS ================= -->
+<section class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Real-World
+            <span class="defaultcolor">Lifelong Learning Scenarios</span>
+        </h2>
+        <p class="bottom40">
+            Experiential learning environments that
+            build reflection, adaptability,
+            and continuous improvement habits.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-route"></i></div>
+            <h4>Career Transition Scenarios</h4>
+            <p>
+                Navigate job changes, role shifts,
+                reskilling decisions, and uncertainty
+                with confidence.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-brain"></i></div>
+            <h4>Learning Strategy Labs</h4>
+            <p>
+                Practice goal setting, learning planning,
+                reflection, and performance improvement.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>Unlearning & Relearning Challenges</h4>
+            <p>
+                Identify outdated assumptions,
+                replace them with new knowledge,
+                and apply learning effectively.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-seedling"></i></div>
+            <h4>Purpose & Growth Reflection Rooms</h4>
+            <p>
+                Align learning with values,
+                purpose, long-term goals,
+                and responsible growth.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
 
 
 

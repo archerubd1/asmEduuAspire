@@ -132,8 +132,9 @@ function echoCoursesByCategory($rows, $category) {
 function autoLoginAndRedirect(action, courseId, lessonId) {
     let isLocal = (window.location.hostname === "localhost");
     let base = isLocal 
+	
         ? "http://localhost/evidya/www/" 
-        : "https://raunakeducares.com/lxp/lxpre/www/";
+        : "https://eduuaspire.online/lxp/lxpre/www/";
 
     let autoLoginKey = "<?php echo $autoLoginToken; ?>";
 

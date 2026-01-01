@@ -394,6 +394,104 @@ include_once('head-nav.php');
     </div>
 </section>
 
+<!-- ================= HOW 3Rs 8Cs 3Ms’ CREATES IMPACT ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<!-- Header -->
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Outcome Architecture</span>
+        <h2 class="font-normal bottom20">
+            How 3Rs 8Cs 3Ms’
+            <span class="defaultcolor">Creates Lasting Impact</span>
+        </h2>
+        <p class="bottom40">
+            EduuAspire’s 3Rs 8Cs 3Ms’ Literacy moves learning beyond content delivery
+            into a living system of human capability, ethical judgment, and lifelong adaptability.
+        </p>
+    </div>
+</div>
+
+<!-- Impact Grid -->
+<div class="row">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-brain"></i></div>
+            <h4>From Memorization to Reasoned Thinking</h4>
+            <p>
+                Learners shift from passive knowledge consumption
+                to active reasoning, inquiry, and evidence-based decision-making
+                across academic, professional, and civic contexts.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>From Fragility to Resilience</h4>
+            <p>
+                Learners develop confidence to face uncertainty,
+                recover from failure, adapt to change,
+                and grow continuously across life stages.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-balance-scale"></i></div>
+            <h4>From Compliance to Responsibility</h4>
+            <p>
+                Ethical judgment, accountability, compassion,
+                and digital responsibility become embedded behaviors—
+                not abstract values.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h4>From Individual Learning to Collective Capability</h4>
+            <p>
+                Collaboration, communication, leadership,
+                and cross-cultural understanding strengthen
+                communities, organizations, and societies.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-lightbulb"></i></div>
+            <h4>From Knowledge to Meaningful Action</h4>
+            <p>
+                Learning becomes purpose-driven—
+                connected to real-world problems,
+                societal contribution, and personal meaning.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item text-center h-100">
+            <div class="icon"><i class="fas fa-infinity"></i></div>
+            <h4>From Fixed Outcomes to Lifelong Growth</h4>
+            <p>
+                With learning that is meaningful, measurable,
+                and malleable, growth becomes continuous,
+                visible, and adaptable across changing futures.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
 
 
 

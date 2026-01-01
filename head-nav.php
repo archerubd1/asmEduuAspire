@@ -15,7 +15,7 @@ if (!isset($base_url)) {
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>EduuAspire Powered By astraal Mind Solutions | converting potential to intellectual capital - Future Learning</title>
-<link href="<?php echo $base_url; ?>/images/eduuFavicon.png" rel="icon">
+<link href="<?php echo $base_url; ?>/images/eduuFaviconrb.png" rel="icon">
 <meta name="description" content="EduuAspire Powered by astraal mind empowers learners and professionals from campus to corporate.">
 <meta name="author" content="EduuAspire Powered by astraal Mind Solutions">
 
@@ -118,7 +118,8 @@ $eduuAspirePages = array(
   'blindfold',
   'mind-gym',
   'super-memory',
-  'neuro-habits',
+  'cognitive',
+  'kinesiology',
   'digital-lit',
   'media-literacy',
   'financial-literacy',
@@ -161,6 +162,21 @@ $aboutUsPages = array(
 
 $isAboutUsActive = in_array($page, $aboutUsPages);
 
+
+
+$platformPages = array(
+    // Platform
+    'core-lms',
+    'lxp-platform',
+    'ai-studio',
+    'human-intelligence',
+    'credentials'
+);
+
+$isPlatformActive = in_array($page, $platformPages);
+
+
+
 /////////////////////////////////////////////////////////////////////////////////////
 // REDONE FOR MARKETING & MONETIZATION FIRST APPROACH and ELIMINATED feature based //
 /////////////////////////////////////////////////////////////////////////////////////
@@ -179,6 +195,13 @@ $whomWeServePages = array(
   'usecase-workforce-skilling',
   'usecase-lifelong-learning',
   'usecase-social-impact',
+  
+  //why eduuaspire 
+  'lxp',
+  'adaptive-learning',
+'curriculum-digital',
+'learning',
+'global-competency',
 
   // Resources
   'case-studies',
@@ -215,7 +238,9 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 <a class="dropdown-item <?php //echo ($page=='adaptive-learning')?'active':''; ?>" href="<?php //echo $base_url; ?>/adaptive-learning.php"><i class="fas fa-sliders-h mr-2"></i>Adaptive & Personalized Learning</a>
 <a class="dropdown-item <?php //echo ($page=='ai-learning')?'active':''; ?>" href="<?php //echo $base_url; ?>/ai-learning.php"><i class="fas fa-brain mr-2"></i>AI-Powered Analytics</a>
 <a class="dropdown-item <?php //echo ($page=='immersive-classrooms')?'active':''; ?>" href="<?php //echo $base_url; ?>/immersive-classrooms.php"><i class="fas fa-vr-cardboard mr-2"></i>Immersive Classrooms</a>
+
 <a class="dropdown-item <?php //echo ($page=='curriculum-digital')?'active':''; ?>" href="<?php //echo $base_url; ?>/curriculum-digital.php"><i class="fas fa-book-reader mr-2"></i>Curriculum Digitization</a>
+
 </div>
 
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
@@ -229,11 +254,15 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
 <h6 style="font-weight:bold;"><i class="fas fa-infinity mr-2"></i>Lifelong Learning & Support</h6>
+
 <a class="dropdown-item <?php //echo ($page=='learning')?'active':''; ?>" href="<?php //echo $base_url; ?>/learning.php"><i class="fas fa-network-wired mr-2"></i>Learning Ecosystem</a>
+
 <a class="dropdown-item <?php //echo ($page=='on-demand')?'active':''; ?>" href="<?php //echo $base_url; ?>/on-demand.php"><i class="fas fa-headset mr-2"></i>On-Demand Support</a>
 <a class="dropdown-item <?php //echo ($page=='career-counseling')?'active':''; ?>" href="<?php //echo $base_url; ?>/career-counseling.php"><i class="fas fa-user-tie mr-2"></i>Career Counseling</a>
 <a class="dropdown-item <?php //echo ($page=='resilience-programs')?'active':''; ?>" href="<?php //echo $base_url; ?>/resilience-programs.php"><i class="fas fa-shield-alt mr-2"></i>Resilience Programs</a>
+
 <a class="dropdown-item <?php //echo ($page=='global-competency')?'active':''; ?>" href="<?php //echo $base_url; ?>/global-competency.php"><i class="fas fa-globe mr-2"></i>Global Competency</a>
+
 </div>
 
 </div>
@@ -259,27 +288,27 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 </h6>
 
 <a class="dropdown-item <?php echo ($page=='schools-colleges')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/schools-colleges.php">
+   href="<?php echo $base_url; ?>/schools-colleges.php">
 <i class="fas fa-school mr-2"></i>Schools & Colleges
 </a>
 
 <a class="dropdown-item <?php echo ($page=='universities')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/universities.php">
+   href="<?php echo $base_url; ?>/higher-ed.php">
 <i class="fas fa-university mr-2"></i>Universities & Higher Education
 </a>
 
 <a class="dropdown-item <?php echo ($page=='corporates')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/corporates.php">
+   href="<?php echo $base_url; ?>/corporates.php">
 <i class="fas fa-industry mr-2"></i>Corporates & Industries
 </a>
 
 <a class="dropdown-item <?php echo ($page=='learners-professionals')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/learners-professionals.php">
+   href="<?php echo $base_url; ?>/learners-professionals.php">
 <i class="fas fa-user-graduate mr-2"></i>Learners & Professionals
 </a>
 
 <a class="dropdown-item <?php echo ($page=='ngos-government')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/ngos-government.php">
+   href="<?php echo $base_url; ?>/ngos-governments.php">
 <i class="fas fa-hands-helping mr-2"></i>NGOs & Government
 </a>
 </div>
@@ -291,62 +320,106 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 </h6>
 
 <a class="dropdown-item <?php echo ($page=='usecase-school-transformation')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/usecase-school-transformation.php">
+   href="<?php echo $base_url; ?>/usecase-school-transformation.php">
 <i class="fas fa-chalkboard mr-2"></i>School & College Transformation
 </a>
 
 <a class="dropdown-item <?php echo ($page=='usecase-campus-employability')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/usecase-campus-employability.php">
+   href="<?php echo $base_url; ?>/usecase-campus-employability.php">
 <i class="fas fa-briefcase mr-2"></i>Campus-to-Corporate Employability
 </a>
 
 <a class="dropdown-item <?php echo ($page=='usecase-workforce-skilling')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/usecase-workforce-skilling.php">
+   href="<?php echo $base_url; ?>/usecase-workforce-skilling.php">
 <i class="fas fa-user-tie mr-2"></i>Workforce Upskilling & Reskilling
 </a>
 
 <a class="dropdown-item <?php echo ($page=='usecase-lifelong-learning')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/usecase-lifelong-learning.php">
+   href="<?php echo $base_url; ?>/usecase-lifelong-learning.php">
 <i class="fas fa-infinity mr-2"></i>Lifelong Learning Pathways
 </a>
 
 <a class="dropdown-item <?php echo ($page=='usecase-social-impact')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/usecase-social-impact.php">
+   href="<?php echo $base_url; ?>/usecase-social-impact.php">
 <i class="fas fa-globe mr-2"></i>Social Impact & Capacity Building
 </a>
 </div>
 
-<!-- COLUMN C : RESOURCES -->
+<!-- COLUMN C : RESOURCES 
 <div class="col-lg-4 col-md-4 col-sm-12">
 <h6 class="font-weight-bold">
 <i class="fas fa-book mr-2"></i>Resources
 </h6>
 
-<a class="dropdown-item <?php echo ($page=='case-studies')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/case-studies.php">
+<a class="dropdown-item <?php //echo ($page=='case-studies')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/case-studies.php">
 <i class="fas fa-file-alt mr-2"></i>Case Studies
 </a>
 
-<a class="dropdown-item <?php echo ($page=='whitepapers')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/whitepapers.php">
+<a class="dropdown-item <?php //echo ($page=='whitepapers')?'active':''; ?>"
+   href="#<?php //echo $base_url; ?>/whitepapers.php">
 <i class="fas fa-scroll mr-2"></i>Whitepapers & Reports
 </a>
 
-<a class="dropdown-item <?php echo ($page=='research-insights')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/research-insights.php">
+<a class="dropdown-item <?php //echo ($page=='research-insights')?'active':''; ?>"
+   href="#<?php //echo $base_url; ?>/research-insights.php">
 <i class="fas fa-search mr-2"></i>Research & Insights
 </a>
 
-<a class="dropdown-item <?php echo ($page=='blogs-articles')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/blogs-articles.php">
+<a class="dropdown-item <?php //echo ($page=='blogs-articles')?'active':''; ?>"
+   href="#<?php //echo $base_url; ?>/blogs-articles.php">
 <i class="fas fa-blog mr-2"></i>Blogs & Articles
 </a>
 
-<a class="dropdown-item <?php echo ($page=='webinars')?'active':''; ?>"
-   href="#<?php echo $base_url; ?>/webinars.php">
+<a class="dropdown-item <?php //echo ($page=='webinars')?'active':''; ?>"
+   href="#<?php //echo $base_url; ?>/webinars.php">
 <i class="fas fa-video mr-2"></i>Webinars & Thought Leadership
 </a>
+</div>   ---->
+
+
+<!-- COLUMN C : EDUUASPIRE ADVANTAGE -->
+<div class="col-lg-4 col-md-4 col-sm-12">
+<h6 class="font-weight-bold">
+<i class="fas fa-star mr-2"></i>Why EduuAspire
+</h6>
+
+
+<a class="dropdown-item <?php echo ($page=='lxp')?'active':''; ?>" href="<?php echo $base_url; ?>/lxp.php"><i class="fas fa-layer-group mr-2"></i>Learning Experience Platform</a>
+<a class="dropdown-item <?php echo ($page=='adaptive-learning')?'active':''; ?>" href="<?php echo $base_url; ?>/adaptive-learning.php"><i class="fas fa-sliders-h mr-2"></i>Adaptive & Personalized Learning</a>
+<a class="dropdown-item <?php echo ($page=='curriculum-digital')?'active':''; ?>" href="<?php echo $base_url; ?>/curriculum-digital.php"><i class="fas fa-book-reader mr-2"></i>Curriculum Digitization</a>
+<a class="dropdown-item <?php echo ($page=='learning')?'active':''; ?>" href="<?php echo $base_url; ?>/learning.php"><i class="fas fa-network-wired mr-2"></i>Learning Ecosystem</a>
+<a class="dropdown-item <?php echo ($page=='global-competency')?'active':''; ?>" href="<?php echo $base_url; ?>/global-competency.php"><i class="fas fa-globe mr-2"></i>Global Competency</a>
+
+<!------
+<a class="dropdown-item <?php //echo ($page=='personalized-learning')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/personalized-learning.php">
+<i class="fas fa-user-cog mr-2"></i>Personalized Learning Journeys
+</a>
+
+<a class="dropdown-item <?php //echo ($page=='outcome-driven-skilling')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/outcome-driven-skilling.php">
+<i class="fas fa-bullseye mr-2"></i>Outcome-Driven Skill Development
+</a>
+
+<a class="dropdown-item <?php //echo ($page=='industry-aligned-curricula')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/industry-aligned-curricula.php">
+<i class="fas fa-industry mr-2"></i>Industry-Aligned Frameworks
+</a>
+
+<a class="dropdown-item <?php //echo ($page=='learning-analytics')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/learning-analytics.php">
+<i class="fas fa-chart-line mr-2"></i>Advanced Learning Analytics 
+</a>
+
+<a class="dropdown-item <?php //echo ($page=='scalable-institutional-lxp')?'active':''; ?>"
+   href="<?php //echo $base_url; ?>/scalable-institutional-lxp.php">
+<i class="fas fa-layer-group mr-2"></i>Scalable Institutional Architecture
+</a>
+---->
+
 </div>
+
 
 </div>
 </div>
@@ -400,33 +473,43 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 </li>
 
 
-
 <!-- ================= EDUUASPIRE PRODUCTS ================= -->
-<li class="nav-item dropdown" style="position:relative; <?php echo ($page=='products') ? 'active' : ''; ?>">
-  <a class="nav-link dropdown-toggle" <?php echo ($page=='products') ? 'active' : ''; ?>"  href="#" data-toggle="dropdown">
-  <i class="fas fa-th-large mr-1"></i> Platform</a>
+<li class="nav-item dropdown <?php echo $isPlatformActive ? 'active' : ''; ?>" style="position:relative;">
+  
+  <a class="nav-link dropdown-toggle <?php echo $isPlatformActive ? 'active' : ''; ?>"
+     href="#"
+     data-toggle="dropdown"
+     aria-haspopup="true"
+     aria-expanded="false">
+     
+     <i class="fas fa-th-large mr-1"></i> Platform
+  </a>
+
   <ul class="dropdown-menu" style="padding:10px; min-width:300px; left:0;">
-    <a class="dropdown-item <?php echo ($page=='core-lms')?'active':''; ?>" href="#core-lms.php">
-<i class="fas fa-server mr-2"></i>EduuAspire Core LMS <small class="text-muted">((eLearning Platform)</small>
-</a>
 
-<a class="dropdown-item <?php echo ($page=='lxp-platform')?'active':''; ?>" href="#lxp-platform.php">
-<i class="fas fa-compass mr-2"></i>EduuAspire LXP <small class="text-muted">(Experience Layer)</small>
-</a>
+    <a class="dropdown-item <?php echo ($page=='core-lms')?'active':''; ?>" href="core-lms.php">
+      <i class="fas fa-server mr-2"></i> EduuAspire Core LMS
+    </a>
 
-<a class="dropdown-item <?php echo ($page=='ai-studio')?'active':''; ?>" href="#ai-studio.php">
-<i class="fas fa-robot mr-2"></i>EduuAspire AI Studio <small class="text-muted">(AI & GenAI Modules)</small>
-</a>
+    <a class="dropdown-item <?php echo ($page=='lxp-platform')?'active':''; ?>" href="lxp-platform.php">
+      <i class="fas fa-compass mr-2"></i> EduuAspire LXP
+    </a>
 
-<a class="dropdown-item <?php echo ($page=='human-intelligence')?'active':''; ?>" href="#human-intelligence.php">
-<i class="fas fa-brain mr-2"></i>EduuAspire Human Intelligence Suite <small class="text-muted">(Human & cognitive capability building)</small>
-</a>
+    <a class="dropdown-item <?php echo ($page=='ai-studio')?'active':''; ?>" href="ai-studio.php">
+      <i class="fas fa-robot mr-2"></i> EduuAspire AI Studio
+    </a>
 
-<a class="dropdown-item <?php echo ($page=='credentials')?'active':''; ?>" href="#credentials.php">
-<i class="fas fa-certificate mr-2"></i>EduuAspire Credentials & Trust Layer <small class="text-muted">(Digital credentials, analytics & verification)</small>
-</a>
+    <a class="dropdown-item <?php echo ($page=='human-intelligence')?'active':''; ?>" href="human-intelligence.php">
+      <i class="fas fa-brain mr-2"></i> EduuAspire Human Intelligence Suite
+    </a>
+
+    <a class="dropdown-item <?php echo ($page=='credentials')?'active':''; ?>" href="credentials.php">
+      <i class="fas fa-certificate mr-2"></i> EduuAspire Credentials & Trust Layer
+    </a>
+
   </ul>
 </li>
+
 
 
 <!-- ================= EDUUASPIRE 21.0 ================= -->
@@ -453,8 +536,8 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 
 <div class="col-lg-4 col-md-6 col-sm-12" style="padding:5px 15px;">
 <h6><i class="fas fa-dna mr-2"></i>Edu-K Framework </h6>
-<a class="dropdown-item" href="#"> <i class="fas fa-brain mr-2"></i>Educational Kinesiology</a>
-<a class="dropdown-item" href="#"><i class="fas fa-project-diagram mr-2"> </i>Cognitive & Neural Capability</a>
+<a class="dropdown-item <?php echo ($page=='kinesiology')?'active':''; ?>" href="educational-kinesiology.php"> <i class="fas fa-brain mr-2"></i>Educational Kinesiology</a>
+<a class="dropdown-item <?php echo ($page=='cognitive')?'active':''; ?>" href="cognitive-capability.php"><i class="fas fa-project-diagram mr-2"> </i>Cognitive & Neural Capability</a>
 <a class="dropdown-item <?php echo ($page=='3rs-8cs-3ms')?'active':''; ?>" href="3rs.php"><i class="fas fa-project-diagram mr-2"></i>3Rs 8Cs 3Ms' Literacy</a>
 <a class="dropdown-item <?php echo ($page=='innovation')?'active':''; ?>" href="innovation-design.php">
 <i class="fas fa-lightbulb mr-2"></i>Innovation & Design Thinking
@@ -512,29 +595,29 @@ $isWhomWeServeActive = in_array($page, $whomWeServePages);
 
   <ul class="dropdown-menu" style="padding:10px; min-width:300px; left:0;">
   
-  <a class="dropdown-item <?php echo ($page=='who-we-are')?'active':''; ?>" href="#who-we-are.php">
+  <a class="dropdown-item <?php echo ($page=='who-we-are')?'active':''; ?>" href="who-we-are.php">
 <i class="fas fa-compass mr-2"></i>Who We Are
 </a>
 
-<a class="dropdown-item <?php echo ($page=='leadership-team')?'active':''; ?>" href="#leadership-team.php">
+<a class="dropdown-item <?php echo ($page=='leadership-team')?'active':''; ?>" href="leadership-team.php">
 <i class="fas fa-users-cog mr-2"></i>Leadership Team
 </a>
 
-<a class="dropdown-item <?php echo ($page=='collaborations')?'active':''; ?>" href="#collaborations.php">
+<a class="dropdown-item <?php echo ($page=='collaborations')?'active':''; ?>" href="collaborations.php">
 <i class="fas fa-handshake mr-2"></i>Collaborations & Partnerships
 </a>
 
-<a class="dropdown-item <?php echo ($page=='careers')?'active':''; ?>" href="#careers.php">
+<a class="dropdown-item <?php echo ($page=='careers')?'active':''; ?>" href="careers.php">
 <i class="fas fa-briefcase mr-2"></i>Careers @ EduuAspire
 </a>
 
-<a class="dropdown-item <?php echo ($page=='join-as-mentor')?'active':''; ?>" href="#join-as-mentor.php">
+<a class="dropdown-item <?php echo ($page=='join-as-mentor')?'active':''; ?>" href="join-as-mentor.php">
 <i class="fas fa-user-plus mr-2"></i>Join Us as a Mentor
 </a>
 <a class="dropdown-item <?php echo ($page=='research-insights')?'active':''; ?>" href="research-insights.php">
 <i class="fas fa-search mr-2"></i>Research & Insights
 </a>
-<a class="dropdown-item <?php echo ($page=='home-tutoring')?'active':''; ?>" href="#home-tutoring.php">
+<a class="dropdown-item <?php echo ($page=='home-tutoring')?'active':''; ?>" href="home-tutoring.php">
 <i class="fas fa-home mr-2"></i>Home Tutoring & Mentoring
 </a>
 

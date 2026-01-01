@@ -264,6 +264,196 @@ include_once('head-nav.php');
 
 
 
+<!-- ================= FUTURE OF WORK FRAMEWORK ================= -->
+<section id="future-work-framework" class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <div class="heading-title bottom40 wow fadeInUp" data-wow-delay="300ms">
+            <span class="defaultcolor">Framework Continuity</span>
+            <h2 class="darkcolor font-normal">
+                From 21st Century Skills to the
+                <span class="defaultcolor">Future of Work Era</span>
+            </h2>
+            <p class="top10">
+                The future of work does not discard human skills —
+                it amplifies their importance in AI-augmented, automated,
+                and rapidly shifting work environments.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Built on Human Foundations</h4>
+            <p>
+                Critical thinking, communication, collaboration,
+                creativity, ethics, and leadership remain
+                the core of meaningful work.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="350ms">
+            <div class="icon"><i class="fas fa-robot"></i></div>
+            <h4>Extended for AI-Augmented Work</h4>
+            <p>
+                These skills must now be applied alongside automation,
+                AI tools, intelligent systems, and digital workflows.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <h4>Designed for Lifelong Careers</h4>
+            <p>
+                Careers become evolving identities —
+                requiring continuous learning, reinvention,
+                and resilience across decades.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+
+<!-- ================= FUTURE OF WORK PATHWAYS ================= -->
+<section class="padding_top padding_bottom bg-white">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Career-Stage Based
+            <span class="defaultcolor">Future of Work Pathways</span>
+        </h2>
+        <p class="bottom40">
+            Progressive pathways that prepare learners
+            for evolving careers across life stages,
+            industries, and economic shifts.
+        </p>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-child"></i></div>
+            <h4>School Learners</h4>
+            <p>
+                Career awareness, adaptability,
+                problem-solving, teamwork,
+                and early exposure to evolving work realities.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>College & Early Career</h4>
+            <p>
+                Career exploration, transferable skills,
+                interdisciplinary thinking, internships,
+                and portfolio-based employability.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h4>Professionals & Workforce</h4>
+            <p>
+                Reskilling, leadership transitions,
+                human–AI collaboration, career pivots,
+                and long-term relevance.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= FUTURE OF WORK IMPACT ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Outcome Architecture</span>
+        <h2 class="font-normal bottom20">
+            How Future of Work Programs
+            <span class="defaultcolor">Create Long-Term Impact</span>
+        </h2>
+        <p class="bottom40">
+            EduuAspire’s Future of Work programs move learners
+            beyond job readiness toward career resilience,
+            adaptability, and lifelong employability.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-user-cog"></i></div>
+        <h4>From Job Seekers to Career Architects</h4>
+        <p>
+            Learners design flexible career identities,
+            build transferable skills,
+            and confidently navigate uncertainty.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-sync-alt"></i></div>
+        <h4>From Static Skills to Continuous Reinvention</h4>
+        <p>
+            Programs embed reskilling, learning agility,
+            and adaptability as permanent capabilities,
+            not one-time interventions.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-infinity"></i></div>
+        <h4>From Employability to Lifelong Relevance</h4>
+        <p>
+            Learners remain relevant across decades,
+            industries, technologies,
+            and economic transitions.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+
 
 
 

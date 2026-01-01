@@ -264,6 +264,270 @@ include_once('head-nav.php');
 </section>
 
 
+<!-- ================= INNOVATION FRAMEWORK CONTINUITY ================= -->
+<section id="innovation-framework" class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <div class="heading-title bottom40 wow fadeInUp" data-wow-delay="300ms">
+            <span class="defaultcolor">Framework Continuity</span>
+            <h2 class="darkcolor font-normal">
+                From Creativity to
+                <span class="defaultcolor">Responsible Innovation</span>
+            </h2>
+            <p class="top10">
+                Innovation is no longer accidental or limited to elite teams.
+                It is a learnable, repeatable human capability that must be
+                embedded across education, work, and society.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Beyond Ideation Workshops</h4>
+            <p>
+                Innovation becomes a structured capability—
+                not a one-time brainstorming activity.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="350ms">
+            <div class="icon"><i class="fas fa-project-diagram"></i></div>
+            <h4>Systematic Problem Solving</h4>
+            <p>
+                Learners apply empathy, reasoning,
+                experimentation, and feedback
+                to real-world challenges.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <h4>Innovation as Life Skill</h4>
+            <p>
+                Design thinking becomes a transferable
+                skill for careers, leadership,
+                and responsible citizenship.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= INNOVATION PATHWAYS ================= -->
+<section class="padding_top padding_bottom bg-white">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Innovation & Design Thinking
+            <span class="defaultcolor">Across Life Stages</span>
+        </h2>
+        <p class="bottom40">
+            Progressive innovation pathways that evolve
+            from curiosity to impact, entrepreneurship,
+            and leadership.
+        </p>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-child"></i></div>
+            <h4>School Learners</h4>
+            <p>
+                Curiosity, empathy, creative confidence,
+                problem identification,
+                and early prototyping.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>College & Youth</h4>
+            <p>
+                Design sprints, innovation challenges,
+                interdisciplinary collaboration,
+                and solution validation.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h4>Professionals & Entrepreneurs</h4>
+            <p>
+                Innovation leadership, business design,
+                social innovation,
+                and continuous improvement.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= INNOVATION SIMULATIONS ================= -->
+<section class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Real-World
+            <span class="defaultcolor">Innovation & Design Labs</span>
+        </h2>
+        <p class="bottom40">
+            Experiential environments where learners
+            apply design thinking to complex,
+            uncertain, and meaningful challenges.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-users"></i></div>
+            <h4>User Empathy & Problem Discovery Labs</h4>
+            <p>
+                Conduct interviews, observations,
+                and journey mapping to uncover
+                real human needs.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-drafting-compass"></i></div>
+            <h4>Rapid Prototyping Studios</h4>
+            <p>
+                Build low-fidelity and digital prototypes,
+                test assumptions,
+                and iterate solutions quickly.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-sync-alt"></i></div>
+            <h4>Failure & Iteration Challenges</h4>
+            <p>
+                Learn how to respond to failure,
+                incorporate feedback,
+                and improve designs responsibly.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-balance-scale"></i></div>
+            <h4>Ethical Innovation Decision Rooms</h4>
+            <p>
+                Navigate trade-offs involving ethics,
+                sustainability,
+                inclusivity, and social impact.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= INNOVATION IMPACT ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Outcome Architecture</span>
+        <h2 class="font-normal bottom20">
+            How Innovation & Design Thinking
+            <span class="defaultcolor">Creates Lasting Impact</span>
+        </h2>
+        <p class="bottom40">
+            EduuAspire’s innovation approach builds
+            human-centered problem solvers,
+            not just idea generators.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-lightbulb"></i></div>
+        <h4>From Ideas to Implementable Solutions</h4>
+        <p>
+            Learners move beyond creativity
+            to designing solutions that are
+            feasible, ethical, and impactful.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-users-cog"></i></div>
+        <h4>From Individual Thinking to Collective Intelligence</h4>
+        <p>
+            Collaboration, co-creation,
+            and diverse perspectives
+            become core innovation strengths.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-infinity"></i></div>
+        <h4>From One-Time Innovation to Capability</h4>
+        <p>
+            Innovation becomes a repeatable,
+            lifelong capability that supports
+            careers, leadership, and entrepreneurship.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
 
 
 

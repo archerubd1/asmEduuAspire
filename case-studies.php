@@ -1,226 +1,263 @@
-<?php 
+<?php
 $page="case-studies";
 include_once('head-nav.php');
 ?>
 
-<!--Page Header-->
+<!-- ================= PAGE HEADER ================= -->
 <section id="main-banner-page" class="position-relative page-header service-header parallax section-nav-smooth">
-   <div class="container">
-     <div class="row">
-       <div class="col-lg-8 offset-lg-2">
-         <div class="page-titles whitecolor text-center padding_top padding_bottom">
-           <h2 class="font-light">Explore</h2>
-           <h2 class="fontbold">Case Studies & Whitepapers</h2>
-           <h2 class="font-light">Evidence • Insights • Impact</h2>
-           <h3 class="font-light">Real-world impact stories and research-driven publications shaping the future of learning and work</h3>
-         </div>
-       </div>
-     </div>
-     <div class="gradient-bg title-wrap bottom25">
-      <div class="row">
-        <div class="col-lg-12 col-md-12 whitecolor">
-         <h3 class="float-left">Case Studies & Whitepapers</h3>
-         <ul class="breadcrumb top10 bottom10 float-right hoverShine">
-           <li class="breadcrumb-item hover-light"><a href="#resources.php">Resources</a></li>
-           <li class="breadcrumb-item hover-light">Case Studies & Whitepapers</li>
-         </ul>
-       </div>
-      </div>
-     </div>
-   </div>
-</section>
-<!--Page Header ends -->
+    <div class="container">
 
-<!-- Case Studies & Whitepapers -->  
+        <div class="row">
+            <div class="col-lg-6 offset-lg-3">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-light">Evidence in Action</h2>
+                    <h2 class="fontbold">Institutional Case Studies</h2>
+                    <h2 class="font-light">Schools • Colleges • Universities</h2>
+                    <h3 class="font-light">
+                        Real-world transformations driven by learning science,
+                        institutional capability systems, and future-readiness frameworks
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="gradient-bg title-wrap bottom25">
+            <div class="row">
+                <div class="col-lg-12 whitecolor">
+                    <h3 class="float-left">Case Studies</h3>
+                    <ul class="breadcrumb top10 bottom10 float-right hoverShine">
+                        <li class="breadcrumb-item hover-light">Resources</li>
+                        <li class="breadcrumb-item hover-light">Case Studies</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- ================= HEADER ENDS ================= -->
+
+
+<!-- ================= CASE STUDIES ================= -->
 <section id="our-blog" class="bglight padding">
-   <div class="container">
-      <!-- Keep id blog-measonry for CubePortfolio -->
-      <div id="blog-measonry" class="cbp top25">
+<div class="container">
 
-         <!-- Case Study 1 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-digital-campus.php">
-                  <img src="images/fc.jpg" alt="Digital Campus Case Study" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-digital-campus.php">Case Study: Building a Digital Campus</a></h3>
-                  <p class="bottom35">How one institution transitioned to a digital ecosystem, driving 40% higher learner engagement.</p>
-                  <a href="#case-digital-campus.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+<!-- ================= FILTER CHIPS ================= -->
+<div class="row bottom30">
+    <div class="col-lg-12 text-center">
 
-         <!-- Whitepaper 1 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-future-skills.php">
-                  <img src="images/w23.jpg" alt="Future Skills Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-future-skills.php">Whitepaper: Future Skills 2030</a></h3>
-                  <p class="bottom35">An in-depth analysis of the competencies essential for the workforce of tomorrow.</p>
-                  <a href="#whitepaper-future-skills.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+        <ul class="case-filter list-inline">
 
-         <!-- Case Study 2 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-blockchain-credentials.php">
-                  <img src="images/bb.jpg" alt="Blockchain Credentialing" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-blockchain-credentials.php">Case Study: Blockchain for Credentialing</a></h3>
-                  <p class="bottom35">Deploying blockchain to ensure trusted, tamper-proof learner credentials.</p>
-                  <a href="#case-blockchain-credentials.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip active" data-filter="all">
+                    <i class="fas fa-th-large mr-1"></i> All
+                </button>
+            </li>
 
-         <!-- Whitepaper 2 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-ai-analytics.php">
-                  <img src="images/ai.jpg" alt="AI Analytics Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-ai-analytics.php">Whitepaper: AI in Learning Analytics</a></h3>
-                  <p class="bottom35">Exploring AI’s role in delivering measurable insights and personalized learning.</p>
-                  <a href="#whitepaper-ai-analytics.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="k12">
+                    <i class="fas fa-school mr-1"></i> K–12
+                </button>
+            </li>
 
-         <!-- Case Study 3 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-career-pathways.php">
-                  <img src="images/cr.jpg" alt="Career Pathways Case Study" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-career-pathways.php">Case Study: Career Pathways Labs</a></h3>
-                  <p class="bottom35">Bridging academia-to-industry gaps and boosting placement outcomes by 35%.</p>
-                  <a href="#case-career-pathways.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="college">
+                    <i class="fas fa-university mr-1"></i> Colleges
+                </button>
+            </li>
 
-         <!-- Whitepaper 3 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-global-competence.php">
-                  <img src="images/gc.jpg" alt="Global Competence Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-global-competence.php">Whitepaper: Global Competence Framework</a></h3>
-                  <p class="bottom35">Frameworks for intercultural skills and international readiness.</p>
-                  <a href="#whitepaper-global-competence.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="ai">
+                    <i class="fas fa-robot mr-1"></i> AI & LXP
+                </button>
+            </li>
 
-         <!-- Case Study 4 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-startup-readiness.php">
-                  <img src="images/be.jpg" alt="Startup Readiness Case Study" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-startup-readiness.php">Case Study: Start-up Readiness Programs</a></h3>
-                  <p class="bottom35">How incubation and mentorship boosted student entrepreneurship outcomes.</p>
-                  <a href="#case-startup-readiness.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="nep">
+                    <i class="fas fa-balance-scale mr-1"></i> NEP
+                </button>
+            </li>
 
-         <!-- Whitepaper 4 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-edtech-trends.php">
-                  <img src="images/et.jpg" alt="EdTech Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-edtech-trends.php">Whitepaper: Emerging EdTech Trends</a></h3>
-                  <p class="bottom35">Analysis of immersive tools, adaptive platforms, and global adoption.</p>
-                  <a href="#whitepaper-edtech-trends.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="employability">
+                    <i class="fas fa-briefcase mr-1"></i> Employability
+                </button>
+            </li>
 
-         <!-- Case Study 5 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-ai-adoption.php">
-                  <img src="images/ai.jpg" alt="AI Adoption Case Study" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-ai-adoption.php">Case Study: AI Adoption in Classrooms</a></h3>
-                  <p class="bottom35">How adaptive AI tools increased learning outcomes across STEM subjects.</p>
-                  <a href="#case-ai-adoption.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+            <li class="list-inline-item">
+                <button class="filter-chip" data-filter="human">
+                    <i class="fas fa-brain mr-1"></i> Human Intelligence
+                </button>
+            </li>
 
-         <!-- Whitepaper 5 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-digital-fluency.php">
-                  <img src="images/df.jpg" alt="Digital Fluency Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-digital-fluency.php">Whitepaper: Digital Fluency in Education</a></h3>
-                  <p class="bottom35">Defining and embedding digital fluency as the new literacy.</p>
-                  <a href="#whitepaper-digital-fluency.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+        </ul>
 
-         <!-- Case Study 6 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#case-global-programs.php">
-                  <img src="images/gc.jpg" alt="Global Programs Case Study" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#case-global-programs.php">Case Study: Global Competency Programs</a></h3>
-                  <p class="bottom35">International exposure and cross-cultural training for future-ready graduates.</p>
-                  <a href="#case-global-programs.php" class="button gradient-btn">View Case Study</a>
-               </div>
-            </div>
-         </div>
+    </div>
+</div>
 
-         <!-- Whitepaper 6 -->
-         <div class="cbp-item">
-            <div class="news_item shadow">
-               <a class="image" href="#whitepaper-career-insights.php">
-                  <img src="images/cr.jpg" alt="Career Insights Whitepaper" class="img-responsive">
-               </a>
-               <div class="news_desc">
-                  <h3 class="darkcolor"><a href="#whitepaper-career-insights.php">Whitepaper: Career Readiness Insights</a></h3>
-                  <p class="bottom35">Evidence-backed strategies for bridging the education-to-employment gap.</p>
-                  <a href="#whitepaper-career-insights.php" class="button gradient-btn">Download Whitepaper</a>
-               </div>
-            </div>
-         </div>
+<!-- ================= CASE STUDIES GRID ================= -->
+<div id="blog-measonry" class="cbp top25">
 
-      </div>
+<!-- CASE 1 -->
+<div class="cbp-item" data-category="k12 nep">
+    <div class="news_item shadow">
+        <a class="image" href="case-k12-mastery.php">
+            <img src="images/eduu/case-k12.jpg" alt="K–12 Learning Mastery" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                K–12 Shift from Rote Learning to Mastery-Based Education
+            </h3>
+            <p class="bottom30">
+                How a CBSE school rebuilt curriculum, assessment, and teaching systems
+                to deliver measurable learning mastery aligned to NEP 2020.
+            </p>
+            <a href="case-k12-mastery.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
 
-      <!-- Pagination -->
-      <div class="row">   
-         <div class="col-sm-12">
-            <ul class="pagination justify-content-center top50">
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-left"></i></a></li>
-               <li class="page-item active"><a class="page-link" href="#">1</a></li>
-               <li class="page-item"><a class="page-link" href="#">2</a></li>
-               <li class="page-item"><a class="page-link" href="#">3</a></li>
-               <li class="page-item"><a class="page-link" href="#"><i class="fa fa-angle-right"></i></a></li>
-            </ul>
-         </div>
-      </div>
-   </div>
+<!-- CASE 2 -->
+<div class="cbp-item" data-category="k12 faculty nep">
+    <div class="news_item shadow">
+        <a class="image" href="case-k12-faculty.php">
+            <img src="images/eduu/case-teacher.jpg" alt="Faculty Enablement" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                Reducing Teacher Burnout Through Faculty Capability Systems
+            </h3>
+            <p class="bottom30">
+                A school network transformation restoring teaching confidence,
+                consistency, and classroom effectiveness at scale.
+            </p>
+            <a href="case-k12-faculty.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
+
+<!-- CASE 3 -->
+<div class="cbp-item" data-category="college employability">
+    <div class="news_item shadow">
+        <a class="image" href="case-college-employability.php">
+            <img src="images/eduu/case-employ.jpg" alt="College Employability" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                Bridging the Degree–Employability Gap in Higher Education
+            </h3>
+            <p class="bottom30">
+                How a multidisciplinary college embedded future skills,
+                career pathways, and employability labs.
+            </p>
+            <a href="case-college-employability.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
+
+<!-- CASE 4 -->
+<div class="cbp-item" data-category="ai college">
+    <div class="news_item shadow">
+        <a class="image" href="case-ai-lxp.php">
+            <img src="images/eduu/case-ai.jpg" alt="AI LXP" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                AI-Enabled Learning Experience Platforms at Scale
+            </h3>
+            <p class="bottom30">
+                Personalization, analytics, and adaptive learning—without
+                increasing faculty workload.
+            </p>
+            <a href="case-ai-lxp.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
+
+<!-- CASE 5 -->
+<div class="cbp-item" data-category="human k12 college">
+    <div class="news_item shadow">
+        <a class="image" href="case-human-intelligence.php">
+            <img src="images/eduu/case-human.jpg" alt="Human Intelligence" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                Building Human Intelligence Beyond Academics
+            </h3>
+            <p class="bottom30">
+                How EduuAspire 21.0 embedded resilience, adaptability,
+                and learning-to-learn across institutions.
+            </p>
+            <a href="case-human-intelligence.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
+
+<!-- CASE 6 -->
+<div class="cbp-item" data-category="college nep governance">
+    <div class="news_item shadow">
+        <a class="image" href="case-nep-governance.php">
+            <img src="images/eduu/case-nep.jpg" alt="NEP Governance" class="img-responsive">
+        </a>
+        <div class="news_desc">
+            <h3 class="font-normal darkcolor">
+                From NEP Compliance to NEP Advantage
+            </h3>
+            <p class="bottom30">
+                Leadership-level transformation from checklist compliance
+                to outcome-driven institutional readiness.
+            </p>
+            <a href="case-nep-governance.php" class="button gradient-btn">Read Case Study</a>
+        </div>
+    </div>
+</div>
+
+</div>
+</div>
 </section>
-<!--Case Studies & Whitepapers Ends-->
+
+<!-- ================= FILTER STYLES ================= -->
+<style>
+.filter-chip {
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    color: #555;
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+.filter-chip:hover {
+    background: #f5f7fa;
+}
+.filter-chip.active {
+    background: linear-gradient(135deg, #1fb6ff, #3fdad8);
+    color: #fff;
+    border-color: transparent;
+}
+</style>
+
+<!-- ================= FILTER LOGIC ================= -->
+<script>
+document.querySelectorAll('.filter-chip').forEach(button => {
+    button.addEventListener('click', function () {
+
+        document.querySelectorAll('.filter-chip').forEach(btn => btn.classList.remove('active'));
+        this.classList.add('active');
+
+        const filter = this.dataset.filter;
+
+        document.querySelectorAll('.cbp-item').forEach(item => {
+            const cats = item.dataset.category;
+            if (filter === 'all' || cats.includes(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+</script>
 
 <?php include_once('footer.php'); ?>

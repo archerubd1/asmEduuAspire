@@ -262,6 +262,195 @@ include_once('head-nav.php');
 
 </section>
 
+<!-- ================= HUMAN SKILLS FRAMEWORK ================= -->
+<section id="human-skills-framework" class="padding_top padding_bottom bg-light">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <div class="heading-title bottom40 wow fadeInUp" data-wow-delay="300ms">
+            <span class="defaultcolor">Framework Continuity</span>
+            <h2 class="darkcolor font-normal">
+                From 21st Century Skills to
+                <span class="defaultcolor">Human-Centered Futures</span>
+            </h2>
+            <p class="top10">
+                As technology accelerates, it is human skills that anchor meaning,
+                ethics, leadership, and responsibility in an automated world.
+            </p>
+        </div>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="300ms">
+            <div class="icon"><i class="fas fa-layer-group"></i></div>
+            <h4>Rooted in Human Foundations</h4>
+            <p>
+                Critical thinking, empathy, collaboration,
+                communication, ethics, and leadership
+                remain the bedrock of human development.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="350ms">
+            <div class="icon"><i class="fas fa-robot"></i></div>
+            <h4>Essential in an AI World</h4>
+            <p>
+                As AI handles tasks and information,
+                human skills guide judgment, interpretation,
+                accountability, and values.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item wow fadeInUp" data-wow-delay="400ms">
+            <div class="icon"><i class="fas fa-forward"></i></div>
+            <h4>Designed for Life, Not Just Work</h4>
+            <p>
+                Human skills empower individuals
+                to thrive across careers, relationships,
+                leadership roles, and civic life.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= HUMAN SKILLS PATHWAYS ================= -->
+<section class="padding_top padding_bottom bg-white">
+<div class="container">
+
+<div class="row text-center">
+    <div class="col-lg-12">
+        <h2 class="darkcolor font-normal bottom30">
+            Life-Stage Based
+            <span class="defaultcolor">Human Skills Pathways</span>
+        </h2>
+        <p class="bottom40">
+            Progressive development of human skills
+            across education, work, leadership,
+            and lifelong growth.
+        </p>
+    </div>
+</div>
+
+<div class="row text-center">
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-child"></i></div>
+            <h4>School Learners</h4>
+            <p>
+                Emotional awareness, communication,
+                empathy, teamwork, curiosity,
+                and ethical foundations.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-user-graduate"></i></div>
+            <h4>College & Youth</h4>
+            <p>
+                Critical reasoning, collaboration,
+                leadership identity, responsibility,
+                and social intelligence.
+            </p>
+        </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 bottom30">
+        <div class="feature-item">
+            <div class="icon"><i class="fas fa-briefcase"></i></div>
+            <h4>Professionals & Leaders</h4>
+            <p>
+                Ethical leadership, empathy-driven management,
+                decision-making under uncertainty,
+                and organizational influence.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</section>
+
+
+
+<!-- ================= HUMAN SKILLS IMPACT ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Outcome Architecture</span>
+        <h2 class="font-normal bottom20">
+            How Human Skills
+            <span class="defaultcolor">Create Enduring Impact</span>
+        </h2>
+        <p class="bottom40">
+            EduuAspire Human Skills programs move beyond
+            soft-skill training to build resilient,
+            ethical, and adaptive human capability.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-user-cog"></i></div>
+        <h4>From Task Execution to Human Judgment</h4>
+        <p>
+            Learners develop the ability to think independently,
+            weigh consequences, and make responsible decisions
+            beyond automated systems.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4>From Individual Performance to Collective Strength</h4>
+        <p>
+            Strong communication, empathy, and collaboration
+            enable healthier teams and sustainable organizations.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item text-center h-100">
+        <div class="icon"><i class="fas fa-infinity"></i></div>
+        <h4>From Skill Training to Life Capability</h4>
+        <p>
+            Human skills remain relevant across careers,
+            leadership roles, social contexts,
+            and lifelong transitions.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+
 
 
 

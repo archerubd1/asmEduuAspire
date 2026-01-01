@@ -1,246 +1,325 @@
-<?php 
+<?php
 $page="learning";
 include_once('head-nav.php');
-
-
-
 ?>
 
-<!--Page Header-->
-<section id="main-banner-page" class="position-relative page-header service-detail-header section-nav-smooth parallax">
-
+<!-- ================= PAGE HEADER ================= -->
+<section id="main-banner-page" class="position-relative page-header service-header section-nav-smooth parallax">
     <div class="overlay overlay-dark opacity-7 z-index-1"></div>
     <div class="container">
-	
-       <div class="row">
-    <div class="col-lg-8 offset-lg-2">
-        <div class="page-titles whitecolor text-center padding_top padding_bottom">
-            <h2 class="font-xlight pt-3">Explore</h2>
-            <h2 class="font-bold">Your Learning Ecosystem</h2>
-            <h2 class="font-xlight">Learn • Apply • Transform</h2>
-            <h3 class="font-light pb-4 pt-2">
-                Unlock personalized pathways to 21st-century skills and career growth
-            </h3>
+
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="page-titles whitecolor text-center padding_top padding_bottom">
+                    <h2 class="font-xlight pt-3">Design</h2>
+                    <h2 class="font-bold">Future-Ready Learning Ecosystems</h2>
+                    <h2 class="font-xlight">Integrate • Engage • Evolve</h2>
+                    <h3 class="font-light pb-4 pt-2">
+                        Building connected learning environments that grow human capability,
+                        institutional resilience, and long-term impact
+                    </h3>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
         <div class="gradient-bg title-wrap mt-n5">
             <div class="row">
-                <div class="col-lg-12 col-md-12 whitecolor">
-                    <h3 class="float-left">Learning Ecosystem</h3>
+                <div class="col-lg-12 whitecolor">
+                    <h3 class="float-left">EduuAspire Learning Ecosystem</h3>
                     <ul class="breadcrumb top10 bottom10 float-right">
-                         <li class="breadcrumb-item hover-light"><a href="#">Future Pathways</a></li>
-                        <li class="breadcrumb-item hover-light">Lifelong Learning & Support</li>
+                        <li class="breadcrumb-item hover-light">Future Pathways</li>
+                        <li class="breadcrumb-item hover-light">Learning Ecosystem</li>
                     </ul>
                 </div>
             </div>
         </div>
+
     </div>
 </section>
-<!--Page Header ends -->
+<!-- ================= PAGE HEADER ENDS ================= -->
 
 
+<!-- ================= OVERVIEW ================= -->
+<section class="padding_top padding_bottom bg-white">
+<div class="container">
 
-<!-- Learning Ecosystem Overview -->
-<section id="lxp-overview" class="padding_top padding_bottom bg-white">
-    <div class="container aboutus">
+<div class="row align-items-center">
 
-        <!-- Section 1: Learning Ecosystem Introduction -->
-        <div class="row align-items-center">
-            <div class="col-lg-6 col-md-6 padding_bottom_half">
-                <div class="image">
-                    <img alt="Learning Ecosystem" src="images/eduu/phx ecosystem.jpg">
-                </div>
-            </div>
-            <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
-                <h2 class="darkcolor font-normal bottom30">
-                    PHX Innovates <span class="defaultcolor">Learning Ecosystem</span>
-                </h2>
-                <p class="bottom35"><p align=justify>
-                    Our ecosystem is a dynamic, interconnected platform designed to empower learners, educators, and institutions. Through personalized learning journeys, immersive technologies, and real-time insights, we create pathways that inspire, engage, and deliver measurable outcomes.
-                </p></p align=justify>
-                <a href="#" class="button btnsecondary gradient-btn pagescroll">Connect with Our L&D Expert</a>
-            </div>
+    <div class="col-lg-6 col-md-6 padding_bottom_half">
+        <div class="image">
+            <img src="images/eduu/learning-ecosystem.jpg" alt="Learning Ecosystem">
         </div>
+    </div>
 
-        <!-- Section 2: Core Features -->
-        <div class="row align-items-center">
+    <div class="col-lg-5 offset-lg-1 col-md-6 padding_bottom_half text-center text-md-left">
+        <h2 class="darkcolor font-normal bottom30">
+            What is a <span class="defaultcolor">Learning Ecosystem?</span>
+        </h2>
 
-            <!-- Left Column: Ecosystem Highlights -->
-            <div class="col-lg-5 col-md-6 text-center text-md-left">
-                <h2 class="darkcolor font-normal bottom30">
-                    Why <span class="defaultcolor">Our Ecosystem?</span>
-                </h2>
+        <p class="bottom20" align="justify">
+            A learning ecosystem is not a platform, a program, or a single methodology.
+            It is a **connected system of learning experiences, capabilities, relationships,
+            technologies, and outcomes** that continuously evolve with learners and society.
+        </p>
 
-                <p><strong><p align=justify>Personalized Learning:</strong> AI-driven pathways adapt to each learner’s pace, style, and goals.</p></p align=justify>
+        <p class="bottom20" align="justify">
+            EduuAspire’s learning ecosystem approach integrates curriculum,
+            pedagogy, human intelligence, technology, and real-world application—
+            ensuring learning does not stop at classrooms, courses, or certifications.
+        </p>
 
-                <p><strong><p align=justify>Immersive & Experiential:</strong> AR/VR/MR/XR classrooms, simulations, and gamified modules that make learning interactive.</p></p align=justify>
+        <p class="bottom35" align="justify">
+            The result is an ecosystem where learning becomes adaptive,
+            collaborative, experiential, and lifelong—aligned to academic,
+            employability, and societal impact goals.
+        </p>
 
-                <p><strong><p align=justify>Collaboration & Community:</strong> Peer learning, mentoring, and social engagement to foster knowledge sharing.</p></p align=justify>
+        <a href="book-a-call.php" target="_blank" class="button btnsecondary gradient-btn">
+            Connect with Our Learning Architect
+        </a>
+    </div>
 
-                <p><strong><p align=justify>Analytics & Insights:</strong> Real-time dashboards to track progress, engagement, and learning outcomes.</p></p align=justify>
+</div>
 
-                <p><strong><p align=justify>Integration & Scalability:</strong> Connects seamlessly with existing systems, tools, and industry platforms for flexible adoption.</p></p align=justify>
-            </div>
+<div class="row align-items-center">
 
-            <!-- Right Column: Impact Indicators -->
-            <div class="col-lg-6 offset-lg-1 col-md-6 padding_top_half">
-                <div class="progress-bars">
+    <div class="col-lg-5 col-md-6 text-center text-md-left">
+        <span class="defaultcolor">Measured Ecosystem Outcomes</span>
+        <h2 class="darkcolor font-normal bottom30">
+            What Strong Learning
+            <span class="defaultcolor">Ecosystems Enable</span>
+        </h2>
 
-                    <div class="progress">
-                        <p>Personalization & Adaptive Learning</p>
-                        <div class="progress-bar gradient-bg" data-value="95">
-                            <span class="gradient-bg whitecolor">95%</span>
-                        </div>
-                    </div>
+        <p class="bottom20" align="justify">
+            Learning ecosystems shift institutions from
+            content delivery to capability development—
+            producing outcomes that compound over time.
+        </p>
+    </div>
 
-                    <div class="progress">
-                        <p>Immersive AR/VR/MR/XR Experiences</p>
-                        <div class="progress-bar gradient-bg" data-value="92">
-                            <span class="gradient-bg whitecolor">92%</span>
-                        </div>
-                    </div>
+    <div class="col-lg-6 offset-lg-1 col-md-6 padding_top_half">
+        <div class="progress-bars">
 
-                    <div class="progress">
-                        <p>Collaboration & Social Learning</p>
-                        <div class="progress-bar gradient-bg" data-value="90">
-                            <span class="gradient-bg whitecolor">90%</span>
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p>Analytics & Outcome Tracking</p>
-                        <div class="progress-bar gradient-bg" data-value="93">
-                            <span class="gradient-bg whitecolor">93%</span>
-                        </div>
-                    </div>
-
-                    <div class="progress">
-                        <p>Integration & Scalability</p>
-                        <div class="progress-bar gradient-bg" data-value="91">
-                            <span class="gradient-bg whitecolor">91%</span>
-                        </div>
-                    </div>
-
+            <div class="progress">
+                <p>Learner Engagement & Ownership</p>
+                <div class="progress-bar gradient-bg" data-value="94">
+                    <span class="gradient-bg whitecolor">94%</span>
                 </div>
             </div>
 
-        </div>
-
-        <div><p><br><br></p></div>
-
-        <!-- Section 3: Ecosystem Offerings / USPs -->
-        <div id="services-measonry" class="cbp">
-
-            <!-- USP 1: Personalized Learning -->
-            <div class="cbp-item digital">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Personalized Learning" src="images/eduu/personalise learning.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Personalized Learning</h3>
-                        <p class="bottom15">AI-driven adaptive pathways to match each learner’s objectives, skills, and pace.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-personalized-learning.php">Learn More</a>
-                        </div>
-                    </div>
+            <div class="progress">
+                <p>Skill Application & Real-World Readiness</p>
+                <div class="progress-bar gradient-bg" data-value="92">
+                    <span class="gradient-bg whitecolor">92%</span>
                 </div>
             </div>
 
-            <!-- USP 2: Future Skills -->
-            <div class="cbp-item design">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Future Skills" src="images/eduu/future skill.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Future Skills</h3>
-                        <p class="bottom15">Hands-on learning in AI, Cybersecurity, Blockchain, Data Science, AR/VR/XR, and more.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-future-skills.php">Learn More</a>
-                        </div>
-                    </div>
+            <div class="progress">
+                <p>Collaboration & Social Learning Depth</p>
+                <div class="progress-bar gradient-bg" data-value="91">
+                    <span class="gradient-bg whitecolor">91%</span>
                 </div>
             </div>
 
-            <!-- USP 3: Immersive Experiences -->
-            <div class="cbp-item brand">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Immersive Experience" src="images/eduu/immer exp.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Immersive Experiences</h3>
-                        <p class="bottom15">Simulations, gamification, and AR/VR/MR/XR modules that engage learners deeply.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-immersive-experience.php">Learn More</a>
-                        </div>
-                    </div>
+            <div class="progress">
+                <p>Faculty Effectiveness & Facilitation Quality</p>
+                <div class="progress-bar gradient-bg" data-value="90">
+                    <span class="gradient-bg whitecolor">90%</span>
                 </div>
             </div>
 
-            <!-- USP 4: Campus-to-Corporate -->
-            <div class="cbp-item graphics">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Campus to Corporate" src="images/eduu/campus.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Campus-to-Corporate</h3>
-                        <p class="bottom15">Skill bridges, mentorship, and career pathways preparing learners for the workplace.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-campus-to-corporate.php">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- USP 5: Collaboration & Community -->
-            <div class="cbp-item digital">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Collaboration & Community" src="images/eduu/collab commu.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Collaboration & Community</h3>
-                        <p class="bottom15">Peer engagement, mentorship, and social learning to foster collaboration.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-collaboration.php">Learn More</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- USP 6: Analytics & Insights -->
-            <div class="cbp-item design graphics">
-                <div class="services-main">
-                    <div class="image bottom10">
-                        <img alt="Analytics & Insights" src="images/eduu/a and insights.jpg">
-                    </div>
-                    <div class="services-content text-center text-md-left">
-                        <h3 class="bottom10 darkcolor">Analytics & Insights</h3>
-                        <p class="bottom15">Real-time dashboards for learners, mentors, and institutions to track progress and outcomes.</p>
-                        <div class="usp-ctas">
-                            <a class="button-readmore" href="#lxp-analytics.php">Learn More</a>
-                        </div>
-                    </div>
+            <div class="progress">
+                <p>Lifelong Learning & Adaptability</p>
+                <div class="progress-bar gradient-bg" data-value="95">
+                    <span class="gradient-bg whitecolor">95%</span>
                 </div>
             </div>
 
         </div>
     </div>
+
+</div>
+
+</div>
 </section>
-<!-- Learning Ecosystem Section Ends -->
 
 
 
+<!-- ================= WHY THIS MATTERS ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Systemic Change • Long-Term Relevance</span>
+        <h2 class="font-normal bottom20">
+            Why Learning Ecosystems
+            <span class="defaultcolor">Matter Now</span>
+        </h2>
+
+        <p class="bottom40">
+            Traditional education and training models were built for
+            stable careers, predictable knowledge, and linear progression.
+            That world no longer exists.
+        </p>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-random"></i></div>
+        <h4 class="bottom10">Learning Is Continuous</h4>
+        <p>
+            Knowledge expires quickly. Skills evolve constantly.
+            Learning ecosystems ensure learners can
+            continuously acquire, apply, and update capabilities.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-users"></i></div>
+        <h4 class="bottom10">Learning Is Social</h4>
+        <p>
+            Most meaningful learning happens through interaction,
+            collaboration, mentoring, and shared problem-solving—
+            not isolated content consumption.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-briefcase"></i></div>
+        <h4 class="bottom10">Learning Must Translate to Action</h4>
+        <p>
+            Ecosystems connect learning to real-world contexts—
+            enabling application, judgment, and decision-making,
+            not just theoretical understanding.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
 
 
+<!-- ================= WHAT EDUUASPIRE DELIVERS ================= -->
+<section class="padding_top padding_bottom bg-white">
+<div class="container">
 
-<?php 
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center">
+        <span class="defaultcolor">Integrated Learning Ecosystem Design</span>
+        <h2 class="darkcolor font-normal bottom20">
+            What EduuAspire
+            <span class="defaultcolor">Delivers</span>
+        </h2>
+        <p class="bottom40">
+            EduuAspire designs learning ecosystems by combining
+            proven pedagogies, future-facing methodologies,
+            and technology-enabled experiences.
+        </p>
+    </div>
+</div>
 
-include_once('footer.php');
+<div id="services-measonry" class="cbp">
 
+<!-- MODULES -->
+<?php
+$modules = [
+["Problem-Based Learning","lxp-pbl.jpg","Real-world problems drive inquiry, critical thinking, and solution design."],
+["Project-Based Learning","lxp-project.jpg","Long-form projects that integrate knowledge, skills, and collaboration."],
+["Collaborative Learning","lxp-collab.jpg","Team-based learning environments mirroring workplace dynamics."],
+["Mentoring & Coaching","lxp-mentor.jpg","Guided development through expert and peer mentoring."],
+["Skills & Competency (Edu 5.0)","lxp-skills.jpg","Human + AI capability development aligned to future roles."],
+["Gamified Learning","lxp-game.jpg","Purpose-led gamification reinforcing motivation and mastery."],
+["Metaverse & Immersive Learning","lxp-meta.jpg","Simulations and immersive environments for experiential learning."],
+["Experiential & Work-Based Learning","lxp-work.jpg","Internships, simulations, and applied learning contexts."],
+["Lifelong Learning Pathways","lxp-life.jpg","Continuous upskilling and reskilling across life stages."]
+];
+
+foreach($modules as $m){
+echo '
+<div class="cbp-item digital">
+    <div class="services-main">
+        <div class="image bottom10">
+            <img src="images/eduu/'.$m[1].'" alt="'.$m[0].'">
+        </div>
+        <div class="services-content text-center text-md-left p-4">
+            <h3 class="bottom10 darkcolor">'.$m[0].'</h3>
+            <p class="bottom15">'.$m[2].'</p>
+        </div>
+    </div>
+</div>';
+}
 ?>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- ================= HOW IT CREATES IMPACT ================= -->
+<section class="padding_top padding_bottom bg-dark">
+<div class="container">
+
+<div class="row">
+    <div class="col-lg-10 offset-lg-1 text-center whitecolor">
+        <span class="defaultcolor">Outcome Architecture</span>
+        <h2 class="font-normal bottom20">
+            How Learning Ecosystems
+            <span class="defaultcolor">Create Impact</span>
+        </h2>
+    </div>
+</div>
+
+<div class="row">
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-user-cog"></i></div>
+        <h4 class="bottom10">Learner Agency & Confidence</h4>
+        <p>
+            Learners take ownership of learning,
+            build confidence, and develop self-direction
+            across changing contexts.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-chart-line"></i></div>
+        <h4 class="bottom10">Measurable Capability Growth</h4>
+        <p>
+            Skills, behaviors, and readiness become visible,
+            measurable, and continuously improvable.
+        </p>
+    </div>
+</div>
+
+<div class="col-lg-4 col-md-6 bottom30">
+    <div class="feature-item h-100 text-center">
+        <div class="icon"><i class="fas fa-infinity"></i></div>
+        <h4 class="bottom10">Sustainable Institutional Relevance</h4>
+        <p>
+            Institutions evolve from static providers
+            into living learning ecosystems with
+            long-term societal impact.
+        </p>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<?php include_once('footer.php'); ?>
