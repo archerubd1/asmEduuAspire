@@ -1,263 +1,418 @@
 <?php
 /**
- * Astraal LXP - Learner Learning Paths
- * Refactored for new session guard architecture
- * PHP 5.4 compatible (UwAmp / GoDaddy)
+ * Astraal LXP – Learner Learning Path
+ * Orchestration + Buckets (CONTROL PRESERVED)
+ * PHP 5.4 compatible
  */
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 require_once('../../config.php');
-require_once('../../session-guard.php'); // ✅ unified session management
+require_once('../../session-guard.php');
 
 $page = "learningPath";
 require_once('learnerHead_Nav2.php');
 
-// -----------------------------------------------------------------------------
-// Validate session
-// -----------------------------------------------------------------------------
-if (!isset($_SESSION['phx_user_id']) || !isset($_SESSION['phx_user_login'])) {
-    header("Location: ../../phxlogin.php?error=" . urlencode(base64_encode("Session expired. Please log in again.")));
+/* ---------------- SESSION ---------------- */
+if (!isset($_SESSION['phx_user_id'], $_SESSION['phx_user_login'])) {
+    header("Location: ../../phxlogin.php");
     exit;
 }
 
-$phx_user_id    = (int) $_SESSION['phx_user_id'];
-$phx_user_login = $_SESSION['phx_user_login'];
+$learner_id    = (int) $_SESSION['phx_user_id'];
+$learner_login = $_SESSION['phx_user_login'];
 
-// -----------------------------------------------------------------------------
-// Fetch learner autologin token dynamically
-// -----------------------------------------------------------------------------
+/* ---------------- FETCH STATES ---------------- */
+
+/* Intent */
+$intent = mysqli_fetch_assoc(mysqli_query($coni,"
+  SELECT * FROM learner_learning_intent
+  WHERE learner_id=$learner_id
+  ORDER BY intent_version DESC LIMIT 1
+"));
+
+/* Skill Gap */
+$skill = mysqli_fetch_assoc(mysqli_query($coni,"
+  SELECT * FROM learner_skill_gap
+  WHERE learner_id=$learner_id
+  ORDER BY skill_gap_version DESC LIMIT 1
+"));
+
+/* Direction */
+$direction = mysqli_fetch_assoc(mysqli_query($coni,"
+  SELECT * FROM learner_learning_direction
+  WHERE learner_id=$learner_id AND direction_status='accepted'
+  ORDER BY direction_version DESC LIMIT 1
+"));
+
+$currentDirection = $direction ? $direction['direction_code'] : 'not_set';
+
+/* ---------------- AUTOLOGIN ---------------- */
 $autoLoginToken = '';
-$query = mysqli_query($coni, "SELECT autologin FROM users WHERE login = '" . mysqli_real_escape_string($coni, $phx_user_login) . "' LIMIT 1");
-if ($query && mysqli_num_rows($query) > 0) {
-    $data = mysqli_fetch_assoc($query);
-    $autoLoginToken = isset($data['autologin']) ? trim($data['autologin']) : '';
-}
+$r = mysqli_fetch_assoc(mysqli_query($coni,"
+  SELECT autologin FROM users
+  WHERE login='".mysqli_real_escape_string($coni,$learner_login)."'
+  LIMIT 1
+"));
+if ($r) $autoLoginToken = trim($r['autologin']);
 
-// -----------------------------------------------------------------------------
-// Fetch user's enrolled courses
-// -----------------------------------------------------------------------------
-$sql_query = "
+/* ---------------- COURSES ---------------- 
+$coursesRes = mysqli_query($coni,"
 SELECT 
-    c.id AS course_id,
-    c.name AS course_name,
-    c.directions_ID,
-    d.name AS direction_name,
-    MIN(ltc.lessons_ID) AS first_lesson_id
-FROM 
-    courses c
-JOIN 
-    users_to_courses utc ON c.id = utc.courses_id
-JOIN 
-    directions d ON c.directions_ID = d.id
-LEFT JOIN 
-    lessons_to_courses ltc ON c.id = ltc.courses_ID
-WHERE 
-    utc.users_login = '" . mysqli_real_escape_string($coni, $phx_user_login) . "'
-GROUP BY 
-    c.id, c.name, c.directions_ID, d.name
-";
+  c.id AS course_id,
+  c.name AS course_name,
+  d.name AS bucket_name,
+  MIN(ltc.lessons_ID) AS first_lesson_id
+FROM courses c
+JOIN users_to_courses utc ON utc.courses_id=c.id
+JOIN directions d ON d.id=c.directions_ID
+LEFT JOIN lessons_to_courses ltc ON ltc.courses_ID=c.id
+WHERE utc.users_login='".mysqli_real_escape_string($coni,$learner_login)."'
+GROUP BY c.id, c.name, d.name
+");  
 
-$courses = mysqli_query($coni, $sql_query);
+$coursesRes = mysqli_query($coni,"
+SELECT
+  course_id,
+  course_name,
+  bucket_name,
+  first_lesson_id
+FROM v_lxp_learning_buckets
+");
 
-// -----------------------------------------------------------------------------
-// Classification mapping
-// -----------------------------------------------------------------------------
-function mapClassification($classification) {
-    $valid = array('K-12','Active Learning','Curated Paths','Skills Booster','Level Up Courses','Crowd Favourites');
-    $classification = ucwords(trim(strtolower($classification)));
-    return in_array($classification, $valid) ? $classification : '';
-}
 
-// -----------------------------------------------------------------------------
-// Prepare rows
-// -----------------------------------------------------------------------------
+
 $rows = array();
-if ($courses && mysqli_num_rows($courses) > 0) {
-    while ($r = mysqli_fetch_assoc($courses)) {
-        $rows[] = $r;
-    }
+while ($row = mysqli_fetch_assoc($coursesRes)) {
+    $rows[] = $row;
+}
+ */
+
+/* ---------------- COURSES (LXP VIEW) ---------------- */
+
+
+
+$coursesRes = mysqli_query($coni,"
+SELECT
+  course_id,
+  course_name,
+  bucket_name,
+  first_lesson_id
+FROM v_lxp_learning_buckets
+WHERE learner_login = '".mysqli_real_escape_string($coni,$learner_login)."'
+");
+
+
+$rows = array();
+while ($row = mysqli_fetch_assoc($coursesRes)) {
+    $rows[] = $row;
 }
 
-// -----------------------------------------------------------------------------
-// Display courses by category
-// -----------------------------------------------------------------------------
-function echoCoursesByCategory($rows, $category) {
+
+/* ---------------- HELPERS ---------------- */
+
+function stateBadge($text, $color, $icon) {
+    return '<span class="badge bg-label-'.$color.' ms-2">
+      <i class="'.$icon.' me-1"></i>'.$text.'
+    </span>';
+}
+
+function renderCourseBadges() {
+    return '
+      <div class="mt-1">
+        <span class="badge bg-label-info me-1"
+              data-bs-toggle="tooltip"
+              title="Recommended based on your accepted learning direction">
+          <i class="bx bx-compass me-1"></i>Recommended
+        </span>
+
+        <span class="badge bg-label-warning me-1"
+              data-bs-toggle="tooltip"
+              title="This course supports one or more of your learning milestones">
+          <i class="bx bx-flag me-1"></i>Boosts Milestone
+        </span>
+
+        <span class="badge bg-label-secondary"
+              data-bs-toggle="tooltip"
+              title="Popular among learners with similar roles or goals">
+          <i class="bx bx-group me-1"></i>Popular
+        </span>
+      </div>';
+}
+
+
+
+
+function echoCoursesByBucket($rows, $bucket) {
     $found = false;
 
-    $html = '<div class="table-responsive">
-    <table class="table table-bordered align-middle">
+    echo '<div class="table-responsive">
+      <table class="table table-bordered align-middle">
       <thead class="table-light">
         <tr>
-          <th style="text-align:center;">Code</th>
-          <th style="text-align:center;">Name</th>
-          <th style="text-align:center;">Direction</th>
-          <th colspan="2" style="text-align:center;">Action</th>
+          <th style="width:80px;text-align:center;">Code</th>
+          <th>Name</th>
+          <th style="width:120px;text-align:center;">Action</th>
         </tr>
-      </thead>
-      <tbody>';
+      </thead><tbody>';
 
-    foreach ($rows as $row) {
-        $classification = isset($row['direction_name']) ? $row['direction_name'] : '';
-        $mapped = mapClassification($classification);
-        if ($mapped === $category) {
-            $found = true;
-            $html .= '
-            <tr>
-              <td class="text-center">' . htmlspecialchars($row['course_id']) . '</td>
-              <td>' . htmlspecialchars($row['course_name']) . '</td>
-              <td>' . htmlspecialchars($classification) . '</td>
-              <td class="text-center">
-                <a href="course-description.php?cid=' . urlencode($row['course_id']) . '" title="View Description">
-                  <i class="bx bx-book-open text-success" style="font-size:22px;"></i>
-                </a>
-              </td>
-              <td class="text-center">
-                <a href="#" onclick="autoLoginAndRedirect(\'start_learning\', ' . (int)$row['course_id'] . ', ' . (int)$row['first_lesson_id'] . ')" title="Start Learning">
-                  <i class="bx bx-play-circle text-primary" style="font-size:22px;"></i>
-                </a>
-              </td>
-            </tr>';
-        }
+    foreach ($rows as $r) {
+        if ($r['bucket_name'] !== $bucket) continue;
+        $found = true;
+		
+        echo '<tr>
+          <td class="text-center">'.$r['course_id'].'</td>
+          <td>
+            <div class="fw-semibold">'.htmlspecialchars($r['course_name']).'</div>
+            '.renderCourseBadges().'
+			<span class="text-muted small d-block mt-1"
+      data-bs-toggle="tooltip"
+      title="Recommended based on your learning direction, milestones, and skill gaps.">
+  <i class="bx bx-info-circle me-1"></i>Why am I seeing this?
+</span></td>
+
+          <td class="text-center">
+            <a href="#" onclick="launchCourse('.$r['course_id'].','.(int)$r['first_lesson_id'].')">
+              <i class="bx bx-play-circle text-primary fs-3"></i>
+            </a>
+          </td>
+        </tr>';
     }
 
-    $html .= '</tbody></table></div>';
-    echo $found ? $html : '<h6 class="text-muted">No courses available in this category yet.</h6>';
+    echo '</tbody></table></div>';
+
+    if (!$found) {
+        echo '<div class="text-muted">No courses available yet.</div>';
+    }
 }
 ?>
 
-<!-- Auto Login Redirect Handler -->
 <script>
-function autoLoginAndRedirect(action, courseId, lessonId) {
-    let isLocal = (window.location.hostname === "localhost");
-    let base = isLocal 
-	
-        ? "http://localhost/evidya/www/" 
-        : "https://eduuaspire.online/lxp/lxpre/www/";
+function launchCourse(courseId, lessonId) {
+  let base = (location.hostname === 'localhost')
+    ? 'http://localhost/evidya/www/'
+    : 'https://eduuaspire.online/lxp/lxpre/www/';
 
-    let autoLoginKey = "<?php echo $autoLoginToken; ?>";
+  let key = "<?php echo $autoLoginToken; ?>";
+  if (!key || !lessonId) return alert('Unable to launch course');
 
-    if (!autoLoginKey) {
-        alert("Auto-login key not found for this user.");
-        return;
-    }
-
-    if (action === "start_learning" && (!lessonId || lessonId == 0)) {
-        alert("No lessons found for this course.");
-        return;
-    }
-
-    let autoLoginUrl = base + "index.php?autologin=" + encodeURIComponent(autoLoginKey);
-    let redirectUrl  = base + "student.php?lessons_ID=" + lessonId + "&from_course=" + courseId;
-
-    fetch(autoLoginUrl, { credentials: 'include' })
-        .then(response => {
-            if (response.ok) {
-                window.open(redirectUrl, '_blank');
-            } else {
-                alert("Auto-login failed. Please try again.");
-            }
-        })
-        .catch(err => console.error("Autologin Error:", err));
+  fetch(base + 'index.php?autologin=' + encodeURIComponent(key), {credentials:'include'})
+    .then(() => window.open(base + 'student.php?lessons_ID=' + lessonId, '_blank'));
 }
 </script>
 
-<!-- Layout -->
 <div class="layout-page">
-  <?php require_once('learnersNav.php'); ?>
+<?php require_once('learnersNav.php'); ?>
 
-  <div class="content-wrapper">
-    <div class="container-xxl flex-grow-1 container-p-y">
+<div class="content-wrapper">
+<div class="container-xxl container-p-y">
 
-      <div class="accordion mt-3 card accordion-item">
-        <h2 class="accordion-header" id="heading3">
-          <button type="button" class="accordion-button bg-label-info collapsed"
-                  data-bs-toggle="collapse" data-bs-target="#accordion3"
-                  aria-expanded="false" aria-controls="accordion3">
-            <i class="bx bx-brain"></i>&nbsp; Manage & Configure Your Learning Paths
-          </button>
-        </h2>
-        <div id="accordion3" class="accordion-collapse collapse" aria-labelledby="heading3">
-          <div class="accordion-body">
-            <div class="row g-3 text-center">
+<!-- ================= ORCHESTRATION ACCORDION ================= -->
+<div class="accordion mb-4">
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-search-alt text-danger" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Training Needs</h6>
-                  <a href="learners-training-needs.php" class="btn btn-danger btn-sm mt-2">Set & Define</a>
-                </div>
-              </div>
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button bg-label-info" data-bs-toggle="collapse" data-bs-target="#orchestration">
+  <i class="bx bx-brain me-2"></i> Learning Journey Orchestration
+</button>
+</h2>
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-bar-chart-alt-2 text-info" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Skill Gaps</h6>
-                  <a href="learners-skills-gap.php" class="btn btn-info btn-sm mt-2">Evaluate Skills</a>
-                </div>
-              </div>
+<div id="orchestration" class="accordion-collapse collapse show">
+<div class="accordion-body"> <br>
+<div class="row g-3 text-center">
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-bullseye text-warning" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Learning Goals</h6>
-                  <a href="learners-learning-goal.php" class="btn btn-warning btn-sm mt-2">Set Goals</a>
-                </div>
-              </div>
+<!-- Intent -->
+<div class="col-md-2">
+<div class="card p-3 shadow-sm">
+<i class="bx bx-search-alt fs-1 text-danger"></i>
+<h6 class="mt-2">Learning Intent</h6>
+<?php
+echo $intent
+ ? stateBadge('Declared','success','bx bx-check')
+ : stateBadge('Not Set','secondary','bx bx-time');
+?>
+<a href="learning-intent.php" class="btn btn-danger btn-sm mt-2">Revise</a>
+</div>
+</div>
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-flag text-primary" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Milestones</h6>
-                  <a href="learners-steps-milestones.php" class="btn btn-primary btn-sm mt-2">Define Steps</a>
-                </div>
-              </div>
+<!-- Skill Gap -->
+<div class="col-md-2">
+<div class="card p-3 shadow-sm">
+<i class="bx bx-bar-chart-alt-2 fs-1 text-info"></i>
+<h6 class="mt-2">Skill Gap</h6>
+<?php
+echo ($skill && $skill['skill_gap_status']=='active')
+ ? stateBadge('Active','success','bx bx-check')
+ : stateBadge('Outdated','warning','bx bx-history');
+?>
+<a href="skills-gap.php" class="btn btn-info btn-sm mt-2">Revise</a>
+</div>
+</div>
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-package text-dark" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Learning Paths</h6>
-                  <a href="#" class="btn btn-dark btn-sm mt-2">Walk Them</a>
-                </div>
-              </div>
+<!-- Direction -->
+<div class="col-md-2">
+<div class="card p-3 shadow-sm">
+<i class="bx bx-bullseye fs-1 text-warning"></i>
+<h6 class="mt-2">Learning Direction</h6>
+<?php
+echo $direction
+ ? stateBadge('Accepted','success','bx bx-check-circle')
+ : stateBadge('Pending','secondary','bx bx-time');
+?>
+<a href="learning-direction.php" class="btn btn-warning btn-sm mt-2">View</a>
+</div>
+</div>
 
-              <div class="col-md-2">
-                <div class="card shadow-sm p-3">
-                  <i class="bx bx-pulse text-secondary" style="font-size:40px;"></i>
-                  <h6 class="mt-2">Monitor Status</h6>
-                  <a href="learners-monitor-status.php" class="btn btn-secondary btn-sm mt-2">Track Progress</a>
-                </div>
-              </div>
+<!-- Milestones -->
+<div class="col-md-2">
+<div class="card p-3 shadow-sm">
+<i class="bx bx-flag fs-1 text-primary"></i>
+<h6 class="mt-2">Milestones</h6>
+<?php
+echo $direction
+ ? stateBadge('Generated','success','bx bx-check')
+ : stateBadge('Locked','secondary','bx bx-lock');
+?>
+<a href="learning-milestones.php" class="btn btn-primary btn-sm mt-2">View</a>
+</div>
+</div>
 
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="card mt-4">
-        <div class="card-header">
-          <ul class="nav nav-pills gap-3" role="tablist">
-            <li class="nav-item"><a href="#tab1" class="nav-link active" data-bs-toggle="pill"><i class="bx bx-book-open text-primary"></i> Active Learning</a></li>
-            <li class="nav-item"><a href="#tab2" class="nav-link" data-bs-toggle="pill"><i class="bx bx-brain text-danger"></i> Curated Paths</a></li>
-            <li class="nav-item"><a href="#tab3" class="nav-link" data-bs-toggle="pill"><i class="bx bx-code-alt text-success"></i> Skills Booster</a></li>
-            <li class="nav-item"><a href="#tab4" class="nav-link" data-bs-toggle="pill"><i class="bx bx-bulb text-warning"></i> Level-Up Learning</a></li>
-            <li class="nav-item"><a href="#tab5" class="nav-link" data-bs-toggle="pill"><i class="bx bx-line-chart text-info"></i> Crowd Favourites</a></li>
-          </ul>
-        </div>
+<!-- ================= GUIDED PATHWAYS ================= -->
+<div class="col-md-2">
+  <div class="card shadow-sm p-3">
+    <i class="bx bx-package text-dark" style="font-size:40px;"></i>
+    <h6 class="mt-2">Guided Pathways</h6>
 
-        <div class="card-body">
-          <div class="tab-content">
-            <div class="tab-pane fade show active" id="tab1"><?php echoCoursesByCategory($rows, 'Active Learning'); ?></div>
-            <div class="tab-pane fade" id="tab2"><?php echoCoursesByCategory($rows, 'Curated Paths'); ?></div>
-            <div class="tab-pane fade" id="tab3"><?php echoCoursesByCategory($rows, 'Skills Booster'); ?></div>
-            <div class="tab-pane fade" id="tab4"><?php echoCoursesByCategory($rows, 'Level Up Courses'); ?></div>
-            <div class="tab-pane fade" id="tab5"><?php echoCoursesByCategory($rows, 'Crowd Favourites'); ?></div>
-          </div>
-        </div>
-      </div>
+    <span class="badge bg-label-info mb-1">
+      <i class="bx bx-map me-1"></i>
+      Adaptive
+    </span>
 
-    </div>
- 
+    <a href="#"
+       class="btn btn-dark btn-sm mt-2 js-cta-tooltip"
+       data-tooltip="Explore adaptive learning pathways generated from your intent, skill gaps, direction, and milestones. These evolve as you progress.">
+       Explore Pathways
+    </a>
+  </div>
+</div>
+
+<!-- ================= LEARNING STATUS ================= -->
+<div class="col-md-2">
+  <div class="card shadow-sm p-3">
+    <i class="bx bx-pulse text-secondary" style="font-size:40px;"></i>
+    <h6 class="mt-2">Learning Status</h6>
+
+    <span class="badge bg-label-success mb-1">
+      <i class="bx bx-activity me-1"></i>
+      Tracking On
+    </span>
+
+    <a href="learners-monitor-status.php"
+       class="btn btn-secondary btn-sm mt-2 js-cta-tooltip"
+       data-tooltip="View your current learning state, momentum, consistency, and readiness indicators based on recent activity.">
+       View Progress
+    </a>
+  </div>
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+<!-- ================= LEARNING BUCKETS ================= -->
+<div class="card mt-4">
+<div class="card-header">
+<button class="btn btn-sm btn-outline-secondary float-end"
+        data-bs-toggle="tooltip"
+        title="You can hide this bucket temporarily.">
+  <i class="bx bx-hide me-1"></i>Hide Bucket
+</button>
+
+<h5 class="mb-1"><i class="bx bx-layer me-2"></i>Learning Buckets</h5>
+<small class="text-muted">
+Aligned to your accepted learning direction:
+<b><?php echo strtoupper($currentDirection); ?></b>
+</small>
+</div>
+
+<div class="card-body">
+<ul class="nav nav-pills mb-3">
+<?php
+$buckets = array(
+ 'Active Learning',
+ 'Curated Paths',
+ 'Skills Booster',
+ 'Level Up Courses',
+ 'Crowd Favourites'
+);
+foreach ($buckets as $i=>$b) {
+ echo '<li class="nav-item">
+   <a class="nav-link '.($i==0?'active':'').'" data-bs-toggle="pill" href="#b'.$i.'">'.$b.'</a>
+ </li>';
+}
+?>
+</ul>
+
+<div class="tab-content">
+<!-- Bucket Helper Text -->
+<div class="alert alert-light border mb-1" id="bucketHelpBox">
+  <i class="bx bx-info-circle me-2 text-primary"></i>
+  <span id="bucketHelpText">
+    Courses you are currently enrolled in and actively progressing through.
+  </span>
+</div>
+<?php foreach ($buckets as $i=>$b) { ?>
+
+<div class="tab-pane fade <?php echo $i==0?'show active':''; ?>" id="b<?php echo $i; ?>">
+<?php echoCoursesByBucket($rows, $b); ?>
+</div>
+<?php } ?>
+</div>
+</div>
+</div>
+<script>
+const bucketHelp = {
+  'Active Learning':
+    'Courses you are currently enrolled in and actively progressing through.',
+  'Curated Paths':
+    'System-recommended courses aligned to your learning direction and milestones.',
+  'Skills Booster':
+    'Focused courses that strengthen skills blocking your next milestone.',
+  'Level Up Courses':
+    'Advanced courses unlocked to prepare you for higher responsibility or mastery.',
+  'Crowd Favourites':
+    'Popular courses chosen by learners with similar roles and goals.'
+};
+
+document.querySelectorAll('.nav-pills .nav-link').forEach(tab => {
+  tab.addEventListener('shown.bs.tab', function () {
+    const label = this.innerText.trim();
+    document.getElementById('bucketHelpText').innerText =
+      bucketHelp[label] || '';
+  });
+});
+</script>
+
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var tooltipTriggerList = [].slice.call(
+    document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  );
+  tooltipTriggerList.forEach(function (el) {
+    new bootstrap.Tooltip(el);
+  });
+});
+</script>
+
+
+
+</div>
+</div>
 
 <?php require_once('../platformFooter.php'); ?>

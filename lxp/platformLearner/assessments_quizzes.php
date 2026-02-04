@@ -1,245 +1,254 @@
 <?php
-/**
- * Astraal LXP - Learner Learning Paths (Tests & Quizzes)
- * Debugged for unified session-guard
- * Dynamic AutoLogin fetched from users.autologin column
- * PHP 5.4 compatible | UwAmp / GoDaddy
- */
+// File: learners/assessments.php
+// Assessment Catalogue – UI aligned with Problem-Solving Catalogue
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 require_once('../../config.php');
-require_once('../../session-guard.php'); // unified session management
+require_once('../../session-guard.php');
 
-$page = "learningPath";
-require_once('learnerHead_Nav2.php');
-
-// -----------------------------------------------------------------------------
-// ✅ Validate Session (Phoenix unified keys)
-// -----------------------------------------------------------------------------
-if (
-    !isset($_SESSION['phx_user_id']) ||
-    !isset($_SESSION['phx_user_login'])
-) {
-    header("Location: ../../phxlogin.php?error=" . urlencode(base64_encode("Session expired. Please log in again.")));
+if (!isset($_SESSION['phx_user_login'])) {
+    header("Location: ../../phxlogin.php");
     exit;
 }
 
-// Extract session vars
-$phx_user_id    = (int) $_SESSION['phx_user_id'];
-$phx_user_login = $_SESSION['phx_user_login'];
-$phx_user_name  = isset($_SESSION['phx_user_name']) ? $_SESSION['phx_user_name'] : '';
-
-// -----------------------------------------------------------------------------
-// ✅ Database connection check
-// -----------------------------------------------------------------------------
-if (!isset($coni) || !$coni) {
-    die("❌ Database connection not initialized. Please verify config.php.");
-}
-
-// -----------------------------------------------------------------------------
-// ✅ Fetch AutoLogin Token dynamically for current learner
-// -----------------------------------------------------------------------------
-$autoLoginToken = '';
-$query = mysqli_query(
-    $coni,
-    "SELECT autologin FROM users WHERE login = '" . mysqli_real_escape_string($coni, $phx_user_login) . "' LIMIT 1"
-);
-if ($query && mysqli_num_rows($query) > 0) {
-    $row = mysqli_fetch_assoc($query);
-    $autoLoginToken = isset($row['autologin']) ? trim($row['autologin']) : '';
-}
-if ($autoLoginToken == '') {
-    $autoLoginToken = 'MISSING_AUTOTOKEN'; // fallback marker for debugging
-}
-
-// -----------------------------------------------------------------------------
-// ✅ Fetch learner’s course–test mapping
-// -----------------------------------------------------------------------------
-$sql = "
-    SELECT 
-        utc.courses_ID AS cid, 
-        c.name AS course_name,
-        d.name AS course_category,
-        t.content_ID AS unitID,
-        t.name AS test_name
-    FROM users_to_courses utc
-    JOIN courses c ON utc.courses_ID = c.id
-    JOIN directions d ON c.directions_ID = d.id
-    JOIN lessons_to_courses ltc ON utc.courses_ID = ltc.courses_ID
-    JOIN tests t ON ltc.lessons_ID = t.lessons_ID
-    WHERE utc.users_LOGIN = ?
-    AND t.content_ID IS NOT NULL
-    ORDER BY c.name, t.name
-";
-
-if ($stmt = mysqli_prepare($coni, $sql)) {
-    mysqli_stmt_bind_param($stmt, "s", $phx_user_login);
-    mysqli_stmt_execute($stmt);
-    mysqli_stmt_store_result($stmt);
-    mysqli_stmt_bind_result($stmt, $cid, $course_name, $course_category, $unitID, $test_name);
-
-    $data = array();
-    while (mysqli_stmt_fetch($stmt)) {
-        $data[] = array(
-            'cid'             => $cid,
-            'course_name'     => $course_name,
-            'course_category' => $course_category,
-            'unitID'          => $unitID,
-            'test_name'       => $test_name
-        );
-    }
-    mysqli_stmt_close($stmt);
-} else {
-    die("❌ SQL Prepare Failed: " . mysqli_error($coni));
-}
-
+$page = "assessments";
+require_once('learnerHead_Nav2.php');
 ?>
 
-<!-- Layout container -->
 <div class="layout-page">
-    <?php require_once('learnersNav.php'); ?>
+<?php require_once('learnersNav.php'); ?>
 
-    <!-- Content wrapper -->
-    <div class="content-wrapper">
-        <div class="container-xxl flex-grow-1 container-p-y">
-            <div class="row">
-                <?php
-                // SweetAlert message handling
-                if (isset($_REQUEST['msg'])) {
-                    $infoMessage = base64_decode(urldecode($_GET['msg']));
-                    echo '<script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            swal.fire("Info", "' . htmlspecialchars($infoMessage) . '", "info");
-                            history.replaceState({}, document.title, window.location.origin + window.location.pathname);
-                        });
-                    </script>';
-                }
+<div class="content-wrapper">
+<div class="container-xxl flex-grow-1 container-p-y">
 
-                if (isset($_REQUEST['error'])) {
-                    $errorMessage = base64_decode(urldecode($_GET['error']));
-                    echo '<script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            swal.fire("Error", "' . htmlspecialchars($errorMessage) . '", "error");
-                            history.replaceState({}, document.title, window.location.origin + window.location.pathname);
-                        });
-                    </script>';
-                }
-                ?>
-
-                <div class="col-lg-12 mb-4 order-0">
-                    <div class="accordion mt-3" id="accordionExample">
-                        <div class="accordion-item">
-                            <h4 class="accordion-header" id="heading3">
-                                <button type="button" class="accordion-button bg-label-primary"
-                                    data-bs-toggle="collapse" data-bs-target="#accordion1" aria-expanded="true"
-                                    aria-controls="accordion1">
-                                    <i class="bx bx-task" style="font-size: 22px;"></i> &nbsp; Manage Quizzes & Tests
-                                </button>
-                            </h4>
-                            <div id="accordion1" class="accordion-collapse collapse show">
-                                <div class="accordion-body">
-                                    <br>
-                                    <div class="table-responsive">
-                                        <?php if (count($data) > 0) { ?>
-                                            <table class="table table-bordered m-0 table-hover">
-                                                <thead>
-                                                    <tr class="text-center">
-                                                        <th><i class="bx bx-barcode"></i> Course Code</th>
-                                                        <th><i class="bx bx-book"></i> Course Title</th>
-                                                        <th><i class="bx bx-book"></i> Test Title</th>
-                                                        <th><i class="bx bx-category"></i> Category</th>
-                                                        <th><i class="bx bx-cog"></i> Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <?php foreach ($data as $row) { ?>
-                                                        <tr>
-                                                            <td><?= htmlspecialchars($row['cid']) ?></td>
-                                                            <td><?= htmlspecialchars($row['course_name']) ?></td>
-                                                            <td><?= htmlspecialchars($row['test_name']) ?></td>
-                                                            <td><?= htmlspecialchars($row['course_category']) ?></td>
-                                                            <td class="text-center">
-                                                                <button onclick="autologinAndNavigate(<?= htmlspecialchars($row['unitID']) ?>)" 
-                                                                        class="btn btn-info btn-sm">
-                                                                    <i class="mdi mdi-view-list"></i> Attempt Test
-                                                                </button>
-                                                            </td>
-                                                        </tr>
-                                                    <?php } ?>
-                                                </tbody>
-                                            </table>
-                                        <?php } else { ?>
-                                            <table class="table table-bordered m-0 table-hover">
-                                                <thead>
-                                                    <tr class="text-center">
-                                                        <th><i class="bx bx-barcode"></i> Course Code</th>
-                                                        <th><i class="bx bx-book"></i> Course Title</th>
-                                                        <th><i class="bx bx-category"></i> Category</th>
-                                                        <th colspan="2"><i class="bx bx-cog"></i> Actions</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr class="text-center">
-                                                        <td colspan="5" style="color: red; font-weight: bold;">
-                                                            No tests or quizzes assigned yet.
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        <?php } ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <?php require_once('../platformFooter.php'); ?>
-            </div>
-        </div>
+<!-- HEADER -->
+<div class="card shadow-sm mb-4">
+  <div class="card-body d-flex justify-content-between align-items-center">
+    <div>
+      <h4 class="mb-1">Assessment Catalogue</h4>
+      <p class="text-muted mb-0">
+        Click <strong>View</strong> to understand the assessment.
+        Click <strong>Preview</strong> to see sample questions.
+        Click <strong>Attempt Now</strong> to begin.
+      </p>
     </div>
+    <i class="fa fa-clipboard-check fa-2x text-primary"></i>
+  </div>
 </div>
 
-<script>
-function autologinAndNavigate(unitId) {
-    if (!unitId) {
-        console.error("❌ Unit ID is missing!");
-        return;
-    }
+<?php
+$assessments = array(
+  array('key'=>'adaptive','title'=>'Adaptive Assessment','icon'=>'fa-brain',
+        'meaning'=>'Difficulty dynamically adjusts based on learner responses.',
+        'skills'=>'Learning agility, problem-solving, cognitive flexibility',
+        'preview'=>'Questions change in complexity based on your answers.',
+        'gain'=>'Personalized challenge without frustration'),
 
-    // Determine environment
-    const isLocal = window.location.hostname === "localhost";
+  array('key'=>'multimodal','title'=>'Multimodal Assessment','icon'=>'fa-layer-group',
+        'meaning'=>'Uses text, audio, video, and interaction formats.',
+        'skills'=>'Comprehension, interpretation, media literacy',
+        'preview'=>'Mixed-format questions including visuals and audio.',
+        'gain'=>'Engagement across learning styles'),
 
-    // Get dynamic auto-login token from PHP
-    const autoLoginKey = "<?= htmlspecialchars($autoLoginToken) ?>";
+  array('key'=>'diagnostic','title'=>'Diagnostic Assessment','icon'=>'fa-stethoscope',
+        'meaning'=>'Identifies strengths and learning gaps.',
+        'skills'=>'Baseline knowledge, conceptual clarity',
+        'preview'=>'Targeted questions to assess readiness.',
+        'gain'=>'Clear learning direction'),
 
-    if (!autoLoginKey || autoLoginKey === "MISSING_AUTOTOKEN") {
-        alert("Auto-login key not configured for this user. Please contact the administrator.");
-        return;
-    }
+  array('key'=>'formative','title'=>'Formative Assessment','icon'=>'fa-chart-line',
+        'meaning'=>'Provides feedback during learning.',
+        'skills'=>'Progress tracking, self-correction',
+        'preview'=>'Short checkpoints with instant feedback.',
+        'gain'=>'Continuous improvement'),
 
-    // Construct URLs
-    const baseAutologinUrl = isLocal
-        ? `http://localhost/evidya/www/index.php?autologin=${autoLoginKey}`
-        : `https://raunakeducares.com/lxp/lxpre/www/index.php?autologin=${autoLoginKey}`;
+  array('key'=>'summative','title'=>'Summative Assessment','icon'=>'fa-award',
+        'meaning'=>'Evaluates mastery at the end of learning.',
+        'skills'=>'Retention, synthesis, mastery',
+        'preview'=>'Comprehensive end-of-unit questions.',
+        'gain'=>'Proof of achievement'),
 
-    const testPageUrl = isLocal
-        ? `http://localhost/evidya/www/student.php?view_unit=${unitId}`
-        : `https://raunakeducares.com/lxp/lxpre/www/student.php?view_unit=${unitId}`;
+  array('key'=>'project','title'=>'Project-Based Assessment','icon'=>'fa-project-diagram',
+        'meaning'=>'Real-world tasks demonstrating applied skills.',
+        'skills'=>'Application, planning, execution',
+        'preview'=>'Multi-step project submissions.',
+        'gain'=>'Practical competence'),
 
-    // Open new tab
-    const newTab = window.open("", "_blank");
+  array('key'=>'peer','title'=>'Peer to Peer Assessment','icon'=>'fa-users',
+        'meaning'=>'Learners assess each other.',
+        'skills'=>'Feedback, collaboration, evaluation',
+        'preview'=>'Rubric-based peer reviews.',
+        'gain'=>'Perspective and communication'),
 
-    fetch(baseAutologinUrl, { method: "GET", credentials: "include" })
-        .then(response => {
-            if (!response.ok) throw new Error("Auto-login failed");
-            newTab.location.href = testPageUrl;
-        })
-        .catch(error => {
-            console.error("❌ Autologin error:", error);
-            newTab.close();
-        });
-}
-</script>
+  array('key'=>'simulation','title'=>'Simulation Assessment','icon'=>'fa-vr-cardboard',
+        'meaning'=>'Scenario-driven simulations.',
+        'skills'=>'Decision-making, adaptability',
+        'preview'=>'Simulated environments with choices.',
+        'gain'=>'Safe real-world practice'),
+
+  array('key'=>'continuous','title'=>'Continuous Assessment','icon'=>'fa-sync-alt',
+        'meaning'=>'Ongoing evaluation across time.',
+        'skills'=>'Consistency, progress',
+        'preview'=>'Distributed micro-assessments.',
+        'gain'=>'Sustained growth'),
+
+  array('key'=>'certification','title'=>'Certification Assessment','icon'=>'fa-certificate',
+        'meaning'=>'Validates skills against standards.',
+        'skills'=>'Compliance, mastery',
+        'preview'=>'Standard-aligned exam questions.',
+        'gain'=>'Recognized credentials'),
+
+  array('key'=>'competency','title'=>'Competency-Based Assessment','icon'=>'fa-check-circle',
+        'meaning'=>'Focuses on demonstrated skills.',
+        'skills'=>'Skill mastery, outcomes',
+        'preview'=>'Performance-driven tasks.',
+        'gain'=>'Skill validation'),
+
+  array('key'=>'performance','title'=>'Performance Assessment','icon'=>'fa-running',
+        'meaning'=>'Evaluates execution quality.',
+        'skills'=>'Accuracy, efficiency',
+        'preview'=>'Task output evaluation.',
+        'gain'=>'Execution excellence'),
+
+  array('key'=>'softskills','title'=>'Personality & Soft Skills','icon'=>'fa-user-friends',
+        'meaning'=>'Measures behavioral traits.',
+        'skills'=>'Communication, teamwork',
+        'preview'=>'Situational judgment questions.',
+        'gain'=>'Workplace readiness'),
+
+  array('key'=>'scenario','title'=>'Scenario-Based Assessment','icon'=>'fa-route',
+        'meaning'=>'Decision-making in context.',
+        'skills'=>'Critical thinking',
+        'preview'=>'Multi-path scenarios.',
+        'gain'=>'Better judgment'),
+
+  array('key'=>'benchmark','title'=>'Benchmarking Assessment','icon'=>'fa-balance-scale',
+        'meaning'=>'Compares performance to standards.',
+        'skills'=>'Relative performance awareness',
+        'preview'=>'Norm-referenced questions.',
+        'gain'=>'Competitive insight'),
+
+  array('key'=>'self','title'=>'Self Assessment & Insights','icon'=>'fa-user-check',
+        'meaning'=>'Reflection-driven evaluation.',
+        'skills'=>'Self-awareness',
+        'preview'=>'Reflection-based prompts.',
+        'gain'=>'Personal insight'),
+);
+?>
+
+<div class="row g-4">
+<?php foreach ($assessments as $a): ?>
+  <div class="col-xl-3 col-lg-4 col-md-6">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+
+        <div class="d-flex align-items-center mb-2">
+          <i class="fa <?php echo $a['icon']; ?> fa-2x text-primary me-3"></i>
+          <h6 class="mb-0"><?php echo $a['title']; ?></h6>
+        </div>
+
+        <p class="text-muted small flex-grow-1"><?php echo $a['meaning']; ?></p>
+
+        <!-- CTA layout EXACT like Problem-Solving -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#view_<?php echo $a['key']; ?>">View</button>
+
+            <button class="btn btn-outline-secondary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#preview_<?php echo $a['key']; ?>">Preview</button>
+          </div>
+
+          <a href="assessment_attempt.php?type=<?php echo $a['key']; ?>"
+             class="btn btn-success btn-sm">
+            Attempt Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- VIEW MODAL -->
+<div class="modal fade" id="view_<?php echo $a['key']; ?>" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa <?php echo $a['icon']; ?> text-primary me-2"></i>
+        <h5 class="modal-title"><?php echo $a['title']; ?></h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>What this assessment means</strong><br><?php echo $a['meaning']; ?></p>
+        <p><strong>Skills evaluated</strong><br><?php echo $a['skills']; ?></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PREVIEW MODAL -->
+<div class="modal fade" id="preview_<?php echo $a['key']; ?>" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <i class="fa <?php echo $a['icon']; ?> text-primary me-2"></i>
+        <h5 class="modal-title"><?php echo $a['title']; ?> – Preview</h5>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <p><strong>What you will attempt</strong><br><?php echo $a['preview']; ?></p>
+        <p><strong>What you gain</strong><br><?php echo $a['gain']; ?></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php endforeach; ?>
+</div>
+
+<p><br></p>	
+		
+<div class="row g-4">
+  <div class="col-xl-12 col-lg-12 col-md-12">
+    <div class="card h-100 shadow-sm">
+      <div class="card-body d-flex flex-column">
+
+        <div class="d-flex align-items-center mb-2">
+          <i class="fa fa-sync fa-2x text-primary me-3"></i>
+          <h6 class="mb-0">360-Degree Feedback</h6>
+        </div>
+
+        <p class="text-muted small flex-grow-1">Feedback from multiple perspectives</p>
+
+        <!-- CTA layout EXACT like Problem-Solving -->
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="d-flex gap-2">
+            <button class="btn btn-outline-primary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#view_feedback360">View</button>
+
+            <button class="btn btn-outline-secondary btn-sm"
+              data-bs-toggle="modal"
+              data-bs-target="#preview_feedback360">Preview</button>
+          </div>
+
+          <a href="assessment_attempt.php?type=feedback360"
+             class="btn btn-success btn-sm">
+            Attempt Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<?php require_once('../platformFooter.php'); ?>

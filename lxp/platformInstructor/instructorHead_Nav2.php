@@ -14,13 +14,15 @@
       content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
     />
 
-   <title>Phx Innovates | EdTech, Campus to Corporate Learning & Skilling Solutions</title>
-
+  <title>EduuAspire by Raunak Educares Powered by Astraal Mind Solutions | EdTech, Campus to Corporate Learning & Skilling Solutions</title>
+  
+  
     <meta name="description" content="" />
 
+   
     <!-- Favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="http://localhost/raunakeducares.com/img/eAfac.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="http://localhost/raunakeducares.com/img/apple-touch-icon.png">
+   <link href="<?php echo $base_url; ?>/images/eduuFaviconrb.png" rel="icon">
+
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -174,6 +176,14 @@
 
 <!-- 2. Manage Course Content Resources -->
     
+	
+	 <li class="menu-item <?php echo ($page == 'courseIntelligence') ? 'active open' : ''; ?>" >
+          <a href="course_intelligence_designer.php" class="menu-link">
+            <i class="menu-icon bx bx-brain"></i>
+            <div>Course Intelligence Designer</div>
+          </a>
+        </li>
+	
 		
         <li class="menu-item <?php echo ($page == 'createContent') ? 'active open' : ''; ?>" >
           <a href="create-content.php" class="menu-link">
@@ -182,7 +192,47 @@
           </a>
         </li>
 		
-		<!-- 3. Assessments & Certifications -->
+		
+		<li class="menu-item <?php echo ($page == 'courseLibrary') ? 'active open' : ''; ?>">
+          <a href="course-library.php" class="menu-link">
+            <i class="menu-icon bx bx-library"></i>
+            <div>Course Library</div>
+          </a>
+        </li>
+		
+        <li class="menu-item <?php echo ($page == 'bulkUpload') ? 'active open' : ''; ?>">
+          <a href="bulk-upload.php" class="menu-link">
+            <i class="menu-icon bx bx-upload"></i>
+            <div>Bulk Upload</div>
+          </a>
+        </li>
+        
+		<li class="menu-item <?php echo ($page == 'contentRepository') ? 'active open' : ''; ?>">
+          <a href="content-repository.php" class="menu-link">
+            <i class="menu-icon bx bx-folder"></i>
+            <div>Content Repository</div>
+          </a>
+        </li>
+        <li class="menu-item <?php echo ($page == 'aiContent') ? 'active open' : ''; ?>">
+          <a href="ai-recommendations.php" class="menu-link">
+            <i class="menu-icon bx bx-laptop"></i>
+            <div>AI-Powered Content Recommendations</div>
+          </a>
+        </li>
+        <li class="menu-item <?php echo ($page == 'contentApprovals') ? 'active open' : ''; ?>">
+          <a href="content-approvals.php" class="menu-link">
+            <i class="menu-icon bx bx-check-circle"></i>
+            <div>Content Approvals</div>
+          </a>
+        </li>
+		<li class="menu-item <?php echo ($page == 'versionControl') ? 'active open' : ''; ?>">
+          <a href="version-control.php" class="menu-link">
+            <i class="menu-icon bx bx-git-branch"></i>
+            <div>Version Control</div>
+          </a>
+        </li>
+		
+	<!-- 3. Assessments & Certifications -->
    
         <li class="menu-item <?php echo ($page == 'quizTest') ? 'active open' : ''; ?>">
           <a href="quizzes-tests.php" class="menu-link">
@@ -202,47 +252,6 @@
             <div>Badges & Certificates</div>
           </a>
         </li>
-		
-        <li class="menu-item <?php echo ($page == 'courseLibrary') ? 'active open' : ''; ?>">
-          <a href="course-library.php" class="menu-link">
-            <i class="menu-icon bx bx-library"></i>
-            <div>Course Library</div>
-          </a>
-        </li>
-        
-        <li class="menu-item <?php echo ($page == 'bulkUpload') ? 'active open' : ''; ?>">
-          <a href="bulk-upload.php" class="menu-link">
-            <i class="menu-icon bx bx-upload"></i>
-            <div>Bulk Upload</div>
-          </a>
-        </li>
-        
-		<li class="menu-item <?php echo ($page == 'contentRepository') ? 'active open' : ''; ?>">
-          <a href="content-repository.php" class="menu-link">
-            <i class="menu-icon bx bx-folder"></i>
-            <div>Content Repository</div>
-          </a>
-        </li>
-        <li class="menu-item <?php echo ($page == 'aiContent') ? 'active open' : ''; ?>">
-          <a href="ai-recommendations.php" class="menu-link">
-            <i class="menu-icon bx bx-brain"></i>
-            <div>AI-Powered Content Recommendations</div>
-          </a>
-        </li>
-        <li class="menu-item <?php echo ($page == 'contentApprovals') ? 'active open' : ''; ?>">
-          <a href="content-approvals.php" class="menu-link">
-            <i class="menu-icon bx bx-check-circle"></i>
-            <div>Content Approvals</div>
-          </a>
-        </li>
-		<li class="menu-item <?php echo ($page == 'versionControl') ? 'active open' : ''; ?>">
-          <a href="version-control.php" class="menu-link">
-            <i class="menu-icon bx bx-git-branch"></i>
-            <div>Version Control</div>
-          </a>
-        </li>
-		
-	
       
 	
 	

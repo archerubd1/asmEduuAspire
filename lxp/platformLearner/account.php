@@ -84,32 +84,29 @@ if (!empty($photoFile) && file_exists('../../uploads/' . $photoFile)) {
       </div>
     </div>
   </div>
-
+  <hr>
+	  
   <div class="card-body">
     <form id="formAccountSettings" method="POST" enctype="multipart/form-data">
+	
+	
       <div class="row">
 
         <!-- name, surname, email come from USERS -->
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-4">
           <label for="firstName" class="form-label">First Name</label>
           <input class="form-control" type="text" id="firstName" name="firstName"
                  value="<?php echo htmlspecialchars($userName); ?>" autofocus />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-4">
           <label for="lastName" class="form-label">Last Name</label>
           <input class="form-control" type="text" id="lastName" name="lastName"
                  value="<?php echo htmlspecialchars($userSurname); ?>" />
         </div>
-
-        <div class="mb-3 col-md-6">
-          <label for="email" class="form-label">E-mail</label>
-          <input class="form-control" type="text" id="email" name="email"
-                 value="<?php echo htmlspecialchars($userEmail); ?>" />
-        </div>
-
-        <!-- Extended learner fields -->
-        <div class="mb-3 col-md-6">
+		
+		<!-- Extended learner fields -->
+        <div class="mb-3 col-md-4">
           <label for="gender" class="form-label">Gender</label>
           <select id="gender" name="gender" class="form-select">
             <option value="">Select</option>
@@ -119,19 +116,21 @@ if (!empty($photoFile) && file_exists('../../uploads/' . $photoFile)) {
           </select>
         </div>
 
-        <div class="mb-3 col-md-6">
+                
+        <div class="mb-3 col-md-4">
           <label for="dob" class="form-label">Date of Birth</label>
           <input class="form-control" type="date" id="dob" name="dob"
                  value="<?php echo htmlspecialchars($dob); ?>" />
         </div>
 
-        <div class="mb-3 col-md-6">
-          <label for="organization" class="form-label">Organization</label>
-          <input type="text" class="form-control" id="organization" name="organization"
-                 value="<?php echo htmlspecialchars($organization); ?>" placeholder="Organization" />
+		
+		<div class="mb-3 col-md-4">
+          <label for="email" class="form-label">E-mail</label>
+          <input class="form-control" type="text" id="email" name="email"
+                 value="<?php echo htmlspecialchars($userEmail); ?>" />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-4">
           <label class="form-label" for="phone">Phone Number</label>
           <div class="input-group input-group-merge">
             <span class="input-group-text">IN (+91)</span>
@@ -139,32 +138,34 @@ if (!empty($photoFile) && file_exists('../../uploads/' . $photoFile)) {
                    value="<?php echo htmlspecialchars($phone); ?>" placeholder="9876543210" />
           </div>
         </div>
+		
+		
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
           <label for="address" class="form-label">Address</label>
           <input type="text" class="form-control" id="address" name="address"
                  value="<?php echo htmlspecialchars($address); ?>" placeholder="Address" />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
           <label for="city" class="form-label">City</label>
           <input type="text" class="form-control" id="city" name="city"
                  value="<?php echo htmlspecialchars($city); ?>" placeholder="City" />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
           <label for="state" class="form-label">State</label>
           <input class="form-control" type="text" id="state" name="state"
                  value="<?php echo htmlspecialchars($state); ?>" placeholder="State" />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
           <label for="zip" class="form-label">ZIP Code</label>
           <input type="text" class="form-control" id="zip" name="zip"
                  maxlength="6" value="<?php echo htmlspecialchars($zip); ?>" placeholder="403001" />
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
           <label for="country" class="form-label">Country</label>
           <select id="country" name="country" class="form-select">
             <option value="India" <?php if ($country == 'India') echo 'selected'; ?>>India</option>
@@ -173,7 +174,23 @@ if (!empty($photoFile) && file_exists('../../uploads/' . $photoFile)) {
           </select>
         </div>
 
-        <div class="mb-3 col-md-6">
+        <div class="mb-3 col-md-3">
+          <label for="timezone" class="form-label">Timezone</label>
+          <select id="timezone" name="timezone" class="form-select">
+            <option value="Asia/Kolkata" <?php if ($timezone == 'Asia/Kolkata') echo 'selected'; ?>>Asia/Kolkata (IST)</option>
+            <option value="Asia/Dubai" <?php if ($timezone == 'Asia/Dubai') echo 'selected'; ?>>Asia/Dubai (GST)</option>
+          </select>
+        </div>
+
+        <div class="mb-3 col-md-3">
+          <label for="currency" class="form-label">Currency</label>
+          <select id="currency" name="currency" class="form-select">
+            <option value="INR" <?php if ($currency == 'INR') echo 'selected'; ?>>INR (₹)</option>
+            <option value="USD" <?php if ($currency == 'USD') echo 'selected'; ?>>USD ($)</option>
+          </select>
+        </div>
+		
+		<div class="mb-3 col-md-3">
           <label for="language" class="form-label">Language</label>
           <select id="language" name="language" class="form-select">
             <option value="en" <?php if ($language == 'en') echo 'selected'; ?>>English</option>
@@ -183,24 +200,22 @@ if (!empty($photoFile) && file_exists('../../uploads/' . $photoFile)) {
             <option value="ko" <?php if ($language == 'ko') echo 'selected'; ?>>Konkani</option>
           </select>
         </div>
-
-        <div class="mb-3 col-md-6">
-          <label for="timezone" class="form-label">Timezone</label>
-          <select id="timezone" name="timezone" class="form-select">
-            <option value="Asia/Kolkata" <?php if ($timezone == 'Asia/Kolkata') echo 'selected'; ?>>Asia/Kolkata (IST)</option>
-            <option value="Asia/Dubai" <?php if ($timezone == 'Asia/Dubai') echo 'selected'; ?>>Asia/Dubai (GST)</option>
-          </select>
-        </div>
-
-        <div class="mb-3 col-md-6">
-          <label for="currency" class="form-label">Currency</label>
-          <select id="currency" name="currency" class="form-select">
-            <option value="INR" <?php if ($currency == 'INR') echo 'selected'; ?>>INR (₹)</option>
-            <option value="USD" <?php if ($currency == 'USD') echo 'selected'; ?>>USD ($)</option>
-          </select>
+		
+		
+		<div class="mb-3 col-md-6">
+          <label for="organization" class="form-label">Organization</label>
+          <input type="text" class="form-control" id="organization" name="organization"
+                 value="<?php echo htmlspecialchars($organization); ?>" placeholder="Organization" />
         </div>
 
       </div>
+	  
+	  <hr>
+	  
+	  
+	  
+	  
+	  
 
       <button type="submit" class="btn btn-primary me-2">Save changes</button>
       <button type="reset" class="btn btn-outline-secondary">Cancel</button>

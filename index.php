@@ -37,7 +37,7 @@ include_once('head-nav.php');
             <div class="col-lg-6 col-md-7 col-sm-7 text-sm-left text-center wow fadeInLeft" data-wow-delay="300ms">
                 <div class="heading-title mb-4">
                     <h2 class="darkcolor font-normal bottom30">
-                        Transform Learning into Real-World Success
+                        Transform Learning 
                     </h2>
                 </div>
                 <p class="bottom35">

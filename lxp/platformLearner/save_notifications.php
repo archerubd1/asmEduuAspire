@@ -125,7 +125,11 @@ foreach ($notificationTypes as $title => $type) {
         mysqli_query($coni, $ins2);
     }
 }
-
-echo json_encode(array('status' => 'success', 'message' => 'Notification preferences saved successfully.'));
+echo json_encode(array(
+    'status'    => 'success',
+    'message'   => 'Notification preferences saved successfully.',
+    'next_step' => 'connections'
+));
 exit;
+
 ?>

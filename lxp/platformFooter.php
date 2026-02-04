@@ -36,6 +36,30 @@
     <!-- / Layout wrapper -->
 
     
+	
+	<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  var ctaButtons = document.querySelectorAll('.js-cta-tooltip');
+
+  ctaButtons.forEach(function (el) {
+    new bootstrap.Tooltip(el, {
+      title: el.getAttribute('data-tooltip'),
+      placement: 'top',
+      container: document.body,
+      boundary: 'viewport',
+      trigger: 'hover focus',
+      fallbackPlacements: ['top', 'bottom'],
+      popperConfig: {
+        strategy: 'fixed'
+      }
+    });
+  });
+
+});
+</script>
+
+
 
     <!-- Core JS -->
     <!-- build:js ../assets/vendor/js/core.js -->

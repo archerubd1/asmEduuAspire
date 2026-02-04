@@ -19,7 +19,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-   <link href="<?php echo $base_url; ?>/images/eduuFavicon.png" rel="icon">
+   <link href="<?php echo $base_url; ?>/images/eduuFaviconrb.png" rel="icon">
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -155,7 +155,7 @@
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="app-brand demo">
     <a href="#" class="app-brand-link">
-      <img src="../assets/img/phxlogo155555555555555555555555555555555.png" height="50%" alt="Astraal LXP" class="img-fluid">
+      <img src="#" height="50%" alt="Astraal LXP" class="img-fluid">
     </a>
     <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
       <i class="bx bx-chevron-left bx-sm align-middle"></i>
@@ -181,6 +181,24 @@
         <div>Learning Path</div>
       </a>
     </li>
+	
+	 <!-- 10. Skills & Competencies -->
+    <li class="menu-item <?php echo ($page == 'skillsCompetencies') ? 'active open' : ''; ?>">
+      <a href="skills-competencies.php" class="menu-link">
+        <i class="menu-icon bx bx-dialpad-alt"></i>
+        <div>Skills & Competencies</div>
+      </a>
+    </li>
+	
+		
+	 <!-- 5. Critical Thinking -->
+    <li class="menu-item <?php echo ($page == 'criticalThinking') ? 'active open' : ''; ?>">
+      <a href="critical-thinking.php" class="menu-link">
+        <i class="menu-icon bx bx-analyse"></i>
+        <div>Critical Thinking</div>
+      </a>
+    </li>
+	
 
     <!-- 3. Problem Solving Skills -->
     <li class="menu-item <?php echo ($page == 'problemSolving') ? 'active open' : ''; ?>">
@@ -190,15 +208,7 @@
       </a>
     </li>
 
-   
-
-    <!-- 5. Critical Thinking -->
-    <li class="menu-item <?php echo ($page == 'criticalThinking') ? 'active open' : ''; ?>">
-      <a href="critical-thinking.php" class="menu-link">
-        <i class="menu-icon bx bx-analyse"></i>
-        <div>Critical Thinking</div>
-      </a>
-    </li>
+     
 
     <!-- 6. Project Management -->
     <li class="menu-item <?php echo ($page == 'projectManagement') ? 'active open' : ''; ?>">
@@ -223,24 +233,15 @@
         <div>Work Life Experience</div>
       </a>
     </li>
-
-    <!-- 9. Edu 5.0 Lifelong Learning -->
-    <li class="menu-item <?php echo ($page == 'edu5.0') ? 'active open' : ''; ?>">
-      <a href="edu5Learning.php" class="menu-link">
-        <i class="menu-icon bx bx-infinite"></i>
-        <div>Edu 5.0 Lifelong Learning</div>
+	
+	<li class="menu-item <?php echo ($page == 'careerPath') ? 'active open' : ''; ?>">
+      <a href="career-path-compliance.php" class="menu-link">
+        <i class="menu-icon bx bx-check-shield"></i>
+        <div>Career Path & Compliance</div>
       </a>
     </li>
 
-    <!-- 10. Skills & Competencies -->
-    <li class="menu-item <?php echo ($page == 'skillsCompetencies') ? 'active open' : ''; ?>">
-      <a href="skills-competencies.php" class="menu-link">
-        <i class="menu-icon bx bx-dialpad-alt"></i>
-        <div>Skills & Competencies</div>
-      </a>
-    </li>
-
-    <!-- 11. Mentorship & Social Learning -->
+ <!-- 11. Mentorship & Social Learning -->
     <li class="menu-item <?php echo ($page == 'mentorSocialLearning') ? 'active open' : ''; ?>">
       <a href="mentorship-social-learning.php" class="menu-link">
         <i class="menu-icon bx bx-chat"></i>
@@ -255,6 +256,20 @@
         <div>Coding Ground</div>
       </a>
     </li>
+	
+	
+	
+    <!-- 9. Edu 5.0 Lifelong Learning -->
+    <li class="menu-item <?php echo ($page == 'edu5.0') ? 'active open' : ''; ?>">
+      <a href="edu5Learning.php" class="menu-link">
+        <i class="menu-icon bx bx-infinite"></i>
+        <div>Edu 5.0 Lifelong Learning</div>
+      </a>
+    </li>
+
+   
+
+   
 	
   </ul>
   

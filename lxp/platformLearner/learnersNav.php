@@ -47,6 +47,13 @@ if ($user_login != '') {
     error_log("⚠️ learnersNav: Empty user_login session value.");
 }
 ?>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 
 
 
@@ -343,6 +350,12 @@ if ($user_login != '') {
             <span class="align-middle">Grades & Feedback</span>
           </a>
         </li>
+		 <li>
+          <a class="dropdown-item" href="#learner-progress.php">
+            <i class="bx bx-line-chart me-2 text-success"></i>
+            <span class="align-middle">Learning & Course Analytics</span>
+          </a>
+        </li>
         <li>
           <a class="dropdown-item" href="custom-analytics.php">
             <i class="bx bx-pie-chart-alt-2 me-2 text-success"></i>
@@ -431,34 +444,60 @@ if ($user_login != '') {
         <li>
           <div class="dropdown-divider"></div>
         </li>
-        <li>
+		
+        <!--- <li>
           <a class="dropdown-item" href="learner-profile.php">
             <i class="bx bx-user me-2 text-primary"></i>
             <span class="align-middle">Manage Profile</span>
           </a>
-        </li>
-        <li>
-          <a class="dropdown-item" href="#learner-progress.php">
-            <i class="bx bx-line-chart me-2 text-success"></i>
-            <span class="align-middle">Learning & Course Analytics</span>
+        </li>    ---->
+		
+		<li>
+          <a class="dropdown-item" href="learner-profile-account.php">
+            <i class="bx bx-user me-2 text-primary"></i>
+            <span class="align-middle">Manage My Profile Account</span>
           </a>
         </li>
+		
+		<li>
+          <a class="dropdown-item" href="learner-profile-notifications.php">
+            <i class="bx bx-user me-2 text-primary"></i>
+            <span class="align-middle">Manage My Notification Preferences</span>
+          </a>
+        </li>
+		
+		<li>
+          <a class="dropdown-item" href="learner-profile-Connections.php">
+            <i class="bx bx-user me-2 text-primary"></i>
+            <span class="align-middle">Manage My Social Connections</span>
+          </a>
+        </li>
+		
+		<li>
+          <a class="dropdown-item" href="learner-profile-360profile.php">
+            <i class="bx bx-user me-2 text-primary"></i>
+            <span class="align-middle">Manage My 360 Profile</span>
+          </a>
+        </li>
+		
+		
+       
 		<li>
           <a class="dropdown-item" href="#learner-alerts.php">
             <i class="bx bx-bell me-2 text-warning"></i>
-            <span class="align-middle">Alerts & Announcements</span>
+            <span class="align-middle">My Alerts & Announcements</span>
           </a>
         </li>
         <li>
           <a class="dropdown-item" href="#learner-subscriptions.php">
             <i class="bx bx-wallet me-2 text-info"></i>
-            <span class="align-middle">Subscriptions</span>
+            <span class="align-middle">My Subscriptions</span>
           </a>
         </li>
         <li>
           <a class="dropdown-item" href="#learner-settings.php">
             <i class="bx bx-cog me-2 text-secondary"></i>
-            <span class="align-middle">Privacy & Custom Settings</span>
+            <span class="align-middle">My Privacy & Custom Settings</span>
           </a>
         </li>
         
@@ -468,25 +507,25 @@ if ($user_login != '') {
 				<li>
 				  <a class="dropdown-item" href="#feature-request.php">
 					<i class="bx bx-bulb me-2 text-warning"></i> <!-- Represents a request/idea -->
-					<span class="align-middle">Feature Request</span>
+					<span class="align-middle">My Feature Request</span>
 				  </a>
 				</li>
 				<li>
 				  <a class="dropdown-item" href="#help-support.php">
 					<i class="bx bx-help-circle me-2 text-primary"></i> <!-- Represents help or support -->
-					<span class="align-middle">Help & Support</span>
+					<span class="align-middle">My Help & Support</span>
 				  </a>
 				</li>
 				<li>
 				  <a class="dropdown-item" href="#feedback-dashboard.php">
 					<i class="bx bx-line-chart me-2 text-success"></i> <!-- Represents analytics or feedback tracking -->
-					<span class="align-middle">Feedback Dashboard</span>
+					<span class="align-middle">My Feedback Dashboard</span>
 				  </a>
 				</li>
 				<li>
 				  <a class="dropdown-item" href="#knowledge-base.php">
 					<i class="bx bx-book-open me-2 text-info"></i> <!-- Represents a knowledge repository -->
-					<span class="align-middle">Knowledge Base</span>
+					<span class="align-middle">My Knowledge Base</span>
 				  </a>
 				</li>
 				<li>

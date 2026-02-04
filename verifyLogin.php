@@ -91,8 +91,28 @@ if (isset($_POST['newWorkflowLOGIN']) && isset($_POST['processLogin']) && $_POST
 
         switch ($_SESSION['phx_user_type']) {
             case 'student':
-                $redirect = "lxp/platformLearner/learnerDashboard.php";
-                break;
+			
+				require_once 'learner-account-check.php';
+
+				if (!isLearnerAccountComplete($coni, $user_id)) {
+					$redirect = "lxp/platformLearner/learner-profile-account.php";
+				} else {
+					$redirect = "lxp/platformLearner/learnerDashboard.php";
+				}
+				break;
+				
+								
+				
+				//require_once 'learner-profile-resolver.php';
+				//if (!isLearnerProfileComplete($coni, $user_id)) {
+				//	$redirect = "lxp/platformLearner/learner-profile.php";
+				//} else {
+				//	$redirect = "lxp/platformLearner/learnerDashboard.php";
+				//}
+				//break;
+				
+               // $redirect = "lxp/platformLearner/learnerDashboard.php";
+               // break;
             case 'professor':
                 $redirect = "lxp/platformInstructor/instructorDashboard.php";
                 break;

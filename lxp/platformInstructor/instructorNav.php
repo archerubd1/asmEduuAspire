@@ -191,7 +191,8 @@ $stmt->close();
             </a>
           </li>
           <li><div class="dropdown-divider"></div></li>
-          <li><a href="instructor-profile.php" class="dropdown-item"><i class="bx bx-user me-2 text-primary"></i>Manage Profile</a></li>
+          <li><a href="instructor-profile.php" class="dropdown-item"><i class="bx bx-user me-2 text-primary"></i>Manage Self Profile</a></li>
+		   <li><a href="moderate-learner-profile.php" class="dropdown-item"><i class="bx bx-group me-2 text-primary"></i>Moderate Learners Profile</a></li>
           <li><a href="learner-progress.php" class="dropdown-item"><i class="bx bx-line-chart me-2 text-success"></i>Learning & Course Analytics</a></li>
           <li><a href="instructor-alerts.php" class="dropdown-item"><i class="bx bx-bell me-2 text-warning"></i>Alerts & Announcements</a></li>
           <li><a href="instructor-subscriptions.php" class="dropdown-item"><i class="bx bx-wallet me-2 text-info"></i>Subscriptions</a></li>

@@ -72,13 +72,18 @@ $learnerUpdate = "
         timezone = '$timezone',
         currency = '$currency',
         gender = '$gender',
-        dob = '$dob'
+        dob = '$dob',
+		status = 'active'
         " . ($photoFileName ? ", profile_photo = '$photoFileName'" : "") . "
     WHERE user_id = $phx_user_id
     LIMIT 1
 ";
 mysqli_query($coni, $learnerUpdate);
 
-echo json_encode(array('status' => 'success', 'message' => 'Profile updated successfully.'));
+echo json_encode(array(
+    'status' => 'success',
+    'message' => 'Profile Account Saved. Update Your Notification Preferences.',
+    'next_step' => 'notifications'
+));
 exit;
 ?>

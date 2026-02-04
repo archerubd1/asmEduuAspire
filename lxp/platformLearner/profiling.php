@@ -8,14 +8,11 @@
 <!-- Include Font Awesome (if not already in your layout) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-<div class="container-fluid">
+
   <!-- =============================== -->
   <!-- 🌐 360° Main Title -->
   <!-- =============================== -->
-  <h4 class="fw-bold mt-4 mb-4">
-    <i class="fa-solid fa-circle-nodes text-primary me-2"></i>
-    360° Learner Profiling Dashboard
-  </h4>
+  
   <p class="text-muted mb-4">
     Build your complete learner identity across psychological, behavioral, and skill-based dimensions.  
     Your 360° profile helps personalize your journey, gamify learning, and guide career readiness.
@@ -123,7 +120,7 @@
     }
     ?>
   </div>
-</div>
+
 
 <!-- ============================== -->
 <!-- ✅ SweetAlert2 Interaction Logic -->

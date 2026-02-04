@@ -52,26 +52,13 @@ require_once('learnerHead_Nav2.php');
         <!-- ✅ Tabs Navigation -->
         <!-- ========================= -->
         <ul class="nav nav-pills flex-column flex-md-row align-items-start mb-4 ps-1" style="gap:25px;">
+         
           <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#account">
-              <i class="fa-solid fa-user-gear me-2"></i> Account
+            <a class="nav-link active" data-bs-toggle="pill" href="#notifications">
+              <i class="fa-solid fa-bell me-2"></i> Notification Preferences
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#notifications">
-              <i class="fa-solid fa-bell me-2"></i> Notifications
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#connections">
-              <i class="fa-solid fa-link me-2"></i> Connections
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link text-success" data-bs-toggle="pill" href="#profiling">
-              <i class="fa-solid fa-circle-nodes me-2"></i> 360° Profiling
-            </a>
-          </li>
+         
         </ul>
 
         <!-- ========================= -->
@@ -79,33 +66,16 @@ require_once('learnerHead_Nav2.php');
         <!-- ========================= -->
         <div class="tab-content text-start">
           
-          <!-- Account -->
-          <div class="tab-pane fade show active" id="account">
-           
-              <?php include('account.php'); ?>
-            
-          </div>
+          
 
           <!-- Notifications -->
-          <div class="tab-pane fade" id="notifications">
+          <div class="tab-pane fade show active" id="notifications">
             
               <?php include('notifications.php'); ?>
            
           </div>
 
-          <!-- Connections -->
-          <div class="tab-pane fade" id="connections">
-           
-              <?php include('connections.php'); ?>
-          
-          </div>
-
-          <!-- 360 Profiling -->
-          <div class="tab-pane fade" id="profiling">
-            <div class="card border-0 shadow-sm p-3">
-              <?php include('profiling.php'); ?>
-            </div>
-          </div>
+         
 
         </div>
       </div>
